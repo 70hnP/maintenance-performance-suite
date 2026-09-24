@@ -1,0 +1,14 @@
+# Python's csv module emits RFC-style CRLF records on every platform.
+# Checking CSV files out as CRLF keeps the reproducibility gate stable on Linux and Windows.
+*.csv text eol=crlf
+
+# Keep source, configuration and documentation normalized.
+*.py text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.md text eol=lf
+*.html text eol=lf
+*.tmdl text eol=lf

@@ -1,0 +1,61 @@
+/// Catálogo de clases de orden SAP y su tipificación de mantenimiento.
+table DimTipoOrden
+	lineageTag: 73ed64bd-e37d-53f9-ac45-446c2c3b7f62
+
+	/// PM01 a PM06.
+	column ClaseOrden
+		dataType: string
+		lineageTag: 43993526-5bb1-5f78-b919-25fcc73ca87b
+		summarizeBy: none
+		sourceColumn: ClaseOrden
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Tipificación.
+	column TipoMantenimiento
+		dataType: string
+		lineageTag: ef78b47b-098a-55e7-93a8-92e503155512
+		summarizeBy: none
+		sourceColumn: TipoMantenimiento
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Descripción de la clase.
+	column Descripcion
+		dataType: string
+		lineageTag: b077c93e-d8ac-56a7-923e-0296aa2a678f
+		summarizeBy: none
+		sourceColumn: Descripcion
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Sí para trabajo planificado, No para reactivo.
+	column EsPlanificado
+		dataType: string
+		lineageTag: 8f2cce12-60bf-53bb-848b-bd1ebceb2418
+		summarizeBy: none
+		sourceColumn: EsPlanificado
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimTipoOrden = m
+		mode: import
+		source =
+				let
+				    Origen = #table(
+				        {"ClaseOrden", "TipoMantenimiento", "Descripcion", "EsPlanificado"},
+				        {
+				        {"PM01", "Correctivo", "Correctivo estándar", "No"},
+				        {"PM02", "Preventivo", "Preventivo por tiempo", "Sí"},
+				        {"PM03", "Preventivo", "Preventivo por condición", "Sí"},
+				        {"PM04", "Mejora", "Mejora / contramedida A3", "Sí"},
+				        {"PM05", "Emergencia", "Correctivo de emergencia", "No"},
+				        {"PM06", "Predictivo", "Predictivo por monitoreo", "Sí"}
+				        }
+				    )
+				in
+				    Origen
+
+	queryGroup: '02 · Dimensiones'
+
+	annotation PBI_ResultType = Table

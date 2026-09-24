@@ -1,0 +1,123 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "p09n",
+  "position": {
+    "x": 16,
+    "y": 562,
+    "z": 130,
+    "width": 1248,
+    "height": 140,
+    "tabOrder": 1300
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "LA MADUREZ EXPLICA POR QUÉ LOS KPI SE ESTANCAN",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "fontWeight": "bold",
+                      "color": "#D97706",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Qué dice el dato · ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#0E1C33",
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "Los cinco scores se calculan desde el propio dato SAP, no desde una encuesta: miden práctica instalada, no percepción.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#101828",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Correlación · ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#0E1C33",
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "El pilar más débil gobierna directamente el KPI que no mejora: el cumplimiento preventivo depende de F2 y la disponibilidad de F5.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#101828",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Riesgo si no se actúa · ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#0E1C33",
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "Perseguir la meta numérica sin instalar la rutina produce mejoras que se revierten al trimestre siguiente.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#101828",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Decisión recomendada: ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#B42318",
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "Priorizar las acciones de los dos pilares más débiles por sobre cualquier otra iniciativa del trimestre, con evidencia de cierre verificable.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#101828",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

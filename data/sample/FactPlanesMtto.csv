@@ -1,0 +1,1105 @@
+AnioMes,Plan,Equipo,DenominacionEquipo,Area,Criticidad,Estrategia,Ciclo,Estado
+2025-01,PM-1000,EQ-0457,Envasadora L2,Envasado,A,Alineamiento y vibración,Trimestral,Cumplido
+2025-01,PM-1001,EQ-0455,Envasadora L1,Envasado,A,Alineamiento y vibración,Trimestral,Cumplido
+2025-01,PM-1002,EQ-0461,Etiquetadora L1,Envasado,A,Inspección eléctrica,Trimestral,Vencido
+2025-01,PM-1003,EQ-0462,Etiquetadora L2,Envasado,B,Lubricación,Mensual,Cumplido
+2025-01,PM-1004,EQ-0470,Paletizador,Envasado,B,Inspección mecánica,Mensual,Cumplido
+2025-01,PM-1005,EQ-0471,Transportador L3,Envasado,C,Inspección mecánica,Quincenal,Cumplido
+2025-01,PM-1006,EQ-0310,Reactor P1,Proceso,A,Inspección mecánica,Quincenal,Vencido
+2025-01,PM-1007,EQ-0311,Intercambiador P1,Proceso,B,Lubricación,Quincenal,Vencido
+2025-01,PM-1008,EQ-0320,Mezclador P2,Proceso,B,Alineamiento y vibración,Mensual,Vencido
+2025-01,PM-1009,EQ-0330,Bomba CIP,Proceso,B,Inspección eléctrica,Quincenal,Cumplido
+2025-01,PM-1010,EQ-0331,Bomba de proceso,Proceso,C,Lubricación,Trimestral,Cumplido
+2025-01,PM-1011,EQ-0201,Caldera 1,Servicios,A,Inspección eléctrica,Quincenal,Cumplido
+2025-01,PM-1012,EQ-0202,Caldera 2,Servicios,B,Cambio de filtros,Quincenal,Cumplido
+2025-01,PM-1013,EQ-0210,Compresor 3,Servicios,B,Inspección eléctrica,Quincenal,Cumplido
+2025-01,PM-1014,EQ-0211,Chiller 1,Servicios,A,Inspección eléctrica,Trimestral,Cumplido
+2025-01,PM-1015,EQ-0601,Grúa horquilla 4,Bodega,C,Inspección eléctrica,Mensual,Vencido
+2025-01,PM-1016,EQ-0457,Envasadora L2,Envasado,A,Lubricación,Mensual,Cumplido
+2025-01,PM-1017,EQ-0455,Envasadora L1,Envasado,A,Lubricación,Trimestral,Vencido
+2025-01,PM-1018,EQ-0461,Etiquetadora L1,Envasado,A,Alineamiento y vibración,Trimestral,Vencido
+2025-01,PM-1019,EQ-0462,Etiquetadora L2,Envasado,B,Alineamiento y vibración,Quincenal,Cumplido
+2025-01,PM-1020,EQ-0470,Paletizador,Envasado,B,Cambio de filtros,Mensual,Cumplido
+2025-01,PM-1021,EQ-0471,Transportador L3,Envasado,C,Inspección mecánica,Quincenal,Cumplido
+2025-01,PM-1022,EQ-0310,Reactor P1,Proceso,A,Inspección mecánica,Quincenal,Vencido
+2025-01,PM-1023,EQ-0311,Intercambiador P1,Proceso,B,Inspección eléctrica,Trimestral,Cumplido
+2025-01,PM-1024,EQ-0320,Mezclador P2,Proceso,B,Cambio de filtros,Mensual,Cumplido
+2025-01,PM-1025,EQ-0330,Bomba CIP,Proceso,B,Lubricación,Quincenal,Cumplido
+2025-01,PM-1026,EQ-0331,Bomba de proceso,Proceso,C,Lubricación,Mensual,Cumplido
+2025-01,PM-1027,EQ-0201,Caldera 1,Servicios,A,Alineamiento y vibración,Mensual,Vencido
+2025-01,PM-1028,EQ-0202,Caldera 2,Servicios,B,Inspección eléctrica,Quincenal,Cumplido
+2025-01,PM-1029,EQ-0210,Compresor 3,Servicios,B,Inspección mecánica,Mensual,Cumplido
+2025-01,PM-1030,EQ-0211,Chiller 1,Servicios,A,Lubricación,Trimestral,Vencido
+2025-01,PM-1031,EQ-0601,Grúa horquilla 4,Bodega,C,Cambio de filtros,Trimestral,Vencido
+2025-01,PM-1032,EQ-0457,Envasadora L2,Envasado,A,Lubricación,Quincenal,Cumplido
+2025-01,PM-1033,EQ-0455,Envasadora L1,Envasado,A,Inspección mecánica,Trimestral,Cumplido
+2025-01,PM-1034,EQ-0461,Etiquetadora L1,Envasado,A,Cambio de filtros,Trimestral,Cumplido
+2025-01,PM-1035,EQ-0462,Etiquetadora L2,Envasado,B,Alineamiento y vibración,Trimestral,Vencido
+2025-01,PM-1036,EQ-0470,Paletizador,Envasado,B,Inspección eléctrica,Trimestral,Vencido
+2025-01,PM-1037,EQ-0471,Transportador L3,Envasado,C,Alineamiento y vibración,Mensual,Cumplido
+2025-01,PM-1038,EQ-0310,Reactor P1,Proceso,A,Cambio de filtros,Quincenal,Cumplido
+2025-01,PM-1039,EQ-0311,Intercambiador P1,Proceso,B,Cambio de filtros,Quincenal,Cumplido
+2025-01,PM-1040,EQ-0320,Mezclador P2,Proceso,B,Alineamiento y vibración,Trimestral,Cumplido
+2025-01,PM-1041,EQ-0330,Bomba CIP,Proceso,B,Lubricación,Trimestral,Cumplido
+2025-01,PM-1042,EQ-0331,Bomba de proceso,Proceso,C,Inspección eléctrica,Quincenal,Vencido
+2025-01,PM-1043,EQ-0201,Caldera 1,Servicios,A,Inspección eléctrica,Quincenal,Vencido
+2025-01,PM-1044,EQ-0202,Caldera 2,Servicios,B,Inspección mecánica,Trimestral,Cumplido
+2025-01,PM-1045,EQ-0210,Compresor 3,Servicios,B,Alineamiento y vibración,Mensual,Cumplido
+2025-02,PM-1000,EQ-0457,Envasadora L2,Envasado,A,Inspección mecánica,Mensual,Cumplido
+2025-02,PM-1001,EQ-0455,Envasadora L1,Envasado,A,Cambio de filtros,Quincenal,Vencido
+2025-02,PM-1002,EQ-0461,Etiquetadora L1,Envasado,A,Cambio de filtros,Mensual,Cumplido
+2025-02,PM-1003,EQ-0462,Etiquetadora L2,Envasado,B,Alineamiento y vibración,Quincenal,Cumplido
+2025-02,PM-1004,EQ-0470,Paletizador,Envasado,B,Alineamiento y vibración,Trimestral,Cumplido
+2025-02,PM-1005,EQ-0471,Transportador L3,Envasado,C,Alineamiento y vibración,Mensual,Cumplido
+2025-02,PM-1006,EQ-0310,Reactor P1,Proceso,A,Lubricación,Quincenal,Cumplido
+2025-02,PM-1007,EQ-0311,Intercambiador P1,Proceso,B,Alineamiento y vibración,Mensual,Cumplido
+2025-02,PM-1008,EQ-0320,Mezclador P2,Proceso,B,Alineamiento y vibración,Quincenal,Cumplido
+2025-02,PM-1009,EQ-0330,Bomba CIP,Proceso,B,Alineamiento y vibración,Trimestral,Vencido
+2025-02,PM-1010,EQ-0331,Bomba de proceso,Proceso,C,Lubricación,Mensual,Cumplido
+2025-02,PM-1011,EQ-0201,Caldera 1,Servicios,A,Inspección mecánica,Trimestral,Cumplido
+2025-02,PM-1012,EQ-0202,Caldera 2,Servicios,B,Inspección mecánica,Mensual,Cumplido
+2025-02,PM-1013,EQ-0210,Compresor 3,Servicios,B,Inspección eléctrica,Trimestral,Vencido
+2025-02,PM-1014,EQ-0211,Chiller 1,Servicios,A,Alineamiento y vibración,Trimestral,Cumplido
+2025-02,PM-1015,EQ-0601,Grúa horquilla 4,Bodega,C,Inspección mecánica,Trimestral,Cumplido
+2025-02,PM-1016,EQ-0457,Envasadora L2,Envasado,A,Inspección eléctrica,Trimestral,Cumplido
+2025-02,PM-1017,EQ-0455,Envasadora L1,Envasado,A,Alineamiento y vibración,Quincenal,Vencido
+2025-02,PM-1018,EQ-0461,Etiquetadora L1,Envasado,A,Cambio de filtros,Quincenal,Cumplido
+2025-02,PM-1019,EQ-0462,Etiquetadora L2,Envasado,B,Inspección mecánica,Mensual,Cumplido
+2025-02,PM-1020,EQ-0470,Paletizador,Envasado,B,Lubricación,Mensual,Cumplido
+2025-02,PM-1021,EQ-0471,Transportador L3,Envasado,C,Alineamiento y vibración,Quincenal,Cumplido
+2025-02,PM-1022,EQ-0310,Reactor P1,Proceso,A,Lubricación,Quincenal,Cumplido
+2025-02,PM-1023,EQ-0311,Intercambiador P1,Proceso,B,Inspección eléctrica,Trimestral,Cumplido
+2025-02,PM-1024,EQ-0320,Mezclador P2,Proceso,B,Inspección eléctrica,Trimestral,Cumplido
+2025-02,PM-1025,EQ-0330,Bomba CIP,Proceso,B,Inspección eléctrica,Quincenal,Cumplido
+2025-02,PM-1026,EQ-0331,Bomba de proceso,Proceso,C,Inspección eléctrica,Quincenal,Cumplido
+2025-02,PM-1027,EQ-0201,Caldera 1,Servicios,A,Alineamiento y vibración,Mensual,Cumplido
+2025-02,PM-1028,EQ-0202,Caldera 2,Servicios,B,Lubricación,Mensual,Cumplido
+2025-02,PM-1029,EQ-0210,Compresor 3,Servicios,B,Cambio de filtros,Quincenal,Cumplido
+2025-02,PM-1030,EQ-0211,Chiller 1,Servicios,A,Inspección eléctrica,Mensual,Cumplido
+2025-02,PM-1031,EQ-0601,Grúa horquilla 4,Bodega,C,Inspección eléctrica,Quincenal,Cumplido
+2025-02,PM-1032,EQ-0457,Envasadora L2,Envasado,A,Lubricación,Trimestral,Cumplido
+2025-02,PM-1033,EQ-0455,Envasadora L1,Envasado,A,Lubricación,Trimestral,Cumplido
+2025-02,PM-1034,EQ-0461,Etiquetadora L1,Envasado,A,Inspección eléctrica,Mensual,Cumplido
+2025-02,PM-1035,EQ-0462,Etiquetadora L2,Envasado,B,Alineamiento y vibración,Trimestral,Cumplido
+2025-02,PM-1036,EQ-0470,Paletizador,Envasado,B,Inspección mecánica,Trimestral,Cumplido
+2025-02,PM-1037,EQ-0471,Transportador L3,Envasado,C,Alineamiento y vibración,Mensual,Cumplido
+2025-02,PM-1038,EQ-0310,Reactor P1,Proceso,A,Lubricación,Trimestral,Vencido
+2025-02,PM-1039,EQ-0311,Intercambiador P1,Proceso,B,Cambio de filtros,Quincenal,Cumplido
+2025-02,PM-1040,EQ-0320,Mezclador P2,Proceso,B,Inspección eléctrica,Mensual,Cumplido
+2025-02,PM-1041,EQ-0330,Bomba CIP,Proceso,B,Inspección mecánica,Trimestral,Cumplido
+2025-02,PM-1042,EQ-0331,Bomba de proceso,Proceso,C,Inspección mecánica,Trimestral,Cumplido
+2025-02,PM-1043,EQ-0201,Caldera 1,Servicios,A,Inspección mecánica,Mensual,Cumplido
+2025-02,PM-1044,EQ-0202,Caldera 2,Servicios,B,Inspección eléctrica,Mensual,Cumplido
+2025-02,PM-1045,EQ-0210,Compresor 3,Servicios,B,Lubricación,Quincenal,Cumplido
+2025-03,PM-1000,EQ-0457,Envasadora L2,Envasado,A,Cambio de filtros,Mensual,Cumplido
+2025-03,PM-1001,EQ-0455,Envasadora L1,Envasado,A,Lubricación,Quincenal,Cumplido
+2025-03,PM-1002,EQ-0461,Etiquetadora L1,Envasado,A,Inspección mecánica,Mensual,Cumplido
+2025-03,PM-1003,EQ-0462,Etiquetadora L2,Envasado,B,Lubricación,Trimestral,Cumplido
+2025-03,PM-1004,EQ-0470,Paletizador,Envasado,B,Inspección eléctrica,Mensual,Cumplido
+2025-03,PM-1005,EQ-0471,Transportador L3,Envasado,C,Cambio de filtros,Quincenal,Cumplido
+2025-03,PM-1006,EQ-0310,Reactor P1,Proceso,A,Alineamiento y vibración,Quincenal,Cumplido
+2025-03,PM-1007,EQ-0311,Intercambiador P1,Proceso,B,Inspección mecánica,Trimestral,Cumplido
+2025-03,PM-1008,EQ-0320,Mezclador P2,Proceso,B,Lubricación,Mensual,Cumplido
+2025-03,PM-1009,EQ-0330,Bomba CIP,Proceso,B,Inspección mecánica,Trimestral,Cumplido
+2025-03,PM-1010,EQ-0331,Bomba de proceso,Proceso,C,Cambio de filtros,Quincenal,Cumplido
+2025-03,PM-1011,EQ-0201,Caldera 1,Servicios,A,Inspección mecánica,Mensual,Cumplido
+2025-03,PM-1012,EQ-0202,Caldera 2,Servicios,B,Inspección mecánica,Quincenal,Vencido
+2025-03,PM-1013,EQ-0210,Compresor 3,Servicios,B,Lubricación,Mensual,Cumplido
+2025-03,PM-1014,EQ-0211,Chiller 1,Servicios,A,Cambio de filtros,Mensual,Vencido
+2025-03,PM-1015,EQ-0601,Grúa horquilla 4,Bodega,C,Alineamiento y vibración,Trimestral,Cumplido
+2025-03,PM-1016,EQ-0457,Envasadora L2,Envasado,A,Lubricación,Quincenal,Cumplido
+2025-03,PM-1017,EQ-0455,Envasadora L1,Envasado,A,Inspección eléctrica,Trimestral,Cumplido
+2025-03,PM-1018,EQ-0461,Etiquetadora L1,Envasado,A,Lubricación,Quincenal,Cumplido
+2025-03,PM-1019,EQ-0462,Etiquetadora L2,Envasado,B,Alineamiento y vibración,Mensual,Cumplido
+2025-03,PM-1020,EQ-0470,Paletizador,Envasado,B,Lubricación,Quincenal,Vencido
+2025-03,PM-1021,EQ-0471,Transportador L3,Envasado,C,Alineamiento y vibración,Trimestral,Cumplido
+2025-03,PM-1022,EQ-0310,Reactor P1,Proceso,A,Cambio de filtros,Quincenal,Cumplido
+2025-03,PM-1023,EQ-0311,Intercambiador P1,Proceso,B,Cambio de filtros,Trimestral,Vencido
+2025-03,PM-1024,EQ-0320,Mezclador P2,Proceso,B,Alineamiento y vibración,Mensual,Cumplido
+2025-03,PM-1025,EQ-0330,Bomba CIP,Proceso,B,Inspección mecánica,Mensual,Vencido
+2025-03,PM-1026,EQ-0331,Bomba de proceso,Proceso,C,Cambio de filtros,Quincenal,Vencido
+2025-03,PM-1027,EQ-0201,Caldera 1,Servicios,A,Lubricación,Trimestral,Cumplido
+2025-03,PM-1028,EQ-0202,Caldera 2,Servicios,B,Inspección eléctrica,Quincenal,Cumplido
+2025-03,PM-1029,EQ-0210,Compresor 3,Servicios,B,Inspección eléctrica,Mensual,Cumplido
+2025-03,PM-1030,EQ-0211,Chiller 1,Servicios,A,Inspección mecánica,Trimestral,Cumplido
+2025-03,PM-1031,EQ-0601,Grúa horquilla 4,Bodega,C,Cambio de filtros,Trimestral,Vencido
+2025-03,PM-1032,EQ-0457,Envasadora L2,Envasado,A,Cambio de filtros,Quincenal,Vencido
+2025-03,PM-1033,EQ-0455,Envasadora L1,Envasado,A,Lubricación,Mensual,Cumplido
+2025-03,PM-1034,EQ-0461,Etiquetadora L1,Envasado,A,Alineamiento y vibración,Quincenal,Cumplido
+2025-03,PM-1035,EQ-0462,Etiquetadora L2,Envasado,B,Cambio de filtros,Mensual,Cumplido
+2025-03,PM-1036,EQ-0470,Paletizador,Envasado,B,Inspección eléctrica,Quincenal,Cumplido
+2025-03,PM-1037,EQ-0471,Transportador L3,Envasado,C,Inspección mecánica,Mensual,Cumplido
+2025-03,PM-1038,EQ-0310,Reactor P1,Proceso,A,Cambio de filtros,Mensual,Cumplido
+2025-03,PM-1039,EQ-0311,Intercambiador P1,Proceso,B,Cambio de filtros,Trimestral,Cumplido
+2025-03,PM-1040,EQ-0320,Mezclador P2,Proceso,B,Alineamiento y vibración,Quincenal,Cumplido
+2025-03,PM-1041,EQ-0330,Bomba CIP,Proceso,B,Cambio de filtros,Quincenal,Cumplido
+2025-03,PM-1042,EQ-0331,Bomba de proceso,Proceso,C,Inspección eléctrica,Mensual,Cumplido
+2025-03,PM-1043,EQ-0201,Caldera 1,Servicios,A,Lubricación,Trimestral,Cumplido
+2025-03,PM-1044,EQ-0202,Caldera 2,Servicios,B,Inspección mecánica,Mensual,Cumplido
+2025-03,PM-1045,EQ-0210,Compresor 3,Servicios,B,Cambio de filtros,Quincenal,Cumplido
+2025-04,PM-1000,EQ-0457,Envasadora L2,Envasado,A,Lubricación,Trimestral,Cumplido
+2025-04,PM-1001,EQ-0455,Envasadora L1,Envasado,A,Lubricación,Mensual,Cumplido
+2025-04,PM-1002,EQ-0461,Etiquetadora L1,Envasado,A,Lubricación,Mensual,Cumplido
+2025-04,PM-1003,EQ-0462,Etiquetadora L2,Envasado,B,Inspección eléctrica,Trimestral,Cumplido
+2025-04,PM-1004,EQ-0470,Paletizador,Envasado,B,Alineamiento y vibración,Quincenal,Cumplido
+2025-04,PM-1005,EQ-0471,Transportador L3,Envasado,C,Alineamiento y vibración,Mensual,Vencido
+2025-04,PM-1006,EQ-0310,Reactor P1,Proceso,A,Alineamiento y vibración,Trimestral,Cumplido
+2025-04,PM-1007,EQ-0311,Intercambiador P1,Proceso,B,Inspección eléctrica,Mensual,Cumplido
+2025-04,PM-1008,EQ-0320,Mezclador P2,Proceso,B,Cambio de filtros,Mensual,Vencido
+2025-04,PM-1009,EQ-0330,Bomba CIP,Proceso,B,Inspección mecánica,Mensual,Cumplido
+2025-04,PM-1010,EQ-0331,Bomba de proceso,Proceso,C,Inspección mecánica,Quincenal,Cumplido
+2025-04,PM-1011,EQ-0201,Caldera 1,Servicios,A,Inspección eléctrica,Trimestral,Cumplido
+2025-04,PM-1012,EQ-0202,Caldera 2,Servicios,B,Inspección mecánica,Quincenal,Cumplido
+2025-04,PM-1013,EQ-0210,Compresor 3,Servicios,B,Lubricación,Quincenal,Cumplido
+2025-04,PM-1014,EQ-0211,Chiller 1,Servicios,A,Cambio de filtros,Trimestral,Cumplido
+2025-04,PM-1015,EQ-0601,Grúa horquilla 4,Bodega,C,Inspección mecánica,Quincenal,Cumplido
+2025-04,PM-1016,EQ-0457,Envasadora L2,Envasado,A,Cambio de filtros,Quincenal,Cumplido
+2025-04,PM-1017,EQ-0455,Envasadora L1,Envasado,A,Cambio de filtros,Mensual,Cumplido
+2025-04,PM-1018,EQ-0461,Etiquetadora L1,Envasado,A,Lubricación,Quincenal,Cumplido
+2025-04,PM-1019,EQ-0462,Etiquetadora L2,Envasado,B,Cambio de filtros,Trimestral,Cumplido
+2025-04,PM-1020,EQ-0470,Paletizador,Envasado,B,Inspección mecánica,Trimestral,Cumplido
+2025-04,PM-1021,EQ-0471,Transportador L3,Envasado,C,Cambio de filtros,Quincenal,Cumplido
+2025-04,PM-1022,EQ-0310,Reactor P1,Proceso,A,Alineamiento y vibración,Quincenal,Cumplido
+2025-04,PM-1023,EQ-0311,Intercambiador P1,Proceso,B,Inspección mecánica,Mensual,Cumplido
+2025-04,PM-1024,EQ-0320,Mezclador P2,Proceso,B,Lubricación,Mensual,Cumplido
+2025-04,PM-1025,EQ-0330,Bomba CIP,Proceso,B,Cambio de filtros,Quincenal,Cumplido
+2025-04,PM-1026,EQ-0331,Bomba de proceso,Proceso,C,Lubricación,Trimestral,Cumplido
+2025-04,PM-1027,EQ-0201,Caldera 1,Servicios,A,Alineamiento y vibración,Mensual,Cumplido
+2025-04,PM-1028,EQ-0202,Caldera 2,Servicios,B,Alineamiento y vibración,Trimestral,Cumplido
+2025-04,PM-1029,EQ-0210,Compresor 3,Servicios,B,Alineamiento y vibración,Trimestral,Cumplido
+2025-04,PM-1030,EQ-0211,Chiller 1,Servicios,A,Inspección eléctrica,Trimestral,Cumplido
+2025-04,PM-1031,EQ-0601,Grúa horquilla 4,Bodega,C,Inspección eléctrica,Mensual,Cumplido
+2025-04,PM-1032,EQ-0457,Envasadora L2,Envasado,A,Lubricación,Trimestral,Cumplido
+2025-04,PM-1033,EQ-0455,Envasadora L1,Envasado,A,Alineamiento y vibración,Quincenal,Vencido
+2025-04,PM-1034,EQ-0461,Etiquetadora L1,Envasado,A,Inspección eléctrica,Quincenal,Cumplido
+2025-04,PM-1035,EQ-0462,Etiquetadora L2,Envasado,B,Inspección mecánica,Trimestral,Cumplido
+2025-04,PM-1036,EQ-0470,Paletizador,Envasado,B,Lubricación,Mensual,Vencido
+2025-04,PM-1037,EQ-0471,Transportador L3,Envasado,C,Cambio de filtros,Quincenal,Vencido
+2025-04,PM-1038,EQ-0310,Reactor P1,Proceso,A,Inspección mecánica,Quincenal,Cumplido
+2025-04,PM-1039,EQ-0311,Intercambiador P1,Proceso,B,Inspección eléctrica,Mensual,Cumplido
+2025-04,PM-1040,EQ-0320,Mezclador P2,Proceso,B,Inspección eléctrica,Mensual,Cumplido
+2025-04,PM-1041,EQ-0330,Bomba CIP,Proceso,B,Cambio de filtros,Mensual,Cumplido
+2025-04,PM-1042,EQ-0331,Bomba de proceso,Proceso,C,Inspección eléctrica,Quincenal,Vencido
+2025-04,PM-1043,EQ-0201,Caldera 1,Servicios,A,Alineamiento y vibración,Mensual,Cumplido
+2025-04,PM-1044,EQ-0202,Caldera 2,Servicios,B,Alineamiento y vibración,Mensual,Vencido
+2025-04,PM-1045,EQ-0210,Compresor 3,Servicios,B,Inspección mecánica,Mensual,Cumplido
+2025-05,PM-1000,EQ-0457,Envasadora L2,Envasado,A,Inspección eléctrica,Mensual,Cumplido
+2025-05,PM-1001,EQ-0455,Envasadora L1,Envasado,A,Alineamiento y vibración,Mensual,Cumplido
+2025-05,PM-1002,EQ-0461,Etiquetadora L1,Envasado,A,Inspección mecánica,Quincenal,Cumplido
+2025-05,PM-1003,EQ-0462,Etiquetadora L2,Envasado,B,Alineamiento y vibración,Quincenal,Cumplido
+2025-05,PM-1004,EQ-0470,Paletizador,Envasado,B,Lubricación,Quincenal,Cumplido
+2025-05,PM-1005,EQ-0471,Transportador L3,Envasado,C,Inspección eléctrica,Trimestral,Vencido
+2025-05,PM-1006,EQ-0310,Reactor P1,Proceso,A,Inspección mecánica,Trimestral,Vencido
+2025-05,PM-1007,EQ-0311,Intercambiador P1,Proceso,B,Lubricación,Trimestral,Cumplido
+2025-05,PM-1008,EQ-0320,Mezclador P2,Proceso,B,Inspección eléctrica,Trimestral,Cumplido
+2025-05,PM-1009,EQ-0330,Bomba CIP,Proceso,B,Alineamiento y vibración,Quincenal,Cumplido
+2025-05,PM-1010,EQ-0331,Bomba de proceso,Proceso,C,Cambio de filtros,Quincenal,Cumplido
+2025-05,PM-1011,EQ-0201,Caldera 1,Servicios,A,Inspección eléctrica,Quincenal,Cumplido
+2025-05,PM-1012,EQ-0202,Caldera 2,Servicios,B,Alineamiento y vibración,Mensual,Cumplido
+2025-05,PM-1013,EQ-0210,Compresor 3,Servicios,B,Alineamiento y vibración,Trimestral,Cumplido
+2025-05,PM-1014,EQ-0211,Chiller 1,Servicios,A,Alineamiento y vibración,Mensual,Cumplido
+2025-05,PM-1015,EQ-0601,Grúa horquilla 4,Bodega,C,Cambio de filtros,Trimestral,Cumplido
+2025-05,PM-1016,EQ-0457,Envasadora L2,Envasado,A,Inspección mecánica,Trimestral,Cumplido
+2025-05,PM-1017,EQ-0455,Envasadora L1,Envasado,A,Alineamiento y vibración,Mensual,Cumplido
+2025-05,PM-1018,EQ-0461,Etiquetadora L1,Envasado,A,Lubricación,Quincenal,Cumplido
+2025-05,PM-1019,EQ-0462,Etiquetadora L2,Envasado,B,Inspección eléctrica,Quincenal,Cumplido
+2025-05,PM-1020,EQ-0470,Paletizador,Envasado,B,Alineamiento y vibración,Mensual,Cumplido
+2025-05,PM-1021,EQ-0471,Transportador L3,Envasado,C,Alineamiento y vibración,Mensual,Cumplido
+2025-05,PM-1022,EQ-0310,Reactor P1,Proceso,A,Inspección eléctrica,Mensual,Vencido
+2025-05,PM-1023,EQ-0311,Intercambiador P1,Proceso,B,Alineamiento y vibración,Mensual,Cumplido
+2025-05,PM-1024,EQ-0320,Mezclador P2,Proceso,B,Alineamiento y vibración,Mensual,Cumplido
+2025-05,PM-1025,EQ-0330,Bomba CIP,Proceso,B,Cambio de filtros,Trimestral,Cumplido
+2025-05,PM-1026,EQ-0331,Bomba de proceso,Proceso,C,Inspección mecánica,Mensual,Cumplido
+2025-05,PM-1027,EQ-0201,Caldera 1,Servicios,A,Inspección mecánica,Trimestral,Cumplido
+2025-05,PM-1028,EQ-0202,Caldera 2,Servicios,B,Inspección eléctrica,Trimestral,Cumplido
+2025-05,PM-1029,EQ-0210,Compresor 3,Servicios,B,Lubricación,Trimestral,Cumplido
+2025-05,PM-1030,EQ-0211,Chiller 1,Servicios,A,Inspección eléctrica,Mensual,Cumplido
+2025-05,PM-1031,EQ-0601,Grúa horquilla 4,Bodega,C,Inspección eléctrica,Quincenal,Cumplido
+2025-05,PM-1032,EQ-0457,Envasadora L2,Envasado,A,Lubricación,Quincenal,Cumplido
+2025-05,PM-1033,EQ-0455,Envasadora L1,Envasado,A,Cambio de filtros,Mensual,Cumplido
+2025-05,PM-1034,EQ-0461,Etiquetadora L1,Envasado,A,Alineamiento y vibración,Mensual,Cumplido
+2025-05,PM-1035,EQ-0462,Etiquetadora L2,Envasado,B,Inspección eléctrica,Mensual,Cumplido
+2025-05,PM-1036,EQ-0470,Paletizador,Envasado,B,Alineamiento y vibración,Quincenal,Cumplido
+2025-05,PM-1037,EQ-0471,Transportador L3,Envasado,C,Cambio de filtros,Mensual,Cumplido
+2025-05,PM-1038,EQ-0310,Reactor P1,Proceso,A,Alineamiento y vibración,Quincenal,Cumplido
+2025-05,PM-1039,EQ-0311,Intercambiador P1,Proceso,B,Lubricación,Mensual,Vencido
+2025-05,PM-1040,EQ-0320,Mezclador P2,Proceso,B,Inspección eléctrica,Quincenal,Vencido
+2025-05,PM-1041,EQ-0330,Bomba CIP,Proceso,B,Inspección mecánica,Mensual,Cumplido
+2025-05,PM-1042,EQ-0331,Bomba de proceso,Proceso,C,Lubricación,Mensual,Cumplido
+2025-05,PM-1043,EQ-0201,Caldera 1,Servicios,A,Alineamiento y vibración,Quincenal,Cumplido
+2025-05,PM-1044,EQ-0202,Caldera 2,Servicios,B,Inspección eléctrica,Quincenal,Cumplido
+2025-05,PM-1045,EQ-0210,Compresor 3,Servicios,B,Inspección mecánica,Mensual,Cumplido
+2025-06,PM-1000,EQ-0457,Envasadora L2,Envasado,A,Inspección mecánica,Quincenal,Cumplido
+2025-06,PM-1001,EQ-0455,Envasadora L1,Envasado,A,Cambio de filtros,Trimestral,Cumplido
+2025-06,PM-1002,EQ-0461,Etiquetadora L1,Envasado,A,Cambio de filtros,Mensual,Cumplido
+2025-06,PM-1003,EQ-0462,Etiquetadora L2,Envasado,B,Inspección eléctrica,Mensual,Cumplido
+2025-06,PM-1004,EQ-0470,Paletizador,Envasado,B,Cambio de filtros,Trimestral,Vencido
+2025-06,PM-1005,EQ-0471,Transportador L3,Envasado,C,Inspección mecánica,Mensual,Vencido
+2025-06,PM-1006,EQ-0310,Reactor P1,Proceso,A,Inspección mecánica,Mensual,Cumplido
+2025-06,PM-1007,EQ-0311,Intercambiador P1,Proceso,B,Cambio de filtros,Trimestral,Cumplido
+2025-06,PM-1008,EQ-0320,Mezclador P2,Proceso,B,Lubricación,Quincenal,Cumplido
+2025-06,PM-1009,EQ-0330,Bomba CIP,Proceso,B,Alineamiento y vibración,Mensual,Cumplido
+2025-06,PM-1010,EQ-0331,Bomba de proceso,Proceso,C,Inspección eléctrica,Quincenal,Cumplido
+2025-06,PM-1011,EQ-0201,Caldera 1,Servicios,A,Inspección eléctrica,Quincenal,Vencido
+2025-06,PM-1012,EQ-0202,Caldera 2,Servicios,B,Cambio de filtros,Mensual,Cumplido
+2025-06,PM-1013,EQ-0210,Compresor 3,Servicios,B,Inspección mecánica,Mensual,Cumplido
+2025-06,PM-1014,EQ-0211,Chiller 1,Servicios,A,Inspección eléctrica,Quincenal,Vencido
+2025-06,PM-1015,EQ-0601,Grúa horquilla 4,Bodega,C,Inspección mecánica,Mensual,Cumplido
+2025-06,PM-1016,EQ-0457,Envasadora L2,Envasado,A,Inspección mecánica,Quincenal,Vencido
+2025-06,PM-1017,EQ-0455,Envasadora L1,Envasado,A,Inspección mecánica,Trimestral,Cumplido
+2025-06,PM-1018,EQ-0461,Etiquetadora L1,Envasado,A,Cambio de filtros,Mensual,Cumplido
+2025-06,PM-1019,EQ-0462,Etiquetadora L2,Envasado,B,Alineamiento y vibración,Quincenal,Cumplido
+2025-06,PM-1020,EQ-0470,Paletizador,Envasado,B,Lubricación,Mensual,Cumplido
+2025-06,PM-1021,EQ-0471,Transportador L3,Envasado,C,Inspección mecánica,Mensual,Vencido
+2025-06,PM-1022,EQ-0310,Reactor P1,Proceso,A,Lubricación,Trimestral,Cumplido
+2025-06,PM-1023,EQ-0311,Intercambiador P1,Proceso,B,Alineamiento y vibración,Trimestral,Cumplido
+2025-06,PM-1024,EQ-0320,Mezclador P2,Proceso,B,Inspección mecánica,Quincenal,Cumplido
+2025-06,PM-1025,EQ-0330,Bomba CIP,Proceso,B,Cambio de filtros,Quincenal,Cumplido
+2025-06,PM-1026,EQ-0331,Bomba de proceso,Proceso,C,Inspección mecánica,Mensual,Cumplido
+2025-06,PM-1027,EQ-0201,Caldera 1,Servicios,A,Lubricación,Quincenal,Cumplido
+2025-06,PM-1028,EQ-0202,Caldera 2,Servicios,B,Inspección eléctrica,Mensual,Cumplido
+2025-06,PM-1029,EQ-0210,Compresor 3,Servicios,B,Inspección eléctrica,Quincenal,Cumplido
+2025-06,PM-1030,EQ-0211,Chiller 1,Servicios,A,Inspección eléctrica,Mensual,Cumplido
+2025-06,PM-1031,EQ-0601,Grúa horquilla 4,Bodega,C,Inspección mecánica,Mensual,Cumplido
+2025-06,PM-1032,EQ-0457,Envasadora L2,Envasado,A,Alineamiento y vibración,Quincenal,Cumplido
+2025-06,PM-1033,EQ-0455,Envasadora L1,Envasado,A,Cambio de filtros,Mensual,Cumplido
+2025-06,PM-1034,EQ-0461,Etiquetadora L1,Envasado,A,Inspección eléctrica,Mensual,Cumplido
+2025-06,PM-1035,EQ-0462,Etiquetadora L2,Envasado,B,Inspección mecánica,Quincenal,Cumplido
+2025-06,PM-1036,EQ-0470,Paletizador,Envasado,B,Inspección mecánica,Mensual,Cumplido
+2025-06,PM-1037,EQ-0471,Transportador L3,Envasado,C,Alineamiento y vibración,Trimestral,Cumplido
+2025-06,PM-1038,EQ-0310,Reactor P1,Proceso,A,Inspección mecánica,Mensual,Cumplido
+2025-06,PM-1039,EQ-0311,Intercambiador P1,Proceso,B,Cambio de filtros,Mensual,Cumplido
+2025-06,PM-1040,EQ-0320,Mezclador P2,Proceso,B,Lubricación,Quincenal,Cumplido
+2025-06,PM-1041,EQ-0330,Bomba CIP,Proceso,B,Inspección eléctrica,Mensual,Cumplido
+2025-06,PM-1042,EQ-0331,Bomba de proceso,Proceso,C,Inspección mecánica,Mensual,Cumplido
+2025-06,PM-1043,EQ-0201,Caldera 1,Servicios,A,Inspección eléctrica,Mensual,Cumplido
+2025-06,PM-1044,EQ-0202,Caldera 2,Servicios,B,Inspección mecánica,Quincenal,Cumplido
+2025-06,PM-1045,EQ-0210,Compresor 3,Servicios,B,Inspección mecánica,Quincenal,Cumplido
+2025-07,PM-1000,EQ-0457,Envasadora L2,Envasado,A,Inspección mecánica,Trimestral,Cumplido
+2025-07,PM-1001,EQ-0455,Envasadora L1,Envasado,A,Inspección mecánica,Mensual,Cumplido
+2025-07,PM-1002,EQ-0461,Etiquetadora L1,Envasado,A,Cambio de filtros,Trimestral,Cumplido
+2025-07,PM-1003,EQ-0462,Etiquetadora L2,Envasado,B,Lubricación,Quincenal,Cumplido
+2025-07,PM-1004,EQ-0470,Paletizador,Envasado,B,Alineamiento y vibración,Mensual,Cumplido
+2025-07,PM-1005,EQ-0471,Transportador L3,Envasado,C,Inspección mecánica,Mensual,Vencido
+2025-07,PM-1006,EQ-0310,Reactor P1,Proceso,A,Alineamiento y vibración,Mensual,Cumplido
+2025-07,PM-1007,EQ-0311,Intercambiador P1,Proceso,B,Cambio de filtros,Mensual,Cumplido
+2025-07,PM-1008,EQ-0320,Mezclador P2,Proceso,B,Alineamiento y vibración,Trimestral,Cumplido
+2025-07,PM-1009,EQ-0330,Bomba CIP,Proceso,B,Lubricación,Trimestral,Cumplido
+2025-07,PM-1010,EQ-0331,Bomba de proceso,Proceso,C,Lubricación,Mensual,Cumplido
+2025-07,PM-1011,EQ-0201,Caldera 1,Servicios,A,Inspección mecánica,Quincenal,Cumplido
+2025-07,PM-1012,EQ-0202,Caldera 2,Servicios,B,Inspección mecánica,Quincenal,Cumplido
+2025-07,PM-1013,EQ-0210,Compresor 3,Servicios,B,Cambio de filtros,Mensual,Cumplido
+2025-07,PM-1014,EQ-0211,Chiller 1,Servicios,A,Lubricación,Quincenal,Vencido
+2025-07,PM-1015,EQ-0601,Grúa horquilla 4,Bodega,C,Cambio de filtros,Quincenal,Cumplido
+2025-07,PM-1016,EQ-0457,Envasadora L2,Envasado,A,Inspección mecánica,Trimestral,Cumplido
+2025-07,PM-1017,EQ-0455,Envasadora L1,Envasado,A,Inspección eléctrica,Quincenal,Cumplido
+2025-07,PM-1018,EQ-0461,Etiquetadora L1,Envasado,A,Inspección mecánica,Quincenal,Cumplido
+2025-07,PM-1019,EQ-0462,Etiquetadora L2,Envasado,B,Inspección mecánica,Quincenal,Cumplido
+2025-07,PM-1020,EQ-0470,Paletizador,Envasado,B,Lubricación,Quincenal,Cumplido
+2025-07,PM-1021,EQ-0471,Transportador L3,Envasado,C,Cambio de filtros,Trimestral,Cumplido
+2025-07,PM-1022,EQ-0310,Reactor P1,Proceso,A,Alineamiento y vibración,Trimestral,Cumplido
+2025-07,PM-1023,EQ-0311,Intercambiador P1,Proceso,B,Lubricación,Mensual,Cumplido
+2025-07,PM-1024,EQ-0320,Mezclador P2,Proceso,B,Inspección mecánica,Mensual,Vencido
+2025-07,PM-1025,EQ-0330,Bomba CIP,Proceso,B,Inspección eléctrica,Trimestral,Cumplido
+2025-07,PM-1026,EQ-0331,Bomba de proceso,Proceso,C,Lubricación,Mensual,Cumplido
+2025-07,PM-1027,EQ-0201,Caldera 1,Servicios,A,Cambio de filtros,Quincenal,Cumplido
+2025-07,PM-1028,EQ-0202,Caldera 2,Servicios,B,Alineamiento y vibración,Trimestral,Cumplido
+2025-07,PM-1029,EQ-0210,Compresor 3,Servicios,B,Lubricación,Trimestral,Vencido
+2025-07,PM-1030,EQ-0211,Chiller 1,Servicios,A,Lubricación,Trimestral,Vencido
+2025-07,PM-1031,EQ-0601,Grúa horquilla 4,Bodega,C,Lubricación,Trimestral,Cumplido
+2025-07,PM-1032,EQ-0457,Envasadora L2,Envasado,A,Cambio de filtros,Quincenal,Cumplido
+2025-07,PM-1033,EQ-0455,Envasadora L1,Envasado,A,Alineamiento y vibración,Trimestral,Cumplido
+2025-07,PM-1034,EQ-0461,Etiquetadora L1,Envasado,A,Cambio de filtros,Mensual,Vencido
+2025-07,PM-1035,EQ-0462,Etiquetadora L2,Envasado,B,Alineamiento y vibración,Quincenal,Cumplido
+2025-07,PM-1036,EQ-0470,Paletizador,Envasado,B,Cambio de filtros,Trimestral,Cumplido
+2025-07,PM-1037,EQ-0471,Transportador L3,Envasado,C,Lubricación,Mensual,Vencido
+2025-07,PM-1038,EQ-0310,Reactor P1,Proceso,A,Cambio de filtros,Quincenal,Cumplido
+2025-07,PM-1039,EQ-0311,Intercambiador P1,Proceso,B,Alineamiento y vibración,Trimestral,Vencido
+2025-07,PM-1040,EQ-0320,Mezclador P2,Proceso,B,Inspección mecánica,Quincenal,Vencido
+2025-07,PM-1041,EQ-0330,Bomba CIP,Proceso,B,Cambio de filtros,Quincenal,Cumplido
+2025-07,PM-1042,EQ-0331,Bomba de proceso,Proceso,C,Lubricación,Trimestral,Cumplido
+2025-07,PM-1043,EQ-0201,Caldera 1,Servicios,A,Inspección mecánica,Quincenal,Cumplido
+2025-07,PM-1044,EQ-0202,Caldera 2,Servicios,B,Cambio de filtros,Trimestral,Cumplido
+2025-07,PM-1045,EQ-0210,Compresor 3,Servicios,B,Inspección mecánica,Trimestral,Cumplido
+2025-08,PM-1000,EQ-0457,Envasadora L2,Envasado,A,Inspección eléctrica,Trimestral,Vencido
+2025-08,PM-1001,EQ-0455,Envasadora L1,Envasado,A,Lubricación,Mensual,Cumplido
+2025-08,PM-1002,EQ-0461,Etiquetadora L1,Envasado,A,Cambio de filtros,Quincenal,Cumplido
+2025-08,PM-1003,EQ-0462,Etiquetadora L2,Envasado,B,Cambio de filtros,Mensual,Cumplido
+2025-08,PM-1004,EQ-0470,Paletizador,Envasado,B,Inspección mecánica,Trimestral,Cumplido
+2025-08,PM-1005,EQ-0471,Transportador L3,Envasado,C,Lubricación,Quincenal,Vencido
+2025-08,PM-1006,EQ-0310,Reactor P1,Proceso,A,Inspección eléctrica,Quincenal,Vencido
+2025-08,PM-1007,EQ-0311,Intercambiador P1,Proceso,B,Cambio de filtros,Quincenal,Vencido
+2025-08,PM-1008,EQ-0320,Mezclador P2,Proceso,B,Inspección mecánica,Quincenal,Cumplido
+2025-08,PM-1009,EQ-0330,Bomba CIP,Proceso,B,Inspección eléctrica,Quincenal,Cumplido
+2025-08,PM-1010,EQ-0331,Bomba de proceso,Proceso,C,Lubricación,Quincenal,Vencido
+2025-08,PM-1011,EQ-0201,Caldera 1,Servicios,A,Alineamiento y vibración,Mensual,Cumplido
+2025-08,PM-1012,EQ-0202,Caldera 2,Servicios,B,Inspección mecánica,Trimestral,Cumplido
+2025-08,PM-1013,EQ-0210,Compresor 3,Servicios,B,Inspección mecánica,Mensual,Vencido
+2025-08,PM-1014,EQ-0211,Chiller 1,Servicios,A,Cambio de filtros,Quincenal,Cumplido
+2025-08,PM-1015,EQ-0601,Grúa horquilla 4,Bodega,C,Inspección eléctrica,Mensual,Cumplido
+2025-08,PM-1016,EQ-0457,Envasadora L2,Envasado,A,Cambio de filtros,Mensual,Cumplido
+2025-08,PM-1017,EQ-0455,Envasadora L1,Envasado,A,Lubricación,Mensual,Cumplido
+2025-08,PM-1018,EQ-0461,Etiquetadora L1,Envasado,A,Lubricación,Quincenal,Cumplido
+2025-08,PM-1019,EQ-0462,Etiquetadora L2,Envasado,B,Inspección mecánica,Mensual,Cumplido
+2025-08,PM-1020,EQ-0470,Paletizador,Envasado,B,Lubricación,Mensual,Cumplido
+2025-08,PM-1021,EQ-0471,Transportador L3,Envasado,C,Alineamiento y vibración,Quincenal,Cumplido
+2025-08,PM-1022,EQ-0310,Reactor P1,Proceso,A,Alineamiento y vibración,Quincenal,Cumplido
+2025-08,PM-1023,EQ-0311,Intercambiador P1,Proceso,B,Lubricación,Mensual,Vencido
+2025-08,PM-1024,EQ-0320,Mezclador P2,Proceso,B,Inspección eléctrica,Quincenal,Cumplido
+2025-08,PM-1025,EQ-0330,Bomba CIP,Proceso,B,Inspección mecánica,Trimestral,Cumplido
+2025-08,PM-1026,EQ-0331,Bomba de proceso,Proceso,C,Lubricación,Trimestral,Cumplido
+2025-08,PM-1027,EQ-0201,Caldera 1,Servicios,A,Inspección mecánica,Mensual,Cumplido
+2025-08,PM-1028,EQ-0202,Caldera 2,Servicios,B,Inspección mecánica,Mensual,Cumplido
+2025-08,PM-1029,EQ-0210,Compresor 3,Servicios,B,Alineamiento y vibración,Trimestral,Cumplido
+2025-08,PM-1030,EQ-0211,Chiller 1,Servicios,A,Inspección mecánica,Mensual,Vencido
+2025-08,PM-1031,EQ-0601,Grúa horquilla 4,Bodega,C,Inspección eléctrica,Trimestral,Cumplido
+2025-08,PM-1032,EQ-0457,Envasadora L2,Envasado,A,Inspección eléctrica,Mensual,Cumplido
+2025-08,PM-1033,EQ-0455,Envasadora L1,Envasado,A,Cambio de filtros,Mensual,Cumplido
+2025-08,PM-1034,EQ-0461,Etiquetadora L1,Envasado,A,Cambio de filtros,Trimestral,Cumplido
+2025-08,PM-1035,EQ-0462,Etiquetadora L2,Envasado,B,Inspección eléctrica,Mensual,Cumplido
+2025-08,PM-1036,EQ-0470,Paletizador,Envasado,B,Alineamiento y vibración,Mensual,Cumplido
+2025-08,PM-1037,EQ-0471,Transportador L3,Envasado,C,Cambio de filtros,Quincenal,Cumplido
+2025-08,PM-1038,EQ-0310,Reactor P1,Proceso,A,Alineamiento y vibración,Trimestral,Vencido
+2025-08,PM-1039,EQ-0311,Intercambiador P1,Proceso,B,Lubricación,Quincenal,Vencido
+2025-08,PM-1040,EQ-0320,Mezclador P2,Proceso,B,Alineamiento y vibración,Mensual,Cumplido
+2025-08,PM-1041,EQ-0330,Bomba CIP,Proceso,B,Inspección mecánica,Quincenal,Cumplido
+2025-08,PM-1042,EQ-0331,Bomba de proceso,Proceso,C,Inspección eléctrica,Trimestral,Cumplido
+2025-08,PM-1043,EQ-0201,Caldera 1,Servicios,A,Inspección mecánica,Quincenal,Cumplido
+2025-08,PM-1044,EQ-0202,Caldera 2,Servicios,B,Inspección eléctrica,Quincenal,Cumplido
+2025-08,PM-1045,EQ-0210,Compresor 3,Servicios,B,Alineamiento y vibración,Mensual,Cumplido
+2025-09,PM-1000,EQ-0457,Envasadora L2,Envasado,A,Alineamiento y vibración,Quincenal,Cumplido
+2025-09,PM-1001,EQ-0455,Envasadora L1,Envasado,A,Alineamiento y vibración,Mensual,Cumplido
+2025-09,PM-1002,EQ-0461,Etiquetadora L1,Envasado,A,Inspección mecánica,Trimestral,Cumplido
+2025-09,PM-1003,EQ-0462,Etiquetadora L2,Envasado,B,Inspección mecánica,Mensual,Cumplido
+2025-09,PM-1004,EQ-0470,Paletizador,Envasado,B,Alineamiento y vibración,Mensual,Vencido
+2025-09,PM-1005,EQ-0471,Transportador L3,Envasado,C,Inspección eléctrica,Quincenal,Cumplido
+2025-09,PM-1006,EQ-0310,Reactor P1,Proceso,A,Lubricación,Trimestral,Cumplido
+2025-09,PM-1007,EQ-0311,Intercambiador P1,Proceso,B,Lubricación,Quincenal,Vencido
+2025-09,PM-1008,EQ-0320,Mezclador P2,Proceso,B,Lubricación,Trimestral,Cumplido
+2025-09,PM-1009,EQ-0330,Bomba CIP,Proceso,B,Alineamiento y vibración,Mensual,Cumplido
+2025-09,PM-1010,EQ-0331,Bomba de proceso,Proceso,C,Cambio de filtros,Quincenal,Cumplido
+2025-09,PM-1011,EQ-0201,Caldera 1,Servicios,A,Lubricación,Mensual,Cumplido
+2025-09,PM-1012,EQ-0202,Caldera 2,Servicios,B,Inspección mecánica,Mensual,Vencido
+2025-09,PM-1013,EQ-0210,Compresor 3,Servicios,B,Lubricación,Quincenal,Cumplido
+2025-09,PM-1014,EQ-0211,Chiller 1,Servicios,A,Inspección mecánica,Mensual,Cumplido
+2025-09,PM-1015,EQ-0601,Grúa horquilla 4,Bodega,C,Inspección mecánica,Quincenal,Cumplido
+2025-09,PM-1016,EQ-0457,Envasadora L2,Envasado,A,Inspección eléctrica,Mensual,Cumplido
+2025-09,PM-1017,EQ-0455,Envasadora L1,Envasado,A,Cambio de filtros,Quincenal,Cumplido
+2025-09,PM-1018,EQ-0461,Etiquetadora L1,Envasado,A,Alineamiento y vibración,Trimestral,Vencido
+2025-09,PM-1019,EQ-0462,Etiquetadora L2,Envasado,B,Alineamiento y vibración,Quincenal,Cumplido
+2025-09,PM-1020,EQ-0470,Paletizador,Envasado,B,Lubricación,Mensual,Cumplido
+2025-09,PM-1021,EQ-0471,Transportador L3,Envasado,C,Cambio de filtros,Trimestral,Cumplido
+2025-09,PM-1022,EQ-0310,Reactor P1,Proceso,A,Inspección eléctrica,Mensual,Cumplido
+2025-09,PM-1023,EQ-0311,Intercambiador P1,Proceso,B,Inspección mecánica,Trimestral,Cumplido
+2025-09,PM-1024,EQ-0320,Mezclador P2,Proceso,B,Inspección eléctrica,Quincenal,Cumplido
+2025-09,PM-1025,EQ-0330,Bomba CIP,Proceso,B,Inspección mecánica,Quincenal,Cumplido
+2025-09,PM-1026,EQ-0331,Bomba de proceso,Proceso,C,Inspección mecánica,Trimestral,Cumplido
+2025-09,PM-1027,EQ-0201,Caldera 1,Servicios,A,Alineamiento y vibración,Quincenal,Cumplido
+2025-09,PM-1028,EQ-0202,Caldera 2,Servicios,B,Alineamiento y vibración,Mensual,Cumplido
+2025-09,PM-1029,EQ-0210,Compresor 3,Servicios,B,Lubricación,Quincenal,Vencido
+2025-09,PM-1030,EQ-0211,Chiller 1,Servicios,A,Inspección eléctrica,Quincenal,Cumplido
+2025-09,PM-1031,EQ-0601,Grúa horquilla 4,Bodega,C,Inspección eléctrica,Mensual,Cumplido
+2025-09,PM-1032,EQ-0457,Envasadora L2,Envasado,A,Cambio de filtros,Quincenal,Cumplido
+2025-09,PM-1033,EQ-0455,Envasadora L1,Envasado,A,Inspección mecánica,Mensual,Cumplido
+2025-09,PM-1034,EQ-0461,Etiquetadora L1,Envasado,A,Lubricación,Quincenal,Cumplido
+2025-09,PM-1035,EQ-0462,Etiquetadora L2,Envasado,B,Inspección mecánica,Trimestral,Cumplido
+2025-09,PM-1036,EQ-0470,Paletizador,Envasado,B,Inspección eléctrica,Mensual,Vencido
+2025-09,PM-1037,EQ-0471,Transportador L3,Envasado,C,Lubricación,Quincenal,Cumplido
+2025-09,PM-1038,EQ-0310,Reactor P1,Proceso,A,Inspección mecánica,Trimestral,Cumplido
+2025-09,PM-1039,EQ-0311,Intercambiador P1,Proceso,B,Cambio de filtros,Mensual,Vencido
+2025-09,PM-1040,EQ-0320,Mezclador P2,Proceso,B,Inspección eléctrica,Trimestral,Cumplido
+2025-09,PM-1041,EQ-0330,Bomba CIP,Proceso,B,Lubricación,Quincenal,Cumplido
+2025-09,PM-1042,EQ-0331,Bomba de proceso,Proceso,C,Inspección mecánica,Quincenal,Cumplido
+2025-09,PM-1043,EQ-0201,Caldera 1,Servicios,A,Lubricación,Quincenal,Cumplido
+2025-09,PM-1044,EQ-0202,Caldera 2,Servicios,B,Lubricación,Mensual,Cumplido
+2025-09,PM-1045,EQ-0210,Compresor 3,Servicios,B,Inspección eléctrica,Quincenal,Cumplido
+2025-10,PM-1000,EQ-0457,Envasadora L2,Envasado,A,Inspección eléctrica,Quincenal,Cumplido
+2025-10,PM-1001,EQ-0455,Envasadora L1,Envasado,A,Lubricación,Quincenal,Cumplido
+2025-10,PM-1002,EQ-0461,Etiquetadora L1,Envasado,A,Lubricación,Trimestral,Vencido
+2025-10,PM-1003,EQ-0462,Etiquetadora L2,Envasado,B,Inspección eléctrica,Quincenal,Cumplido
+2025-10,PM-1004,EQ-0470,Paletizador,Envasado,B,Cambio de filtros,Quincenal,Cumplido
+2025-10,PM-1005,EQ-0471,Transportador L3,Envasado,C,Alineamiento y vibración,Trimestral,Cumplido
+2025-10,PM-1006,EQ-0310,Reactor P1,Proceso,A,Cambio de filtros,Mensual,Cumplido
+2025-10,PM-1007,EQ-0311,Intercambiador P1,Proceso,B,Inspección mecánica,Trimestral,Cumplido
+2025-10,PM-1008,EQ-0320,Mezclador P2,Proceso,B,Inspección mecánica,Trimestral,Vencido
+2025-10,PM-1009,EQ-0330,Bomba CIP,Proceso,B,Cambio de filtros,Quincenal,Cumplido
+2025-10,PM-1010,EQ-0331,Bomba de proceso,Proceso,C,Lubricación,Trimestral,Cumplido
+2025-10,PM-1011,EQ-0201,Caldera 1,Servicios,A,Cambio de filtros,Quincenal,Cumplido
+2025-10,PM-1012,EQ-0202,Caldera 2,Servicios,B,Alineamiento y vibración,Quincenal,Vencido
+2025-10,PM-1013,EQ-0210,Compresor 3,Servicios,B,Lubricación,Quincenal,Cumplido
+2025-10,PM-1014,EQ-0211,Chiller 1,Servicios,A,Cambio de filtros,Quincenal,Cumplido
+2025-10,PM-1015,EQ-0601,Grúa horquilla 4,Bodega,C,Cambio de filtros,Mensual,Cumplido
+2025-10,PM-1016,EQ-0457,Envasadora L2,Envasado,A,Inspección eléctrica,Quincenal,Vencido
+2025-10,PM-1017,EQ-0455,Envasadora L1,Envasado,A,Lubricación,Trimestral,Cumplido
+2025-10,PM-1018,EQ-0461,Etiquetadora L1,Envasado,A,Alineamiento y vibración,Quincenal,Vencido
+2025-10,PM-1019,EQ-0462,Etiquetadora L2,Envasado,B,Lubricación,Trimestral,Vencido
+2025-10,PM-1020,EQ-0470,Paletizador,Envasado,B,Lubricación,Mensual,Cumplido
+2025-10,PM-1021,EQ-0471,Transportador L3,Envasado,C,Cambio de filtros,Quincenal,Vencido
+2025-10,PM-1022,EQ-0310,Reactor P1,Proceso,A,Inspección eléctrica,Quincenal,Cumplido
+2025-10,PM-1023,EQ-0311,Intercambiador P1,Proceso,B,Inspección eléctrica,Trimestral,Vencido
+2025-10,PM-1024,EQ-0320,Mezclador P2,Proceso,B,Cambio de filtros,Quincenal,Cumplido
+2025-10,PM-1025,EQ-0330,Bomba CIP,Proceso,B,Inspección eléctrica,Mensual,Cumplido
+2025-10,PM-1026,EQ-0331,Bomba de proceso,Proceso,C,Cambio de filtros,Quincenal,Vencido
+2025-10,PM-1027,EQ-0201,Caldera 1,Servicios,A,Cambio de filtros,Trimestral,Vencido
+2025-10,PM-1028,EQ-0202,Caldera 2,Servicios,B,Inspección eléctrica,Trimestral,Cumplido
+2025-10,PM-1029,EQ-0210,Compresor 3,Servicios,B,Inspección eléctrica,Quincenal,Cumplido
+2025-10,PM-1030,EQ-0211,Chiller 1,Servicios,A,Alineamiento y vibración,Trimestral,Cumplido
+2025-10,PM-1031,EQ-0601,Grúa horquilla 4,Bodega,C,Alineamiento y vibración,Mensual,Cumplido
+2025-10,PM-1032,EQ-0457,Envasadora L2,Envasado,A,Inspección eléctrica,Mensual,Cumplido
+2025-10,PM-1033,EQ-0455,Envasadora L1,Envasado,A,Inspección eléctrica,Mensual,Cumplido
+2025-10,PM-1034,EQ-0461,Etiquetadora L1,Envasado,A,Lubricación,Trimestral,Cumplido
+2025-10,PM-1035,EQ-0462,Etiquetadora L2,Envasado,B,Inspección mecánica,Trimestral,Cumplido
+2025-10,PM-1036,EQ-0470,Paletizador,Envasado,B,Lubricación,Trimestral,Cumplido
+2025-10,PM-1037,EQ-0471,Transportador L3,Envasado,C,Lubricación,Mensual,Cumplido
+2025-10,PM-1038,EQ-0310,Reactor P1,Proceso,A,Cambio de filtros,Trimestral,Cumplido
+2025-10,PM-1039,EQ-0311,Intercambiador P1,Proceso,B,Cambio de filtros,Quincenal,Vencido
+2025-10,PM-1040,EQ-0320,Mezclador P2,Proceso,B,Cambio de filtros,Trimestral,Cumplido
+2025-10,PM-1041,EQ-0330,Bomba CIP,Proceso,B,Inspección eléctrica,Trimestral,Cumplido
+2025-10,PM-1042,EQ-0331,Bomba de proceso,Proceso,C,Inspección mecánica,Mensual,Cumplido
+2025-10,PM-1043,EQ-0201,Caldera 1,Servicios,A,Cambio de filtros,Mensual,Cumplido
+2025-10,PM-1044,EQ-0202,Caldera 2,Servicios,B,Lubricación,Quincenal,Cumplido
+2025-10,PM-1045,EQ-0210,Compresor 3,Servicios,B,Lubricación,Quincenal,Cumplido
+2025-11,PM-1000,EQ-0457,Envasadora L2,Envasado,A,Cambio de filtros,Quincenal,Cumplido
+2025-11,PM-1001,EQ-0455,Envasadora L1,Envasado,A,Inspección eléctrica,Quincenal,Vencido
+2025-11,PM-1002,EQ-0461,Etiquetadora L1,Envasado,A,Lubricación,Quincenal,Cumplido
+2025-11,PM-1003,EQ-0462,Etiquetadora L2,Envasado,B,Inspección eléctrica,Trimestral,Vencido
+2025-11,PM-1004,EQ-0470,Paletizador,Envasado,B,Lubricación,Mensual,Cumplido
+2025-11,PM-1005,EQ-0471,Transportador L3,Envasado,C,Alineamiento y vibración,Trimestral,Cumplido
+2025-11,PM-1006,EQ-0310,Reactor P1,Proceso,A,Cambio de filtros,Quincenal,Vencido
+2025-11,PM-1007,EQ-0311,Intercambiador P1,Proceso,B,Cambio de filtros,Trimestral,Cumplido
+2025-11,PM-1008,EQ-0320,Mezclador P2,Proceso,B,Cambio de filtros,Quincenal,Cumplido
+2025-11,PM-1009,EQ-0330,Bomba CIP,Proceso,B,Lubricación,Quincenal,Vencido
+2025-11,PM-1010,EQ-0331,Bomba de proceso,Proceso,C,Cambio de filtros,Mensual,Cumplido
+2025-11,PM-1011,EQ-0201,Caldera 1,Servicios,A,Alineamiento y vibración,Trimestral,Cumplido
+2025-11,PM-1012,EQ-0202,Caldera 2,Servicios,B,Cambio de filtros,Trimestral,Vencido
+2025-11,PM-1013,EQ-0210,Compresor 3,Servicios,B,Inspección mecánica,Quincenal,Cumplido
+2025-11,PM-1014,EQ-0211,Chiller 1,Servicios,A,Inspección mecánica,Quincenal,Cumplido
+2025-11,PM-1015,EQ-0601,Grúa horquilla 4,Bodega,C,Cambio de filtros,Quincenal,Cumplido
+2025-11,PM-1016,EQ-0457,Envasadora L2,Envasado,A,Alineamiento y vibración,Trimestral,Vencido
+2025-11,PM-1017,EQ-0455,Envasadora L1,Envasado,A,Lubricación,Quincenal,Vencido
+2025-11,PM-1018,EQ-0461,Etiquetadora L1,Envasado,A,Inspección eléctrica,Trimestral,Cumplido
+2025-11,PM-1019,EQ-0462,Etiquetadora L2,Envasado,B,Cambio de filtros,Quincenal,Vencido
+2025-11,PM-1020,EQ-0470,Paletizador,Envasado,B,Inspección eléctrica,Mensual,Cumplido
+2025-11,PM-1021,EQ-0471,Transportador L3,Envasado,C,Inspección mecánica,Mensual,Cumplido
+2025-11,PM-1022,EQ-0310,Reactor P1,Proceso,A,Alineamiento y vibración,Mensual,Cumplido
+2025-11,PM-1023,EQ-0311,Intercambiador P1,Proceso,B,Cambio de filtros,Trimestral,Cumplido
+2025-11,PM-1024,EQ-0320,Mezclador P2,Proceso,B,Lubricación,Mensual,Cumplido
+2025-11,PM-1025,EQ-0330,Bomba CIP,Proceso,B,Inspección mecánica,Mensual,Cumplido
+2025-11,PM-1026,EQ-0331,Bomba de proceso,Proceso,C,Inspección eléctrica,Mensual,Cumplido
+2025-11,PM-1027,EQ-0201,Caldera 1,Servicios,A,Lubricación,Quincenal,Cumplido
+2025-11,PM-1028,EQ-0202,Caldera 2,Servicios,B,Alineamiento y vibración,Mensual,Vencido
+2025-11,PM-1029,EQ-0210,Compresor 3,Servicios,B,Lubricación,Quincenal,Cumplido
+2025-11,PM-1030,EQ-0211,Chiller 1,Servicios,A,Inspección eléctrica,Trimestral,Cumplido
+2025-11,PM-1031,EQ-0601,Grúa horquilla 4,Bodega,C,Inspección mecánica,Quincenal,Cumplido
+2025-11,PM-1032,EQ-0457,Envasadora L2,Envasado,A,Cambio de filtros,Trimestral,Cumplido
+2025-11,PM-1033,EQ-0455,Envasadora L1,Envasado,A,Inspección mecánica,Trimestral,Cumplido
+2025-11,PM-1034,EQ-0461,Etiquetadora L1,Envasado,A,Alineamiento y vibración,Mensual,Cumplido
+2025-11,PM-1035,EQ-0462,Etiquetadora L2,Envasado,B,Inspección mecánica,Trimestral,Vencido
+2025-11,PM-1036,EQ-0470,Paletizador,Envasado,B,Inspección mecánica,Mensual,Cumplido
+2025-11,PM-1037,EQ-0471,Transportador L3,Envasado,C,Inspección eléctrica,Quincenal,Cumplido
+2025-11,PM-1038,EQ-0310,Reactor P1,Proceso,A,Cambio de filtros,Quincenal,Cumplido
+2025-11,PM-1039,EQ-0311,Intercambiador P1,Proceso,B,Alineamiento y vibración,Trimestral,Cumplido
+2025-11,PM-1040,EQ-0320,Mezclador P2,Proceso,B,Lubricación,Quincenal,Cumplido
+2025-11,PM-1041,EQ-0330,Bomba CIP,Proceso,B,Lubricación,Quincenal,Cumplido
+2025-11,PM-1042,EQ-0331,Bomba de proceso,Proceso,C,Inspección mecánica,Trimestral,Vencido
+2025-11,PM-1043,EQ-0201,Caldera 1,Servicios,A,Alineamiento y vibración,Mensual,Cumplido
+2025-11,PM-1044,EQ-0202,Caldera 2,Servicios,B,Cambio de filtros,Mensual,Cumplido
+2025-11,PM-1045,EQ-0210,Compresor 3,Servicios,B,Lubricación,Trimestral,Cumplido
+2025-12,PM-1000,EQ-0457,Envasadora L2,Envasado,A,Inspección eléctrica,Quincenal,Cumplido
+2025-12,PM-1001,EQ-0455,Envasadora L1,Envasado,A,Alineamiento y vibración,Mensual,Cumplido
+2025-12,PM-1002,EQ-0461,Etiquetadora L1,Envasado,A,Lubricación,Mensual,Cumplido
+2025-12,PM-1003,EQ-0462,Etiquetadora L2,Envasado,B,Inspección mecánica,Mensual,Cumplido
+2025-12,PM-1004,EQ-0470,Paletizador,Envasado,B,Cambio de filtros,Trimestral,Cumplido
+2025-12,PM-1005,EQ-0471,Transportador L3,Envasado,C,Inspección mecánica,Mensual,Cumplido
+2025-12,PM-1006,EQ-0310,Reactor P1,Proceso,A,Lubricación,Trimestral,Vencido
+2025-12,PM-1007,EQ-0311,Intercambiador P1,Proceso,B,Inspección eléctrica,Quincenal,Cumplido
+2025-12,PM-1008,EQ-0320,Mezclador P2,Proceso,B,Cambio de filtros,Quincenal,Cumplido
+2025-12,PM-1009,EQ-0330,Bomba CIP,Proceso,B,Inspección eléctrica,Trimestral,Cumplido
+2025-12,PM-1010,EQ-0331,Bomba de proceso,Proceso,C,Inspección eléctrica,Trimestral,Cumplido
+2025-12,PM-1011,EQ-0201,Caldera 1,Servicios,A,Inspección eléctrica,Quincenal,Cumplido
+2025-12,PM-1012,EQ-0202,Caldera 2,Servicios,B,Inspección eléctrica,Trimestral,Cumplido
+2025-12,PM-1013,EQ-0210,Compresor 3,Servicios,B,Cambio de filtros,Mensual,Cumplido
+2025-12,PM-1014,EQ-0211,Chiller 1,Servicios,A,Inspección mecánica,Trimestral,Cumplido
+2025-12,PM-1015,EQ-0601,Grúa horquilla 4,Bodega,C,Cambio de filtros,Mensual,Cumplido
+2025-12,PM-1016,EQ-0457,Envasadora L2,Envasado,A,Alineamiento y vibración,Quincenal,Vencido
+2025-12,PM-1017,EQ-0455,Envasadora L1,Envasado,A,Alineamiento y vibración,Trimestral,Vencido
+2025-12,PM-1018,EQ-0461,Etiquetadora L1,Envasado,A,Cambio de filtros,Quincenal,Cumplido
+2025-12,PM-1019,EQ-0462,Etiquetadora L2,Envasado,B,Alineamiento y vibración,Quincenal,Cumplido
+2025-12,PM-1020,EQ-0470,Paletizador,Envasado,B,Inspección mecánica,Quincenal,Cumplido
+2025-12,PM-1021,EQ-0471,Transportador L3,Envasado,C,Inspección eléctrica,Quincenal,Cumplido
+2025-12,PM-1022,EQ-0310,Reactor P1,Proceso,A,Cambio de filtros,Mensual,Cumplido
+2025-12,PM-1023,EQ-0311,Intercambiador P1,Proceso,B,Inspección eléctrica,Quincenal,Cumplido
+2025-12,PM-1024,EQ-0320,Mezclador P2,Proceso,B,Inspección mecánica,Mensual,Cumplido
+2025-12,PM-1025,EQ-0330,Bomba CIP,Proceso,B,Alineamiento y vibración,Quincenal,Cumplido
+2025-12,PM-1026,EQ-0331,Bomba de proceso,Proceso,C,Alineamiento y vibración,Quincenal,Cumplido
+2025-12,PM-1027,EQ-0201,Caldera 1,Servicios,A,Inspección mecánica,Trimestral,Cumplido
+2025-12,PM-1028,EQ-0202,Caldera 2,Servicios,B,Cambio de filtros,Mensual,Cumplido
+2025-12,PM-1029,EQ-0210,Compresor 3,Servicios,B,Inspección mecánica,Mensual,Cumplido
+2025-12,PM-1030,EQ-0211,Chiller 1,Servicios,A,Cambio de filtros,Trimestral,Cumplido
+2025-12,PM-1031,EQ-0601,Grúa horquilla 4,Bodega,C,Inspección eléctrica,Mensual,Cumplido
+2025-12,PM-1032,EQ-0457,Envasadora L2,Envasado,A,Inspección mecánica,Mensual,Cumplido
+2025-12,PM-1033,EQ-0455,Envasadora L1,Envasado,A,Inspección eléctrica,Trimestral,Cumplido
+2025-12,PM-1034,EQ-0461,Etiquetadora L1,Envasado,A,Inspección mecánica,Mensual,Cumplido
+2025-12,PM-1035,EQ-0462,Etiquetadora L2,Envasado,B,Alineamiento y vibración,Quincenal,Cumplido
+2025-12,PM-1036,EQ-0470,Paletizador,Envasado,B,Inspección eléctrica,Quincenal,Cumplido
+2025-12,PM-1037,EQ-0471,Transportador L3,Envasado,C,Cambio de filtros,Trimestral,Vencido
+2025-12,PM-1038,EQ-0310,Reactor P1,Proceso,A,Inspección mecánica,Trimestral,Cumplido
+2025-12,PM-1039,EQ-0311,Intercambiador P1,Proceso,B,Inspección mecánica,Quincenal,Cumplido
+2025-12,PM-1040,EQ-0320,Mezclador P2,Proceso,B,Lubricación,Mensual,Cumplido
+2025-12,PM-1041,EQ-0330,Bomba CIP,Proceso,B,Lubricación,Mensual,Cumplido
+2025-12,PM-1042,EQ-0331,Bomba de proceso,Proceso,C,Cambio de filtros,Quincenal,Cumplido
+2025-12,PM-1043,EQ-0201,Caldera 1,Servicios,A,Alineamiento y vibración,Mensual,Cumplido
+2025-12,PM-1044,EQ-0202,Caldera 2,Servicios,B,Cambio de filtros,Quincenal,Cumplido
+2025-12,PM-1045,EQ-0210,Compresor 3,Servicios,B,Inspección mecánica,Trimestral,Cumplido
+2026-01,PM-1000,EQ-0457,Envasadora L2,Envasado,A,Inspección mecánica,Mensual,Cumplido
+2026-01,PM-1001,EQ-0455,Envasadora L1,Envasado,A,Cambio de filtros,Trimestral,Cumplido
+2026-01,PM-1002,EQ-0461,Etiquetadora L1,Envasado,A,Inspección eléctrica,Mensual,Cumplido
+2026-01,PM-1003,EQ-0462,Etiquetadora L2,Envasado,B,Inspección eléctrica,Quincenal,Cumplido
+2026-01,PM-1004,EQ-0470,Paletizador,Envasado,B,Inspección mecánica,Trimestral,Cumplido
+2026-01,PM-1005,EQ-0471,Transportador L3,Envasado,C,Cambio de filtros,Quincenal,Cumplido
+2026-01,PM-1006,EQ-0310,Reactor P1,Proceso,A,Inspección mecánica,Trimestral,Cumplido
+2026-01,PM-1007,EQ-0311,Intercambiador P1,Proceso,B,Alineamiento y vibración,Trimestral,Vencido
+2026-01,PM-1008,EQ-0320,Mezclador P2,Proceso,B,Cambio de filtros,Mensual,Cumplido
+2026-01,PM-1009,EQ-0330,Bomba CIP,Proceso,B,Inspección mecánica,Trimestral,Cumplido
+2026-01,PM-1010,EQ-0331,Bomba de proceso,Proceso,C,Inspección eléctrica,Quincenal,Cumplido
+2026-01,PM-1011,EQ-0201,Caldera 1,Servicios,A,Cambio de filtros,Quincenal,Cumplido
+2026-01,PM-1012,EQ-0202,Caldera 2,Servicios,B,Alineamiento y vibración,Trimestral,Cumplido
+2026-01,PM-1013,EQ-0210,Compresor 3,Servicios,B,Alineamiento y vibración,Mensual,Cumplido
+2026-01,PM-1014,EQ-0211,Chiller 1,Servicios,A,Lubricación,Quincenal,Cumplido
+2026-01,PM-1015,EQ-0601,Grúa horquilla 4,Bodega,C,Inspección mecánica,Trimestral,Cumplido
+2026-01,PM-1016,EQ-0457,Envasadora L2,Envasado,A,Cambio de filtros,Trimestral,Cumplido
+2026-01,PM-1017,EQ-0455,Envasadora L1,Envasado,A,Lubricación,Quincenal,Vencido
+2026-01,PM-1018,EQ-0461,Etiquetadora L1,Envasado,A,Lubricación,Quincenal,Cumplido
+2026-01,PM-1019,EQ-0462,Etiquetadora L2,Envasado,B,Alineamiento y vibración,Trimestral,Cumplido
+2026-01,PM-1020,EQ-0470,Paletizador,Envasado,B,Lubricación,Quincenal,Cumplido
+2026-01,PM-1021,EQ-0471,Transportador L3,Envasado,C,Lubricación,Mensual,Cumplido
+2026-01,PM-1022,EQ-0310,Reactor P1,Proceso,A,Inspección mecánica,Mensual,Cumplido
+2026-01,PM-1023,EQ-0311,Intercambiador P1,Proceso,B,Alineamiento y vibración,Mensual,Cumplido
+2026-01,PM-1024,EQ-0320,Mezclador P2,Proceso,B,Inspección mecánica,Trimestral,Cumplido
+2026-01,PM-1025,EQ-0330,Bomba CIP,Proceso,B,Inspección mecánica,Quincenal,Cumplido
+2026-01,PM-1026,EQ-0331,Bomba de proceso,Proceso,C,Cambio de filtros,Quincenal,Cumplido
+2026-01,PM-1027,EQ-0201,Caldera 1,Servicios,A,Lubricación,Trimestral,Cumplido
+2026-01,PM-1028,EQ-0202,Caldera 2,Servicios,B,Alineamiento y vibración,Trimestral,Cumplido
+2026-01,PM-1029,EQ-0210,Compresor 3,Servicios,B,Cambio de filtros,Trimestral,Cumplido
+2026-01,PM-1030,EQ-0211,Chiller 1,Servicios,A,Inspección mecánica,Mensual,Cumplido
+2026-01,PM-1031,EQ-0601,Grúa horquilla 4,Bodega,C,Lubricación,Trimestral,Cumplido
+2026-01,PM-1032,EQ-0457,Envasadora L2,Envasado,A,Inspección mecánica,Quincenal,Cumplido
+2026-01,PM-1033,EQ-0455,Envasadora L1,Envasado,A,Cambio de filtros,Quincenal,Cumplido
+2026-01,PM-1034,EQ-0461,Etiquetadora L1,Envasado,A,Alineamiento y vibración,Trimestral,Cumplido
+2026-01,PM-1035,EQ-0462,Etiquetadora L2,Envasado,B,Alineamiento y vibración,Trimestral,Cumplido
+2026-01,PM-1036,EQ-0470,Paletizador,Envasado,B,Inspección eléctrica,Trimestral,Cumplido
+2026-01,PM-1037,EQ-0471,Transportador L3,Envasado,C,Alineamiento y vibración,Trimestral,Cumplido
+2026-01,PM-1038,EQ-0310,Reactor P1,Proceso,A,Inspección eléctrica,Mensual,Cumplido
+2026-01,PM-1039,EQ-0311,Intercambiador P1,Proceso,B,Cambio de filtros,Quincenal,Cumplido
+2026-01,PM-1040,EQ-0320,Mezclador P2,Proceso,B,Inspección mecánica,Mensual,Cumplido
+2026-01,PM-1041,EQ-0330,Bomba CIP,Proceso,B,Alineamiento y vibración,Quincenal,Cumplido
+2026-01,PM-1042,EQ-0331,Bomba de proceso,Proceso,C,Inspección eléctrica,Trimestral,Vencido
+2026-01,PM-1043,EQ-0201,Caldera 1,Servicios,A,Lubricación,Quincenal,Cumplido
+2026-01,PM-1044,EQ-0202,Caldera 2,Servicios,B,Inspección eléctrica,Trimestral,Cumplido
+2026-01,PM-1045,EQ-0210,Compresor 3,Servicios,B,Cambio de filtros,Trimestral,Cumplido
+2026-02,PM-1000,EQ-0457,Envasadora L2,Envasado,A,Cambio de filtros,Trimestral,Cumplido
+2026-02,PM-1001,EQ-0455,Envasadora L1,Envasado,A,Alineamiento y vibración,Quincenal,Cumplido
+2026-02,PM-1002,EQ-0461,Etiquetadora L1,Envasado,A,Cambio de filtros,Mensual,Cumplido
+2026-02,PM-1003,EQ-0462,Etiquetadora L2,Envasado,B,Inspección eléctrica,Trimestral,Cumplido
+2026-02,PM-1004,EQ-0470,Paletizador,Envasado,B,Inspección eléctrica,Trimestral,Cumplido
+2026-02,PM-1005,EQ-0471,Transportador L3,Envasado,C,Cambio de filtros,Quincenal,Cumplido
+2026-02,PM-1006,EQ-0310,Reactor P1,Proceso,A,Inspección eléctrica,Quincenal,Cumplido
+2026-02,PM-1007,EQ-0311,Intercambiador P1,Proceso,B,Lubricación,Quincenal,Cumplido
+2026-02,PM-1008,EQ-0320,Mezclador P2,Proceso,B,Inspección mecánica,Mensual,Cumplido
+2026-02,PM-1009,EQ-0330,Bomba CIP,Proceso,B,Alineamiento y vibración,Quincenal,Cumplido
+2026-02,PM-1010,EQ-0331,Bomba de proceso,Proceso,C,Cambio de filtros,Mensual,Cumplido
+2026-02,PM-1011,EQ-0201,Caldera 1,Servicios,A,Inspección eléctrica,Trimestral,Cumplido
+2026-02,PM-1012,EQ-0202,Caldera 2,Servicios,B,Lubricación,Trimestral,Vencido
+2026-02,PM-1013,EQ-0210,Compresor 3,Servicios,B,Cambio de filtros,Mensual,Vencido
+2026-02,PM-1014,EQ-0211,Chiller 1,Servicios,A,Cambio de filtros,Mensual,Cumplido
+2026-02,PM-1015,EQ-0601,Grúa horquilla 4,Bodega,C,Cambio de filtros,Quincenal,Cumplido
+2026-02,PM-1016,EQ-0457,Envasadora L2,Envasado,A,Cambio de filtros,Quincenal,Cumplido
+2026-02,PM-1017,EQ-0455,Envasadora L1,Envasado,A,Alineamiento y vibración,Mensual,Cumplido
+2026-02,PM-1018,EQ-0461,Etiquetadora L1,Envasado,A,Lubricación,Trimestral,Cumplido
+2026-02,PM-1019,EQ-0462,Etiquetadora L2,Envasado,B,Inspección mecánica,Trimestral,Cumplido
+2026-02,PM-1020,EQ-0470,Paletizador,Envasado,B,Lubricación,Trimestral,Cumplido
+2026-02,PM-1021,EQ-0471,Transportador L3,Envasado,C,Inspección mecánica,Mensual,Cumplido
+2026-02,PM-1022,EQ-0310,Reactor P1,Proceso,A,Lubricación,Trimestral,Cumplido
+2026-02,PM-1023,EQ-0311,Intercambiador P1,Proceso,B,Cambio de filtros,Trimestral,Cumplido
+2026-02,PM-1024,EQ-0320,Mezclador P2,Proceso,B,Lubricación,Mensual,Cumplido
+2026-02,PM-1025,EQ-0330,Bomba CIP,Proceso,B,Alineamiento y vibración,Quincenal,Cumplido
+2026-02,PM-1026,EQ-0331,Bomba de proceso,Proceso,C,Inspección mecánica,Trimestral,Vencido
+2026-02,PM-1027,EQ-0201,Caldera 1,Servicios,A,Cambio de filtros,Mensual,Cumplido
+2026-02,PM-1028,EQ-0202,Caldera 2,Servicios,B,Lubricación,Mensual,Cumplido
+2026-02,PM-1029,EQ-0210,Compresor 3,Servicios,B,Alineamiento y vibración,Mensual,Cumplido
+2026-02,PM-1030,EQ-0211,Chiller 1,Servicios,A,Inspección mecánica,Quincenal,Cumplido
+2026-02,PM-1031,EQ-0601,Grúa horquilla 4,Bodega,C,Inspección mecánica,Trimestral,Cumplido
+2026-02,PM-1032,EQ-0457,Envasadora L2,Envasado,A,Lubricación,Mensual,Cumplido
+2026-02,PM-1033,EQ-0455,Envasadora L1,Envasado,A,Cambio de filtros,Trimestral,Cumplido
+2026-02,PM-1034,EQ-0461,Etiquetadora L1,Envasado,A,Inspección eléctrica,Quincenal,Cumplido
+2026-02,PM-1035,EQ-0462,Etiquetadora L2,Envasado,B,Inspección eléctrica,Trimestral,Cumplido
+2026-02,PM-1036,EQ-0470,Paletizador,Envasado,B,Inspección eléctrica,Mensual,Cumplido
+2026-02,PM-1037,EQ-0471,Transportador L3,Envasado,C,Lubricación,Mensual,Cumplido
+2026-02,PM-1038,EQ-0310,Reactor P1,Proceso,A,Lubricación,Quincenal,Vencido
+2026-02,PM-1039,EQ-0311,Intercambiador P1,Proceso,B,Inspección eléctrica,Mensual,Cumplido
+2026-02,PM-1040,EQ-0320,Mezclador P2,Proceso,B,Inspección eléctrica,Mensual,Cumplido
+2026-02,PM-1041,EQ-0330,Bomba CIP,Proceso,B,Inspección mecánica,Trimestral,Cumplido
+2026-02,PM-1042,EQ-0331,Bomba de proceso,Proceso,C,Inspección eléctrica,Trimestral,Cumplido
+2026-02,PM-1043,EQ-0201,Caldera 1,Servicios,A,Alineamiento y vibración,Trimestral,Cumplido
+2026-02,PM-1044,EQ-0202,Caldera 2,Servicios,B,Inspección eléctrica,Quincenal,Cumplido
+2026-02,PM-1045,EQ-0210,Compresor 3,Servicios,B,Inspección eléctrica,Trimestral,Cumplido
+2026-03,PM-1000,EQ-0457,Envasadora L2,Envasado,A,Inspección mecánica,Trimestral,Cumplido
+2026-03,PM-1001,EQ-0455,Envasadora L1,Envasado,A,Alineamiento y vibración,Mensual,Cumplido
+2026-03,PM-1002,EQ-0461,Etiquetadora L1,Envasado,A,Alineamiento y vibración,Mensual,Cumplido
+2026-03,PM-1003,EQ-0462,Etiquetadora L2,Envasado,B,Lubricación,Trimestral,Cumplido
+2026-03,PM-1004,EQ-0470,Paletizador,Envasado,B,Cambio de filtros,Mensual,Cumplido
+2026-03,PM-1005,EQ-0471,Transportador L3,Envasado,C,Inspección mecánica,Mensual,Cumplido
+2026-03,PM-1006,EQ-0310,Reactor P1,Proceso,A,Alineamiento y vibración,Quincenal,Vencido
+2026-03,PM-1007,EQ-0311,Intercambiador P1,Proceso,B,Alineamiento y vibración,Trimestral,Cumplido
+2026-03,PM-1008,EQ-0320,Mezclador P2,Proceso,B,Cambio de filtros,Trimestral,Cumplido
+2026-03,PM-1009,EQ-0330,Bomba CIP,Proceso,B,Lubricación,Quincenal,Cumplido
+2026-03,PM-1010,EQ-0331,Bomba de proceso,Proceso,C,Lubricación,Trimestral,Cumplido
+2026-03,PM-1011,EQ-0201,Caldera 1,Servicios,A,Inspección mecánica,Mensual,Cumplido
+2026-03,PM-1012,EQ-0202,Caldera 2,Servicios,B,Inspección mecánica,Trimestral,Cumplido
+2026-03,PM-1013,EQ-0210,Compresor 3,Servicios,B,Alineamiento y vibración,Mensual,Cumplido
+2026-03,PM-1014,EQ-0211,Chiller 1,Servicios,A,Cambio de filtros,Trimestral,Cumplido
+2026-03,PM-1015,EQ-0601,Grúa horquilla 4,Bodega,C,Inspección mecánica,Quincenal,Cumplido
+2026-03,PM-1016,EQ-0457,Envasadora L2,Envasado,A,Alineamiento y vibración,Quincenal,Vencido
+2026-03,PM-1017,EQ-0455,Envasadora L1,Envasado,A,Cambio de filtros,Quincenal,Cumplido
+2026-03,PM-1018,EQ-0461,Etiquetadora L1,Envasado,A,Lubricación,Quincenal,Cumplido
+2026-03,PM-1019,EQ-0462,Etiquetadora L2,Envasado,B,Alineamiento y vibración,Mensual,Cumplido
+2026-03,PM-1020,EQ-0470,Paletizador,Envasado,B,Inspección mecánica,Mensual,Cumplido
+2026-03,PM-1021,EQ-0471,Transportador L3,Envasado,C,Alineamiento y vibración,Trimestral,Cumplido
+2026-03,PM-1022,EQ-0310,Reactor P1,Proceso,A,Inspección mecánica,Mensual,Cumplido
+2026-03,PM-1023,EQ-0311,Intercambiador P1,Proceso,B,Inspección mecánica,Quincenal,Cumplido
+2026-03,PM-1024,EQ-0320,Mezclador P2,Proceso,B,Inspección mecánica,Trimestral,Cumplido
+2026-03,PM-1025,EQ-0330,Bomba CIP,Proceso,B,Inspección eléctrica,Mensual,Cumplido
+2026-03,PM-1026,EQ-0331,Bomba de proceso,Proceso,C,Inspección mecánica,Quincenal,Cumplido
+2026-03,PM-1027,EQ-0201,Caldera 1,Servicios,A,Lubricación,Mensual,Cumplido
+2026-03,PM-1028,EQ-0202,Caldera 2,Servicios,B,Cambio de filtros,Trimestral,Cumplido
+2026-03,PM-1029,EQ-0210,Compresor 3,Servicios,B,Cambio de filtros,Quincenal,Cumplido
+2026-03,PM-1030,EQ-0211,Chiller 1,Servicios,A,Inspección mecánica,Trimestral,Cumplido
+2026-03,PM-1031,EQ-0601,Grúa horquilla 4,Bodega,C,Lubricación,Mensual,Cumplido
+2026-03,PM-1032,EQ-0457,Envasadora L2,Envasado,A,Lubricación,Quincenal,Cumplido
+2026-03,PM-1033,EQ-0455,Envasadora L1,Envasado,A,Lubricación,Mensual,Cumplido
+2026-03,PM-1034,EQ-0461,Etiquetadora L1,Envasado,A,Alineamiento y vibración,Quincenal,Cumplido
+2026-03,PM-1035,EQ-0462,Etiquetadora L2,Envasado,B,Alineamiento y vibración,Mensual,Cumplido
+2026-03,PM-1036,EQ-0470,Paletizador,Envasado,B,Cambio de filtros,Trimestral,Cumplido
+2026-03,PM-1037,EQ-0471,Transportador L3,Envasado,C,Inspección mecánica,Quincenal,Cumplido
+2026-03,PM-1038,EQ-0310,Reactor P1,Proceso,A,Alineamiento y vibración,Mensual,Cumplido
+2026-03,PM-1039,EQ-0311,Intercambiador P1,Proceso,B,Inspección mecánica,Mensual,Cumplido
+2026-03,PM-1040,EQ-0320,Mezclador P2,Proceso,B,Inspección eléctrica,Quincenal,Cumplido
+2026-03,PM-1041,EQ-0330,Bomba CIP,Proceso,B,Alineamiento y vibración,Quincenal,Cumplido
+2026-03,PM-1042,EQ-0331,Bomba de proceso,Proceso,C,Lubricación,Mensual,Vencido
+2026-03,PM-1043,EQ-0201,Caldera 1,Servicios,A,Alineamiento y vibración,Mensual,Cumplido
+2026-03,PM-1044,EQ-0202,Caldera 2,Servicios,B,Cambio de filtros,Quincenal,Cumplido
+2026-03,PM-1045,EQ-0210,Compresor 3,Servicios,B,Lubricación,Trimestral,Cumplido
+2026-04,PM-1000,EQ-0457,Envasadora L2,Envasado,A,Inspección eléctrica,Quincenal,Vencido
+2026-04,PM-1001,EQ-0455,Envasadora L1,Envasado,A,Lubricación,Trimestral,Cumplido
+2026-04,PM-1002,EQ-0461,Etiquetadora L1,Envasado,A,Alineamiento y vibración,Trimestral,Vencido
+2026-04,PM-1003,EQ-0462,Etiquetadora L2,Envasado,B,Inspección mecánica,Quincenal,Cumplido
+2026-04,PM-1004,EQ-0470,Paletizador,Envasado,B,Inspección mecánica,Quincenal,Cumplido
+2026-04,PM-1005,EQ-0471,Transportador L3,Envasado,C,Cambio de filtros,Mensual,Cumplido
+2026-04,PM-1006,EQ-0310,Reactor P1,Proceso,A,Inspección mecánica,Mensual,Vencido
+2026-04,PM-1007,EQ-0311,Intercambiador P1,Proceso,B,Cambio de filtros,Mensual,Cumplido
+2026-04,PM-1008,EQ-0320,Mezclador P2,Proceso,B,Inspección eléctrica,Quincenal,Cumplido
+2026-04,PM-1009,EQ-0330,Bomba CIP,Proceso,B,Cambio de filtros,Trimestral,Cumplido
+2026-04,PM-1010,EQ-0331,Bomba de proceso,Proceso,C,Inspección eléctrica,Mensual,Cumplido
+2026-04,PM-1011,EQ-0201,Caldera 1,Servicios,A,Alineamiento y vibración,Mensual,Cumplido
+2026-04,PM-1012,EQ-0202,Caldera 2,Servicios,B,Alineamiento y vibración,Mensual,Cumplido
+2026-04,PM-1013,EQ-0210,Compresor 3,Servicios,B,Inspección mecánica,Quincenal,Cumplido
+2026-04,PM-1014,EQ-0211,Chiller 1,Servicios,A,Alineamiento y vibración,Mensual,Cumplido
+2026-04,PM-1015,EQ-0601,Grúa horquilla 4,Bodega,C,Lubricación,Quincenal,Cumplido
+2026-04,PM-1016,EQ-0457,Envasadora L2,Envasado,A,Lubricación,Quincenal,Cumplido
+2026-04,PM-1017,EQ-0455,Envasadora L1,Envasado,A,Inspección mecánica,Quincenal,Cumplido
+2026-04,PM-1018,EQ-0461,Etiquetadora L1,Envasado,A,Cambio de filtros,Quincenal,Cumplido
+2026-04,PM-1019,EQ-0462,Etiquetadora L2,Envasado,B,Lubricación,Mensual,Cumplido
+2026-04,PM-1020,EQ-0470,Paletizador,Envasado,B,Inspección mecánica,Mensual,Cumplido
+2026-04,PM-1021,EQ-0471,Transportador L3,Envasado,C,Inspección eléctrica,Quincenal,Cumplido
+2026-04,PM-1022,EQ-0310,Reactor P1,Proceso,A,Lubricación,Mensual,Cumplido
+2026-04,PM-1023,EQ-0311,Intercambiador P1,Proceso,B,Cambio de filtros,Trimestral,Cumplido
+2026-04,PM-1024,EQ-0320,Mezclador P2,Proceso,B,Lubricación,Quincenal,Vencido
+2026-04,PM-1025,EQ-0330,Bomba CIP,Proceso,B,Inspección mecánica,Mensual,Vencido
+2026-04,PM-1026,EQ-0331,Bomba de proceso,Proceso,C,Inspección eléctrica,Quincenal,Cumplido
+2026-04,PM-1027,EQ-0201,Caldera 1,Servicios,A,Inspección mecánica,Quincenal,Cumplido
+2026-04,PM-1028,EQ-0202,Caldera 2,Servicios,B,Cambio de filtros,Quincenal,Cumplido
+2026-04,PM-1029,EQ-0210,Compresor 3,Servicios,B,Inspección mecánica,Trimestral,Cumplido
+2026-04,PM-1030,EQ-0211,Chiller 1,Servicios,A,Inspección eléctrica,Quincenal,Cumplido
+2026-04,PM-1031,EQ-0601,Grúa horquilla 4,Bodega,C,Inspección mecánica,Quincenal,Cumplido
+2026-04,PM-1032,EQ-0457,Envasadora L2,Envasado,A,Cambio de filtros,Quincenal,Cumplido
+2026-04,PM-1033,EQ-0455,Envasadora L1,Envasado,A,Cambio de filtros,Quincenal,Cumplido
+2026-04,PM-1034,EQ-0461,Etiquetadora L1,Envasado,A,Inspección eléctrica,Quincenal,Cumplido
+2026-04,PM-1035,EQ-0462,Etiquetadora L2,Envasado,B,Inspección mecánica,Trimestral,Cumplido
+2026-04,PM-1036,EQ-0470,Paletizador,Envasado,B,Alineamiento y vibración,Trimestral,Cumplido
+2026-04,PM-1037,EQ-0471,Transportador L3,Envasado,C,Alineamiento y vibración,Trimestral,Cumplido
+2026-04,PM-1038,EQ-0310,Reactor P1,Proceso,A,Lubricación,Quincenal,Cumplido
+2026-04,PM-1039,EQ-0311,Intercambiador P1,Proceso,B,Lubricación,Mensual,Cumplido
+2026-04,PM-1040,EQ-0320,Mezclador P2,Proceso,B,Inspección eléctrica,Trimestral,Cumplido
+2026-04,PM-1041,EQ-0330,Bomba CIP,Proceso,B,Lubricación,Quincenal,Cumplido
+2026-04,PM-1042,EQ-0331,Bomba de proceso,Proceso,C,Inspección eléctrica,Mensual,Cumplido
+2026-04,PM-1043,EQ-0201,Caldera 1,Servicios,A,Lubricación,Mensual,Cumplido
+2026-04,PM-1044,EQ-0202,Caldera 2,Servicios,B,Lubricación,Quincenal,Cumplido
+2026-04,PM-1045,EQ-0210,Compresor 3,Servicios,B,Cambio de filtros,Quincenal,Cumplido
+2026-05,PM-1000,EQ-0457,Envasadora L2,Envasado,A,Lubricación,Trimestral,Cumplido
+2026-05,PM-1001,EQ-0455,Envasadora L1,Envasado,A,Inspección mecánica,Trimestral,Cumplido
+2026-05,PM-1002,EQ-0461,Etiquetadora L1,Envasado,A,Alineamiento y vibración,Trimestral,Cumplido
+2026-05,PM-1003,EQ-0462,Etiquetadora L2,Envasado,B,Alineamiento y vibración,Mensual,Cumplido
+2026-05,PM-1004,EQ-0470,Paletizador,Envasado,B,Cambio de filtros,Trimestral,Cumplido
+2026-05,PM-1005,EQ-0471,Transportador L3,Envasado,C,Lubricación,Mensual,Cumplido
+2026-05,PM-1006,EQ-0310,Reactor P1,Proceso,A,Inspección mecánica,Quincenal,Cumplido
+2026-05,PM-1007,EQ-0311,Intercambiador P1,Proceso,B,Inspección mecánica,Quincenal,Cumplido
+2026-05,PM-1008,EQ-0320,Mezclador P2,Proceso,B,Inspección mecánica,Mensual,Vencido
+2026-05,PM-1009,EQ-0330,Bomba CIP,Proceso,B,Inspección eléctrica,Trimestral,Cumplido
+2026-05,PM-1010,EQ-0331,Bomba de proceso,Proceso,C,Alineamiento y vibración,Quincenal,Cumplido
+2026-05,PM-1011,EQ-0201,Caldera 1,Servicios,A,Lubricación,Mensual,Vencido
+2026-05,PM-1012,EQ-0202,Caldera 2,Servicios,B,Inspección eléctrica,Trimestral,Cumplido
+2026-05,PM-1013,EQ-0210,Compresor 3,Servicios,B,Cambio de filtros,Trimestral,Cumplido
+2026-05,PM-1014,EQ-0211,Chiller 1,Servicios,A,Inspección eléctrica,Quincenal,Cumplido
+2026-05,PM-1015,EQ-0601,Grúa horquilla 4,Bodega,C,Lubricación,Quincenal,Cumplido
+2026-05,PM-1016,EQ-0457,Envasadora L2,Envasado,A,Inspección eléctrica,Quincenal,Cumplido
+2026-05,PM-1017,EQ-0455,Envasadora L1,Envasado,A,Alineamiento y vibración,Trimestral,Cumplido
+2026-05,PM-1018,EQ-0461,Etiquetadora L1,Envasado,A,Lubricación,Quincenal,Cumplido
+2026-05,PM-1019,EQ-0462,Etiquetadora L2,Envasado,B,Inspección mecánica,Mensual,Cumplido
+2026-05,PM-1020,EQ-0470,Paletizador,Envasado,B,Inspección mecánica,Quincenal,Cumplido
+2026-05,PM-1021,EQ-0471,Transportador L3,Envasado,C,Cambio de filtros,Trimestral,Cumplido
+2026-05,PM-1022,EQ-0310,Reactor P1,Proceso,A,Lubricación,Quincenal,Cumplido
+2026-05,PM-1023,EQ-0311,Intercambiador P1,Proceso,B,Inspección mecánica,Quincenal,Cumplido
+2026-05,PM-1024,EQ-0320,Mezclador P2,Proceso,B,Lubricación,Quincenal,Cumplido
+2026-05,PM-1025,EQ-0330,Bomba CIP,Proceso,B,Inspección eléctrica,Mensual,Cumplido
+2026-05,PM-1026,EQ-0331,Bomba de proceso,Proceso,C,Inspección mecánica,Quincenal,Cumplido
+2026-05,PM-1027,EQ-0201,Caldera 1,Servicios,A,Cambio de filtros,Mensual,Cumplido
+2026-05,PM-1028,EQ-0202,Caldera 2,Servicios,B,Inspección eléctrica,Trimestral,Cumplido
+2026-05,PM-1029,EQ-0210,Compresor 3,Servicios,B,Inspección eléctrica,Quincenal,Vencido
+2026-05,PM-1030,EQ-0211,Chiller 1,Servicios,A,Inspección eléctrica,Mensual,Cumplido
+2026-05,PM-1031,EQ-0601,Grúa horquilla 4,Bodega,C,Cambio de filtros,Quincenal,Cumplido
+2026-05,PM-1032,EQ-0457,Envasadora L2,Envasado,A,Cambio de filtros,Mensual,Cumplido
+2026-05,PM-1033,EQ-0455,Envasadora L1,Envasado,A,Cambio de filtros,Quincenal,Cumplido
+2026-05,PM-1034,EQ-0461,Etiquetadora L1,Envasado,A,Cambio de filtros,Mensual,Cumplido
+2026-05,PM-1035,EQ-0462,Etiquetadora L2,Envasado,B,Inspección mecánica,Trimestral,Cumplido
+2026-05,PM-1036,EQ-0470,Paletizador,Envasado,B,Lubricación,Trimestral,Cumplido
+2026-05,PM-1037,EQ-0471,Transportador L3,Envasado,C,Alineamiento y vibración,Mensual,Cumplido
+2026-05,PM-1038,EQ-0310,Reactor P1,Proceso,A,Inspección eléctrica,Mensual,Cumplido
+2026-05,PM-1039,EQ-0311,Intercambiador P1,Proceso,B,Cambio de filtros,Trimestral,Cumplido
+2026-05,PM-1040,EQ-0320,Mezclador P2,Proceso,B,Alineamiento y vibración,Trimestral,Cumplido
+2026-05,PM-1041,EQ-0330,Bomba CIP,Proceso,B,Inspección eléctrica,Trimestral,Cumplido
+2026-05,PM-1042,EQ-0331,Bomba de proceso,Proceso,C,Inspección mecánica,Mensual,Cumplido
+2026-05,PM-1043,EQ-0201,Caldera 1,Servicios,A,Cambio de filtros,Trimestral,Vencido
+2026-05,PM-1044,EQ-0202,Caldera 2,Servicios,B,Alineamiento y vibración,Trimestral,Cumplido
+2026-05,PM-1045,EQ-0210,Compresor 3,Servicios,B,Inspección eléctrica,Quincenal,Cumplido
+2026-06,PM-1000,EQ-0457,Envasadora L2,Envasado,A,Lubricación,Quincenal,Cumplido
+2026-06,PM-1001,EQ-0455,Envasadora L1,Envasado,A,Inspección mecánica,Trimestral,Vencido
+2026-06,PM-1002,EQ-0461,Etiquetadora L1,Envasado,A,Lubricación,Trimestral,Cumplido
+2026-06,PM-1003,EQ-0462,Etiquetadora L2,Envasado,B,Inspección mecánica,Trimestral,Vencido
+2026-06,PM-1004,EQ-0470,Paletizador,Envasado,B,Inspección eléctrica,Trimestral,Cumplido
+2026-06,PM-1005,EQ-0471,Transportador L3,Envasado,C,Alineamiento y vibración,Mensual,Cumplido
+2026-06,PM-1006,EQ-0310,Reactor P1,Proceso,A,Inspección eléctrica,Mensual,Vencido
+2026-06,PM-1007,EQ-0311,Intercambiador P1,Proceso,B,Inspección eléctrica,Quincenal,Cumplido
+2026-06,PM-1008,EQ-0320,Mezclador P2,Proceso,B,Lubricación,Mensual,Cumplido
+2026-06,PM-1009,EQ-0330,Bomba CIP,Proceso,B,Lubricación,Trimestral,Cumplido
+2026-06,PM-1010,EQ-0331,Bomba de proceso,Proceso,C,Lubricación,Quincenal,Cumplido
+2026-06,PM-1011,EQ-0201,Caldera 1,Servicios,A,Alineamiento y vibración,Quincenal,Cumplido
+2026-06,PM-1012,EQ-0202,Caldera 2,Servicios,B,Cambio de filtros,Quincenal,Cumplido
+2026-06,PM-1013,EQ-0210,Compresor 3,Servicios,B,Inspección mecánica,Quincenal,Vencido
+2026-06,PM-1014,EQ-0211,Chiller 1,Servicios,A,Inspección mecánica,Quincenal,Cumplido
+2026-06,PM-1015,EQ-0601,Grúa horquilla 4,Bodega,C,Alineamiento y vibración,Mensual,Vencido
+2026-06,PM-1016,EQ-0457,Envasadora L2,Envasado,A,Alineamiento y vibración,Trimestral,Cumplido
+2026-06,PM-1017,EQ-0455,Envasadora L1,Envasado,A,Inspección eléctrica,Quincenal,Cumplido
+2026-06,PM-1018,EQ-0461,Etiquetadora L1,Envasado,A,Inspección eléctrica,Trimestral,Cumplido
+2026-06,PM-1019,EQ-0462,Etiquetadora L2,Envasado,B,Inspección eléctrica,Trimestral,Cumplido
+2026-06,PM-1020,EQ-0470,Paletizador,Envasado,B,Inspección mecánica,Trimestral,Cumplido
+2026-06,PM-1021,EQ-0471,Transportador L3,Envasado,C,Cambio de filtros,Trimestral,Cumplido
+2026-06,PM-1022,EQ-0310,Reactor P1,Proceso,A,Cambio de filtros,Mensual,Cumplido
+2026-06,PM-1023,EQ-0311,Intercambiador P1,Proceso,B,Inspección mecánica,Quincenal,Cumplido
+2026-06,PM-1024,EQ-0320,Mezclador P2,Proceso,B,Inspección eléctrica,Trimestral,Cumplido
+2026-06,PM-1025,EQ-0330,Bomba CIP,Proceso,B,Lubricación,Mensual,Vencido
+2026-06,PM-1026,EQ-0331,Bomba de proceso,Proceso,C,Inspección eléctrica,Mensual,Cumplido
+2026-06,PM-1027,EQ-0201,Caldera 1,Servicios,A,Alineamiento y vibración,Quincenal,Cumplido
+2026-06,PM-1028,EQ-0202,Caldera 2,Servicios,B,Cambio de filtros,Quincenal,Cumplido
+2026-06,PM-1029,EQ-0210,Compresor 3,Servicios,B,Lubricación,Mensual,Cumplido
+2026-06,PM-1030,EQ-0211,Chiller 1,Servicios,A,Alineamiento y vibración,Quincenal,Cumplido
+2026-06,PM-1031,EQ-0601,Grúa horquilla 4,Bodega,C,Lubricación,Quincenal,Cumplido
+2026-06,PM-1032,EQ-0457,Envasadora L2,Envasado,A,Cambio de filtros,Quincenal,Cumplido
+2026-06,PM-1033,EQ-0455,Envasadora L1,Envasado,A,Inspección eléctrica,Quincenal,Cumplido
+2026-06,PM-1034,EQ-0461,Etiquetadora L1,Envasado,A,Lubricación,Mensual,Cumplido
+2026-06,PM-1035,EQ-0462,Etiquetadora L2,Envasado,B,Inspección mecánica,Quincenal,Cumplido
+2026-06,PM-1036,EQ-0470,Paletizador,Envasado,B,Lubricación,Mensual,Cumplido
+2026-06,PM-1037,EQ-0471,Transportador L3,Envasado,C,Alineamiento y vibración,Trimestral,Cumplido
+2026-06,PM-1038,EQ-0310,Reactor P1,Proceso,A,Cambio de filtros,Trimestral,Cumplido
+2026-06,PM-1039,EQ-0311,Intercambiador P1,Proceso,B,Lubricación,Quincenal,Cumplido
+2026-06,PM-1040,EQ-0320,Mezclador P2,Proceso,B,Inspección eléctrica,Mensual,Cumplido
+2026-06,PM-1041,EQ-0330,Bomba CIP,Proceso,B,Alineamiento y vibración,Quincenal,Cumplido
+2026-06,PM-1042,EQ-0331,Bomba de proceso,Proceso,C,Inspección eléctrica,Quincenal,Cumplido
+2026-06,PM-1043,EQ-0201,Caldera 1,Servicios,A,Cambio de filtros,Quincenal,Vencido
+2026-06,PM-1044,EQ-0202,Caldera 2,Servicios,B,Cambio de filtros,Mensual,Cumplido
+2026-06,PM-1045,EQ-0210,Compresor 3,Servicios,B,Alineamiento y vibración,Mensual,Cumplido
+2026-07,PM-1000,EQ-0457,Envasadora L2,Envasado,A,Lubricación,Mensual,Cumplido
+2026-07,PM-1001,EQ-0455,Envasadora L1,Envasado,A,Inspección eléctrica,Trimestral,Cumplido
+2026-07,PM-1002,EQ-0461,Etiquetadora L1,Envasado,A,Inspección eléctrica,Mensual,Cumplido
+2026-07,PM-1003,EQ-0462,Etiquetadora L2,Envasado,B,Inspección eléctrica,Trimestral,Cumplido
+2026-07,PM-1004,EQ-0470,Paletizador,Envasado,B,Inspección mecánica,Mensual,Cumplido
+2026-07,PM-1005,EQ-0471,Transportador L3,Envasado,C,Lubricación,Quincenal,Vencido
+2026-07,PM-1006,EQ-0310,Reactor P1,Proceso,A,Alineamiento y vibración,Trimestral,Cumplido
+2026-07,PM-1007,EQ-0311,Intercambiador P1,Proceso,B,Cambio de filtros,Quincenal,Cumplido
+2026-07,PM-1008,EQ-0320,Mezclador P2,Proceso,B,Inspección eléctrica,Mensual,Cumplido
+2026-07,PM-1009,EQ-0330,Bomba CIP,Proceso,B,Inspección mecánica,Mensual,Cumplido
+2026-07,PM-1010,EQ-0331,Bomba de proceso,Proceso,C,Inspección mecánica,Trimestral,Cumplido
+2026-07,PM-1011,EQ-0201,Caldera 1,Servicios,A,Lubricación,Quincenal,Cumplido
+2026-07,PM-1012,EQ-0202,Caldera 2,Servicios,B,Lubricación,Mensual,Cumplido
+2026-07,PM-1013,EQ-0210,Compresor 3,Servicios,B,Lubricación,Trimestral,Cumplido
+2026-07,PM-1014,EQ-0211,Chiller 1,Servicios,A,Lubricación,Mensual,Cumplido
+2026-07,PM-1015,EQ-0601,Grúa horquilla 4,Bodega,C,Cambio de filtros,Quincenal,Cumplido
+2026-07,PM-1016,EQ-0457,Envasadora L2,Envasado,A,Inspección eléctrica,Quincenal,Cumplido
+2026-07,PM-1017,EQ-0455,Envasadora L1,Envasado,A,Alineamiento y vibración,Mensual,Cumplido
+2026-07,PM-1018,EQ-0461,Etiquetadora L1,Envasado,A,Cambio de filtros,Trimestral,Vencido
+2026-07,PM-1019,EQ-0462,Etiquetadora L2,Envasado,B,Cambio de filtros,Mensual,Vencido
+2026-07,PM-1020,EQ-0470,Paletizador,Envasado,B,Lubricación,Trimestral,Cumplido
+2026-07,PM-1021,EQ-0471,Transportador L3,Envasado,C,Inspección eléctrica,Mensual,Cumplido
+2026-07,PM-1022,EQ-0310,Reactor P1,Proceso,A,Inspección eléctrica,Mensual,Cumplido
+2026-07,PM-1023,EQ-0311,Intercambiador P1,Proceso,B,Alineamiento y vibración,Mensual,Cumplido
+2026-07,PM-1024,EQ-0320,Mezclador P2,Proceso,B,Cambio de filtros,Trimestral,Cumplido
+2026-07,PM-1025,EQ-0330,Bomba CIP,Proceso,B,Lubricación,Quincenal,Cumplido
+2026-07,PM-1026,EQ-0331,Bomba de proceso,Proceso,C,Cambio de filtros,Trimestral,Cumplido
+2026-07,PM-1027,EQ-0201,Caldera 1,Servicios,A,Inspección eléctrica,Mensual,Cumplido
+2026-07,PM-1028,EQ-0202,Caldera 2,Servicios,B,Alineamiento y vibración,Quincenal,Cumplido
+2026-07,PM-1029,EQ-0210,Compresor 3,Servicios,B,Cambio de filtros,Quincenal,Cumplido
+2026-07,PM-1030,EQ-0211,Chiller 1,Servicios,A,Lubricación,Trimestral,Cumplido
+2026-07,PM-1031,EQ-0601,Grúa horquilla 4,Bodega,C,Alineamiento y vibración,Mensual,Cumplido
+2026-07,PM-1032,EQ-0457,Envasadora L2,Envasado,A,Alineamiento y vibración,Mensual,Cumplido
+2026-07,PM-1033,EQ-0455,Envasadora L1,Envasado,A,Inspección mecánica,Mensual,Vencido
+2026-07,PM-1034,EQ-0461,Etiquetadora L1,Envasado,A,Alineamiento y vibración,Quincenal,Cumplido
+2026-07,PM-1035,EQ-0462,Etiquetadora L2,Envasado,B,Inspección mecánica,Trimestral,Cumplido
+2026-07,PM-1036,EQ-0470,Paletizador,Envasado,B,Inspección eléctrica,Mensual,Cumplido
+2026-07,PM-1037,EQ-0471,Transportador L3,Envasado,C,Inspección eléctrica,Mensual,Cumplido
+2026-07,PM-1038,EQ-0310,Reactor P1,Proceso,A,Inspección mecánica,Trimestral,Cumplido
+2026-07,PM-1039,EQ-0311,Intercambiador P1,Proceso,B,Alineamiento y vibración,Quincenal,Vencido
+2026-07,PM-1040,EQ-0320,Mezclador P2,Proceso,B,Cambio de filtros,Quincenal,Cumplido
+2026-07,PM-1041,EQ-0330,Bomba CIP,Proceso,B,Inspección eléctrica,Quincenal,Cumplido
+2026-07,PM-1042,EQ-0331,Bomba de proceso,Proceso,C,Alineamiento y vibración,Mensual,Cumplido
+2026-07,PM-1043,EQ-0201,Caldera 1,Servicios,A,Inspección eléctrica,Quincenal,Cumplido
+2026-07,PM-1044,EQ-0202,Caldera 2,Servicios,B,Lubricación,Trimestral,Cumplido
+2026-07,PM-1045,EQ-0210,Compresor 3,Servicios,B,Inspección mecánica,Quincenal,Cumplido
+2026-08,PM-1000,EQ-0457,Envasadora L2,Envasado,A,Inspección eléctrica,Quincenal,Cumplido
+2026-08,PM-1001,EQ-0455,Envasadora L1,Envasado,A,Inspección mecánica,Quincenal,Vencido
+2026-08,PM-1002,EQ-0461,Etiquetadora L1,Envasado,A,Alineamiento y vibración,Quincenal,Cumplido
+2026-08,PM-1003,EQ-0462,Etiquetadora L2,Envasado,B,Inspección mecánica,Quincenal,Cumplido
+2026-08,PM-1004,EQ-0470,Paletizador,Envasado,B,Inspección eléctrica,Trimestral,Vencido
+2026-08,PM-1005,EQ-0471,Transportador L3,Envasado,C,Inspección eléctrica,Trimestral,Cumplido
+2026-08,PM-1006,EQ-0310,Reactor P1,Proceso,A,Alineamiento y vibración,Trimestral,Cumplido
+2026-08,PM-1007,EQ-0311,Intercambiador P1,Proceso,B,Lubricación,Trimestral,Cumplido
+2026-08,PM-1008,EQ-0320,Mezclador P2,Proceso,B,Cambio de filtros,Trimestral,Cumplido
+2026-08,PM-1009,EQ-0330,Bomba CIP,Proceso,B,Lubricación,Mensual,Cumplido
+2026-08,PM-1010,EQ-0331,Bomba de proceso,Proceso,C,Inspección mecánica,Quincenal,Cumplido
+2026-08,PM-1011,EQ-0201,Caldera 1,Servicios,A,Inspección mecánica,Quincenal,Cumplido
+2026-08,PM-1012,EQ-0202,Caldera 2,Servicios,B,Cambio de filtros,Quincenal,Cumplido
+2026-08,PM-1013,EQ-0210,Compresor 3,Servicios,B,Inspección mecánica,Trimestral,Cumplido
+2026-08,PM-1014,EQ-0211,Chiller 1,Servicios,A,Alineamiento y vibración,Mensual,Vencido
+2026-08,PM-1015,EQ-0601,Grúa horquilla 4,Bodega,C,Inspección mecánica,Quincenal,Cumplido
+2026-08,PM-1016,EQ-0457,Envasadora L2,Envasado,A,Lubricación,Mensual,Cumplido
+2026-08,PM-1017,EQ-0455,Envasadora L1,Envasado,A,Inspección mecánica,Trimestral,Cumplido
+2026-08,PM-1018,EQ-0461,Etiquetadora L1,Envasado,A,Cambio de filtros,Mensual,Vencido
+2026-08,PM-1019,EQ-0462,Etiquetadora L2,Envasado,B,Cambio de filtros,Mensual,Cumplido
+2026-08,PM-1020,EQ-0470,Paletizador,Envasado,B,Inspección eléctrica,Quincenal,Cumplido
+2026-08,PM-1021,EQ-0471,Transportador L3,Envasado,C,Cambio de filtros,Trimestral,Cumplido
+2026-08,PM-1022,EQ-0310,Reactor P1,Proceso,A,Lubricación,Quincenal,Cumplido
+2026-08,PM-1023,EQ-0311,Intercambiador P1,Proceso,B,Inspección mecánica,Trimestral,Cumplido
+2026-08,PM-1024,EQ-0320,Mezclador P2,Proceso,B,Lubricación,Trimestral,Cumplido
+2026-08,PM-1025,EQ-0330,Bomba CIP,Proceso,B,Alineamiento y vibración,Quincenal,Cumplido
+2026-08,PM-1026,EQ-0331,Bomba de proceso,Proceso,C,Lubricación,Trimestral,Cumplido
+2026-08,PM-1027,EQ-0201,Caldera 1,Servicios,A,Cambio de filtros,Mensual,Cumplido
+2026-08,PM-1028,EQ-0202,Caldera 2,Servicios,B,Alineamiento y vibración,Mensual,Cumplido
+2026-08,PM-1029,EQ-0210,Compresor 3,Servicios,B,Inspección eléctrica,Mensual,Cumplido
+2026-08,PM-1030,EQ-0211,Chiller 1,Servicios,A,Inspección eléctrica,Mensual,Cumplido
+2026-08,PM-1031,EQ-0601,Grúa horquilla 4,Bodega,C,Cambio de filtros,Mensual,Vencido
+2026-08,PM-1032,EQ-0457,Envasadora L2,Envasado,A,Alineamiento y vibración,Trimestral,Cumplido
+2026-08,PM-1033,EQ-0455,Envasadora L1,Envasado,A,Inspección mecánica,Mensual,Cumplido
+2026-08,PM-1034,EQ-0461,Etiquetadora L1,Envasado,A,Inspección mecánica,Quincenal,Cumplido
+2026-08,PM-1035,EQ-0462,Etiquetadora L2,Envasado,B,Lubricación,Trimestral,Cumplido
+2026-08,PM-1036,EQ-0470,Paletizador,Envasado,B,Alineamiento y vibración,Quincenal,Vencido
+2026-08,PM-1037,EQ-0471,Transportador L3,Envasado,C,Alineamiento y vibración,Trimestral,Cumplido
+2026-08,PM-1038,EQ-0310,Reactor P1,Proceso,A,Inspección mecánica,Mensual,Cumplido
+2026-08,PM-1039,EQ-0311,Intercambiador P1,Proceso,B,Alineamiento y vibración,Mensual,Cumplido
+2026-08,PM-1040,EQ-0320,Mezclador P2,Proceso,B,Inspección eléctrica,Quincenal,Cumplido
+2026-08,PM-1041,EQ-0330,Bomba CIP,Proceso,B,Inspección mecánica,Mensual,Cumplido
+2026-08,PM-1042,EQ-0331,Bomba de proceso,Proceso,C,Cambio de filtros,Mensual,Cumplido
+2026-08,PM-1043,EQ-0201,Caldera 1,Servicios,A,Lubricación,Trimestral,Cumplido
+2026-08,PM-1044,EQ-0202,Caldera 2,Servicios,B,Inspección eléctrica,Mensual,Cumplido
+2026-08,PM-1045,EQ-0210,Compresor 3,Servicios,B,Inspección mecánica,Trimestral,Cumplido
+2026-09,PM-1000,EQ-0457,Envasadora L2,Envasado,A,Lubricación,Quincenal,Cumplido
+2026-09,PM-1001,EQ-0455,Envasadora L1,Envasado,A,Cambio de filtros,Trimestral,Cumplido
+2026-09,PM-1002,EQ-0461,Etiquetadora L1,Envasado,A,Cambio de filtros,Mensual,Cumplido
+2026-09,PM-1003,EQ-0462,Etiquetadora L2,Envasado,B,Inspección eléctrica,Quincenal,Cumplido
+2026-09,PM-1004,EQ-0470,Paletizador,Envasado,B,Lubricación,Quincenal,Cumplido
+2026-09,PM-1005,EQ-0471,Transportador L3,Envasado,C,Lubricación,Quincenal,Cumplido
+2026-09,PM-1006,EQ-0310,Reactor P1,Proceso,A,Inspección eléctrica,Trimestral,Cumplido
+2026-09,PM-1007,EQ-0311,Intercambiador P1,Proceso,B,Cambio de filtros,Quincenal,Vencido
+2026-09,PM-1008,EQ-0320,Mezclador P2,Proceso,B,Inspección eléctrica,Quincenal,Cumplido
+2026-09,PM-1009,EQ-0330,Bomba CIP,Proceso,B,Inspección eléctrica,Trimestral,Cumplido
+2026-09,PM-1010,EQ-0331,Bomba de proceso,Proceso,C,Lubricación,Mensual,Vencido
+2026-09,PM-1011,EQ-0201,Caldera 1,Servicios,A,Lubricación,Trimestral,Cumplido
+2026-09,PM-1012,EQ-0202,Caldera 2,Servicios,B,Inspección eléctrica,Mensual,Cumplido
+2026-09,PM-1013,EQ-0210,Compresor 3,Servicios,B,Cambio de filtros,Mensual,Cumplido
+2026-09,PM-1014,EQ-0211,Chiller 1,Servicios,A,Alineamiento y vibración,Quincenal,Cumplido
+2026-09,PM-1015,EQ-0601,Grúa horquilla 4,Bodega,C,Alineamiento y vibración,Trimestral,Cumplido
+2026-09,PM-1016,EQ-0457,Envasadora L2,Envasado,A,Alineamiento y vibración,Quincenal,Cumplido
+2026-09,PM-1017,EQ-0455,Envasadora L1,Envasado,A,Lubricación,Trimestral,Cumplido
+2026-09,PM-1018,EQ-0461,Etiquetadora L1,Envasado,A,Inspección eléctrica,Quincenal,Cumplido
+2026-09,PM-1019,EQ-0462,Etiquetadora L2,Envasado,B,Lubricación,Quincenal,Cumplido
+2026-09,PM-1020,EQ-0470,Paletizador,Envasado,B,Alineamiento y vibración,Quincenal,Cumplido
+2026-09,PM-1021,EQ-0471,Transportador L3,Envasado,C,Alineamiento y vibración,Quincenal,Cumplido
+2026-09,PM-1022,EQ-0310,Reactor P1,Proceso,A,Cambio de filtros,Mensual,Cumplido
+2026-09,PM-1023,EQ-0311,Intercambiador P1,Proceso,B,Cambio de filtros,Mensual,Cumplido
+2026-09,PM-1024,EQ-0320,Mezclador P2,Proceso,B,Inspección mecánica,Quincenal,Vencido
+2026-09,PM-1025,EQ-0330,Bomba CIP,Proceso,B,Cambio de filtros,Quincenal,Vencido
+2026-09,PM-1026,EQ-0331,Bomba de proceso,Proceso,C,Inspección mecánica,Trimestral,Vencido
+2026-09,PM-1027,EQ-0201,Caldera 1,Servicios,A,Lubricación,Trimestral,Cumplido
+2026-09,PM-1028,EQ-0202,Caldera 2,Servicios,B,Inspección mecánica,Mensual,Cumplido
+2026-09,PM-1029,EQ-0210,Compresor 3,Servicios,B,Inspección eléctrica,Trimestral,Cumplido
+2026-09,PM-1030,EQ-0211,Chiller 1,Servicios,A,Lubricación,Quincenal,Cumplido
+2026-09,PM-1031,EQ-0601,Grúa horquilla 4,Bodega,C,Cambio de filtros,Quincenal,Cumplido
+2026-09,PM-1032,EQ-0457,Envasadora L2,Envasado,A,Inspección mecánica,Quincenal,Cumplido
+2026-09,PM-1033,EQ-0455,Envasadora L1,Envasado,A,Cambio de filtros,Quincenal,Cumplido
+2026-09,PM-1034,EQ-0461,Etiquetadora L1,Envasado,A,Alineamiento y vibración,Mensual,Cumplido
+2026-09,PM-1035,EQ-0462,Etiquetadora L2,Envasado,B,Cambio de filtros,Trimestral,Cumplido
+2026-09,PM-1036,EQ-0470,Paletizador,Envasado,B,Lubricación,Mensual,Cumplido
+2026-09,PM-1037,EQ-0471,Transportador L3,Envasado,C,Inspección mecánica,Trimestral,Cumplido
+2026-09,PM-1038,EQ-0310,Reactor P1,Proceso,A,Cambio de filtros,Quincenal,Cumplido
+2026-09,PM-1039,EQ-0311,Intercambiador P1,Proceso,B,Inspección eléctrica,Trimestral,Cumplido
+2026-09,PM-1040,EQ-0320,Mezclador P2,Proceso,B,Inspección mecánica,Mensual,Cumplido
+2026-09,PM-1041,EQ-0330,Bomba CIP,Proceso,B,Lubricación,Quincenal,Cumplido
+2026-09,PM-1042,EQ-0331,Bomba de proceso,Proceso,C,Inspección eléctrica,Quincenal,Cumplido
+2026-09,PM-1043,EQ-0201,Caldera 1,Servicios,A,Alineamiento y vibración,Quincenal,Cumplido
+2026-09,PM-1044,EQ-0202,Caldera 2,Servicios,B,Lubricación,Mensual,Cumplido
+2026-09,PM-1045,EQ-0210,Compresor 3,Servicios,B,Cambio de filtros,Quincenal,Cumplido
+2026-10,PM-1000,EQ-0457,Envasadora L2,Envasado,A,Lubricación,Mensual,Cumplido
+2026-10,PM-1001,EQ-0455,Envasadora L1,Envasado,A,Lubricación,Trimestral,Cumplido
+2026-10,PM-1002,EQ-0461,Etiquetadora L1,Envasado,A,Alineamiento y vibración,Trimestral,Cumplido
+2026-10,PM-1003,EQ-0462,Etiquetadora L2,Envasado,B,Alineamiento y vibración,Trimestral,Cumplido
+2026-10,PM-1004,EQ-0470,Paletizador,Envasado,B,Inspección mecánica,Trimestral,Cumplido
+2026-10,PM-1005,EQ-0471,Transportador L3,Envasado,C,Cambio de filtros,Quincenal,Cumplido
+2026-10,PM-1006,EQ-0310,Reactor P1,Proceso,A,Cambio de filtros,Quincenal,Cumplido
+2026-10,PM-1007,EQ-0311,Intercambiador P1,Proceso,B,Inspección mecánica,Quincenal,Cumplido
+2026-10,PM-1008,EQ-0320,Mezclador P2,Proceso,B,Lubricación,Quincenal,Cumplido
+2026-10,PM-1009,EQ-0330,Bomba CIP,Proceso,B,Cambio de filtros,Trimestral,Cumplido
+2026-10,PM-1010,EQ-0331,Bomba de proceso,Proceso,C,Inspección eléctrica,Mensual,Cumplido
+2026-10,PM-1011,EQ-0201,Caldera 1,Servicios,A,Inspección mecánica,Quincenal,Cumplido
+2026-10,PM-1012,EQ-0202,Caldera 2,Servicios,B,Inspección mecánica,Trimestral,Cumplido
+2026-10,PM-1013,EQ-0210,Compresor 3,Servicios,B,Lubricación,Trimestral,Cumplido
+2026-10,PM-1014,EQ-0211,Chiller 1,Servicios,A,Lubricación,Mensual,Cumplido
+2026-10,PM-1015,EQ-0601,Grúa horquilla 4,Bodega,C,Alineamiento y vibración,Quincenal,Cumplido
+2026-10,PM-1016,EQ-0457,Envasadora L2,Envasado,A,Alineamiento y vibración,Trimestral,Cumplido
+2026-10,PM-1017,EQ-0455,Envasadora L1,Envasado,A,Lubricación,Trimestral,Cumplido
+2026-10,PM-1018,EQ-0461,Etiquetadora L1,Envasado,A,Lubricación,Quincenal,Cumplido
+2026-10,PM-1019,EQ-0462,Etiquetadora L2,Envasado,B,Alineamiento y vibración,Trimestral,Cumplido
+2026-10,PM-1020,EQ-0470,Paletizador,Envasado,B,Inspección mecánica,Quincenal,Cumplido
+2026-10,PM-1021,EQ-0471,Transportador L3,Envasado,C,Inspección eléctrica,Quincenal,Cumplido
+2026-10,PM-1022,EQ-0310,Reactor P1,Proceso,A,Inspección mecánica,Trimestral,Cumplido
+2026-10,PM-1023,EQ-0311,Intercambiador P1,Proceso,B,Lubricación,Quincenal,Cumplido
+2026-10,PM-1024,EQ-0320,Mezclador P2,Proceso,B,Inspección eléctrica,Quincenal,Cumplido
+2026-10,PM-1025,EQ-0330,Bomba CIP,Proceso,B,Inspección eléctrica,Trimestral,Cumplido
+2026-10,PM-1026,EQ-0331,Bomba de proceso,Proceso,C,Inspección mecánica,Quincenal,Cumplido
+2026-10,PM-1027,EQ-0201,Caldera 1,Servicios,A,Inspección mecánica,Mensual,Cumplido
+2026-10,PM-1028,EQ-0202,Caldera 2,Servicios,B,Cambio de filtros,Trimestral,Cumplido
+2026-10,PM-1029,EQ-0210,Compresor 3,Servicios,B,Lubricación,Trimestral,Cumplido
+2026-10,PM-1030,EQ-0211,Chiller 1,Servicios,A,Cambio de filtros,Trimestral,Cumplido
+2026-10,PM-1031,EQ-0601,Grúa horquilla 4,Bodega,C,Inspección eléctrica,Mensual,Cumplido
+2026-10,PM-1032,EQ-0457,Envasadora L2,Envasado,A,Cambio de filtros,Trimestral,Cumplido
+2026-10,PM-1033,EQ-0455,Envasadora L1,Envasado,A,Alineamiento y vibración,Mensual,Cumplido
+2026-10,PM-1034,EQ-0461,Etiquetadora L1,Envasado,A,Cambio de filtros,Trimestral,Cumplido
+2026-10,PM-1035,EQ-0462,Etiquetadora L2,Envasado,B,Alineamiento y vibración,Mensual,Cumplido
+2026-10,PM-1036,EQ-0470,Paletizador,Envasado,B,Inspección mecánica,Mensual,Cumplido
+2026-10,PM-1037,EQ-0471,Transportador L3,Envasado,C,Alineamiento y vibración,Quincenal,Cumplido
+2026-10,PM-1038,EQ-0310,Reactor P1,Proceso,A,Lubricación,Mensual,Cumplido
+2026-10,PM-1039,EQ-0311,Intercambiador P1,Proceso,B,Lubricación,Mensual,Vencido
+2026-10,PM-1040,EQ-0320,Mezclador P2,Proceso,B,Inspección eléctrica,Trimestral,Cumplido
+2026-10,PM-1041,EQ-0330,Bomba CIP,Proceso,B,Alineamiento y vibración,Trimestral,Cumplido
+2026-10,PM-1042,EQ-0331,Bomba de proceso,Proceso,C,Inspección mecánica,Mensual,Cumplido
+2026-10,PM-1043,EQ-0201,Caldera 1,Servicios,A,Alineamiento y vibración,Mensual,Cumplido
+2026-10,PM-1044,EQ-0202,Caldera 2,Servicios,B,Inspección eléctrica,Trimestral,Cumplido
+2026-10,PM-1045,EQ-0210,Compresor 3,Servicios,B,Inspección eléctrica,Mensual,Cumplido
+2026-11,PM-1000,EQ-0457,Envasadora L2,Envasado,A,Inspección eléctrica,Quincenal,Cumplido
+2026-11,PM-1001,EQ-0455,Envasadora L1,Envasado,A,Inspección mecánica,Trimestral,Cumplido
+2026-11,PM-1002,EQ-0461,Etiquetadora L1,Envasado,A,Cambio de filtros,Trimestral,Cumplido
+2026-11,PM-1003,EQ-0462,Etiquetadora L2,Envasado,B,Cambio de filtros,Trimestral,Cumplido
+2026-11,PM-1004,EQ-0470,Paletizador,Envasado,B,Inspección eléctrica,Quincenal,Cumplido
+2026-11,PM-1005,EQ-0471,Transportador L3,Envasado,C,Inspección eléctrica,Mensual,Cumplido
+2026-11,PM-1006,EQ-0310,Reactor P1,Proceso,A,Alineamiento y vibración,Mensual,Cumplido
+2026-11,PM-1007,EQ-0311,Intercambiador P1,Proceso,B,Cambio de filtros,Quincenal,Cumplido
+2026-11,PM-1008,EQ-0320,Mezclador P2,Proceso,B,Alineamiento y vibración,Mensual,Cumplido
+2026-11,PM-1009,EQ-0330,Bomba CIP,Proceso,B,Lubricación,Quincenal,Cumplido
+2026-11,PM-1010,EQ-0331,Bomba de proceso,Proceso,C,Inspección eléctrica,Quincenal,Cumplido
+2026-11,PM-1011,EQ-0201,Caldera 1,Servicios,A,Lubricación,Quincenal,Cumplido
+2026-11,PM-1012,EQ-0202,Caldera 2,Servicios,B,Inspección mecánica,Trimestral,Cumplido
+2026-11,PM-1013,EQ-0210,Compresor 3,Servicios,B,Inspección mecánica,Mensual,Cumplido
+2026-11,PM-1014,EQ-0211,Chiller 1,Servicios,A,Cambio de filtros,Mensual,Cumplido
+2026-11,PM-1015,EQ-0601,Grúa horquilla 4,Bodega,C,Inspección eléctrica,Quincenal,Cumplido
+2026-11,PM-1016,EQ-0457,Envasadora L2,Envasado,A,Inspección eléctrica,Mensual,Cumplido
+2026-11,PM-1017,EQ-0455,Envasadora L1,Envasado,A,Inspección eléctrica,Mensual,Cumplido
+2026-11,PM-1018,EQ-0461,Etiquetadora L1,Envasado,A,Cambio de filtros,Mensual,Cumplido
+2026-11,PM-1019,EQ-0462,Etiquetadora L2,Envasado,B,Inspección eléctrica,Trimestral,Cumplido
+2026-11,PM-1020,EQ-0470,Paletizador,Envasado,B,Alineamiento y vibración,Mensual,Cumplido
+2026-11,PM-1021,EQ-0471,Transportador L3,Envasado,C,Alineamiento y vibración,Quincenal,Cumplido
+2026-11,PM-1022,EQ-0310,Reactor P1,Proceso,A,Alineamiento y vibración,Quincenal,Cumplido
+2026-11,PM-1023,EQ-0311,Intercambiador P1,Proceso,B,Inspección eléctrica,Trimestral,Cumplido
+2026-11,PM-1024,EQ-0320,Mezclador P2,Proceso,B,Cambio de filtros,Mensual,Cumplido
+2026-11,PM-1025,EQ-0330,Bomba CIP,Proceso,B,Inspección eléctrica,Trimestral,Cumplido
+2026-11,PM-1026,EQ-0331,Bomba de proceso,Proceso,C,Inspección eléctrica,Mensual,Cumplido
+2026-11,PM-1027,EQ-0201,Caldera 1,Servicios,A,Cambio de filtros,Trimestral,Cumplido
+2026-11,PM-1028,EQ-0202,Caldera 2,Servicios,B,Alineamiento y vibración,Trimestral,Cumplido
+2026-11,PM-1029,EQ-0210,Compresor 3,Servicios,B,Inspección eléctrica,Mensual,Cumplido
+2026-11,PM-1030,EQ-0211,Chiller 1,Servicios,A,Lubricación,Trimestral,Cumplido
+2026-11,PM-1031,EQ-0601,Grúa horquilla 4,Bodega,C,Cambio de filtros,Mensual,Cumplido
+2026-11,PM-1032,EQ-0457,Envasadora L2,Envasado,A,Inspección eléctrica,Trimestral,Cumplido
+2026-11,PM-1033,EQ-0455,Envasadora L1,Envasado,A,Lubricación,Mensual,Cumplido
+2026-11,PM-1034,EQ-0461,Etiquetadora L1,Envasado,A,Cambio de filtros,Mensual,Cumplido
+2026-11,PM-1035,EQ-0462,Etiquetadora L2,Envasado,B,Inspección eléctrica,Mensual,Cumplido
+2026-11,PM-1036,EQ-0470,Paletizador,Envasado,B,Alineamiento y vibración,Quincenal,Cumplido
+2026-11,PM-1037,EQ-0471,Transportador L3,Envasado,C,Inspección mecánica,Mensual,Cumplido
+2026-11,PM-1038,EQ-0310,Reactor P1,Proceso,A,Lubricación,Quincenal,Cumplido
+2026-11,PM-1039,EQ-0311,Intercambiador P1,Proceso,B,Lubricación,Quincenal,Cumplido
+2026-11,PM-1040,EQ-0320,Mezclador P2,Proceso,B,Inspección eléctrica,Quincenal,Cumplido
+2026-11,PM-1041,EQ-0330,Bomba CIP,Proceso,B,Lubricación,Mensual,Cumplido
+2026-11,PM-1042,EQ-0331,Bomba de proceso,Proceso,C,Lubricación,Quincenal,Cumplido
+2026-11,PM-1043,EQ-0201,Caldera 1,Servicios,A,Cambio de filtros,Quincenal,Cumplido
+2026-11,PM-1044,EQ-0202,Caldera 2,Servicios,B,Cambio de filtros,Mensual,Cumplido
+2026-11,PM-1045,EQ-0210,Compresor 3,Servicios,B,Inspección mecánica,Trimestral,Cumplido
+2026-12,PM-1000,EQ-0457,Envasadora L2,Envasado,A,Cambio de filtros,Mensual,Cumplido
+2026-12,PM-1001,EQ-0455,Envasadora L1,Envasado,A,Alineamiento y vibración,Quincenal,Cumplido
+2026-12,PM-1002,EQ-0461,Etiquetadora L1,Envasado,A,Inspección eléctrica,Mensual,Cumplido
+2026-12,PM-1003,EQ-0462,Etiquetadora L2,Envasado,B,Inspección mecánica,Mensual,Cumplido
+2026-12,PM-1004,EQ-0470,Paletizador,Envasado,B,Inspección eléctrica,Quincenal,Cumplido
+2026-12,PM-1005,EQ-0471,Transportador L3,Envasado,C,Alineamiento y vibración,Trimestral,Cumplido
+2026-12,PM-1006,EQ-0310,Reactor P1,Proceso,A,Inspección mecánica,Mensual,Vencido
+2026-12,PM-1007,EQ-0311,Intercambiador P1,Proceso,B,Alineamiento y vibración,Mensual,Cumplido
+2026-12,PM-1008,EQ-0320,Mezclador P2,Proceso,B,Inspección mecánica,Trimestral,Cumplido
+2026-12,PM-1009,EQ-0330,Bomba CIP,Proceso,B,Inspección eléctrica,Mensual,Vencido
+2026-12,PM-1010,EQ-0331,Bomba de proceso,Proceso,C,Lubricación,Quincenal,Cumplido
+2026-12,PM-1011,EQ-0201,Caldera 1,Servicios,A,Lubricación,Mensual,Cumplido
+2026-12,PM-1012,EQ-0202,Caldera 2,Servicios,B,Alineamiento y vibración,Mensual,Cumplido
+2026-12,PM-1013,EQ-0210,Compresor 3,Servicios,B,Lubricación,Quincenal,Cumplido
+2026-12,PM-1014,EQ-0211,Chiller 1,Servicios,A,Cambio de filtros,Trimestral,Cumplido
+2026-12,PM-1015,EQ-0601,Grúa horquilla 4,Bodega,C,Cambio de filtros,Trimestral,Cumplido
+2026-12,PM-1016,EQ-0457,Envasadora L2,Envasado,A,Inspección mecánica,Quincenal,Cumplido
+2026-12,PM-1017,EQ-0455,Envasadora L1,Envasado,A,Inspección eléctrica,Mensual,Cumplido
+2026-12,PM-1018,EQ-0461,Etiquetadora L1,Envasado,A,Inspección mecánica,Trimestral,Cumplido
+2026-12,PM-1019,EQ-0462,Etiquetadora L2,Envasado,B,Alineamiento y vibración,Trimestral,Cumplido
+2026-12,PM-1020,EQ-0470,Paletizador,Envasado,B,Inspección mecánica,Trimestral,Cumplido
+2026-12,PM-1021,EQ-0471,Transportador L3,Envasado,C,Lubricación,Trimestral,Cumplido
+2026-12,PM-1022,EQ-0310,Reactor P1,Proceso,A,Inspección eléctrica,Mensual,Cumplido
+2026-12,PM-1023,EQ-0311,Intercambiador P1,Proceso,B,Inspección eléctrica,Mensual,Cumplido
+2026-12,PM-1024,EQ-0320,Mezclador P2,Proceso,B,Inspección mecánica,Mensual,Cumplido
+2026-12,PM-1025,EQ-0330,Bomba CIP,Proceso,B,Lubricación,Quincenal,Vencido
+2026-12,PM-1026,EQ-0331,Bomba de proceso,Proceso,C,Inspección eléctrica,Trimestral,Cumplido
+2026-12,PM-1027,EQ-0201,Caldera 1,Servicios,A,Inspección mecánica,Mensual,Cumplido
+2026-12,PM-1028,EQ-0202,Caldera 2,Servicios,B,Cambio de filtros,Quincenal,Cumplido
+2026-12,PM-1029,EQ-0210,Compresor 3,Servicios,B,Lubricación,Mensual,Cumplido
+2026-12,PM-1030,EQ-0211,Chiller 1,Servicios,A,Cambio de filtros,Quincenal,Cumplido
+2026-12,PM-1031,EQ-0601,Grúa horquilla 4,Bodega,C,Inspección mecánica,Quincenal,Cumplido
+2026-12,PM-1032,EQ-0457,Envasadora L2,Envasado,A,Alineamiento y vibración,Trimestral,Cumplido
+2026-12,PM-1033,EQ-0455,Envasadora L1,Envasado,A,Lubricación,Trimestral,Cumplido
+2026-12,PM-1034,EQ-0461,Etiquetadora L1,Envasado,A,Lubricación,Mensual,Cumplido
+2026-12,PM-1035,EQ-0462,Etiquetadora L2,Envasado,B,Inspección eléctrica,Trimestral,Cumplido
+2026-12,PM-1036,EQ-0470,Paletizador,Envasado,B,Cambio de filtros,Quincenal,Cumplido
+2026-12,PM-1037,EQ-0471,Transportador L3,Envasado,C,Lubricación,Quincenal,Vencido
+2026-12,PM-1038,EQ-0310,Reactor P1,Proceso,A,Cambio de filtros,Mensual,Vencido
+2026-12,PM-1039,EQ-0311,Intercambiador P1,Proceso,B,Alineamiento y vibración,Quincenal,Cumplido
+2026-12,PM-1040,EQ-0320,Mezclador P2,Proceso,B,Inspección eléctrica,Mensual,Cumplido
+2026-12,PM-1041,EQ-0330,Bomba CIP,Proceso,B,Cambio de filtros,Quincenal,Cumplido
+2026-12,PM-1042,EQ-0331,Bomba de proceso,Proceso,C,Inspección eléctrica,Mensual,Cumplido
+2026-12,PM-1043,EQ-0201,Caldera 1,Servicios,A,Inspección mecánica,Quincenal,Cumplido
+2026-12,PM-1044,EQ-0202,Caldera 2,Servicios,B,Inspección eléctrica,Trimestral,Cumplido
+2026-12,PM-1045,EQ-0210,Compresor 3,Servicios,B,Lubricación,Mensual,Cumplido

@@ -1,0 +1,123 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "p02n",
+  "position": {
+    "x": 16,
+    "y": 562,
+    "z": 31,
+    "width": 1248,
+    "height": 140,
+    "tabOrder": 310
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "DISCIPLINA DE EJECUCIÓN",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "fontWeight": "bold",
+                      "color": "#D97706",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Qué dice el dato · ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#0E1C33",
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "El ciclo aviso → orden → cierre pierde registros en cada paso; solo una parte de las órdenes termina con HH confirmadas.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#101828",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Correlación · ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#0E1C33",
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "Las semanas con menor cumplimiento de programación coinciden con los picos de emergencia: cada trabajo no planificado desplaza trabajo programado.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#101828",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Riesgo si no se actúa · ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#0E1C33",
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "Un backlog que envejece sin priorizar genera trabajo repetido y pérdida de trazabilidad, base de todo el análisis de confiabilidad.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#101828",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Decisión recomendada: ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#B42318",
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "Congelar la programación semanal con 48 h de anticipación y limitar la inserción de trabajo no planificado a un cupo del 15% de la capacidad.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#101828",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "p09h",
+  "position": {
+    "x": 16,
+    "y": 8,
+    "z": 117,
+    "width": 1248,
+    "height": 34,
+    "tabOrder": 1170
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "09 · TPM y 5 Fundacionales",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#0E1C33",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "     Medir madurez y orientar la mejora cultural",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#5A6473",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

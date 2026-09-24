@@ -1,0 +1,135 @@
+/// Calendario generado en M. Marcada como tabla de fechas: conecta los cinco hechos por su fecha relevante.
+table DimFecha
+	lineageTag: 6d333e06-6810-5a2f-8455-e68b04ec296f
+	dataCategory: Time
+
+	/// Clave de relación.
+	column Fecha
+		dataType: dateTime
+		isKey
+		formatString: yyyy-mm-dd
+		lineageTag: da5e399c-1dd5-5f50-b8c4-a16697233e45
+		summarizeBy: none
+		sourceColumn: Fecha
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Año.
+	column Anio
+		dataType: int64
+		lineageTag: e4aca410-215d-5b79-9c6b-bce9f4a6fbac
+		summarizeBy: none
+		sourceColumn: Anio
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Mes.
+	column Mes
+		dataType: int64
+		lineageTag: b379ac22-5796-54bb-99b9-ef569f4678d3
+		summarizeBy: none
+		sourceColumn: Mes
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Nombre del mes.
+	column NombreMes
+		dataType: string
+		lineageTag: c3b01525-6560-5a85-942a-217f2feb1404
+		summarizeBy: none
+		sourceColumn: NombreMes
+
+		sortByColumn: OrdenAnioMes
+		annotation SummarizationSetBy = Automatic
+
+	/// T1 a T4.
+	column Trimestre
+		dataType: string
+		lineageTag: 9b9ee3d8-f50a-5e22-bdb7-caac306ae766
+		summarizeBy: none
+		sourceColumn: Trimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	/// S1 o S2.
+	column Semestre
+		dataType: string
+		lineageTag: 124f2d3c-4e4c-5495-9490-f5967c38663e
+		summarizeBy: none
+		sourceColumn: Semestre
+
+		annotation SummarizationSetBy = Automatic
+
+	/// aaaa-MM.
+	column AnioMes
+		dataType: string
+		lineageTag: 977f729a-b7fb-56f8-b578-b65496638ace
+		summarizeBy: none
+		sourceColumn: AnioMes
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Clave de ordenamiento cronológico.
+	column OrdenAnioMes
+		dataType: int64
+		lineageTag: 0cefe794-748c-51eb-a42f-33c3c84facf7
+		summarizeBy: none
+		sourceColumn: OrdenAnioMes
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Etiqueta corta para ejes.
+	column MesCorto
+		dataType: string
+		lineageTag: d00732bc-bd90-548e-aa73-756ab5179dc5
+		summarizeBy: none
+		sourceColumn: MesCorto
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Primer día del mes.
+	column InicioMes
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: 66a46790-d0f0-5069-bd79-c0683dd2f96e
+		summarizeBy: none
+		sourceColumn: InicioMes
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Verdadero de lunes a viernes.
+	column EsLaboral
+		dataType: boolean
+		lineageTag: 3ed2af95-eed7-58bf-8d96-f78d69517120
+		summarizeBy: none
+		sourceColumn: EsLaboral
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimFecha = m
+		mode: import
+		source =
+				let
+				    // Calendario generado en M: cubre el dataset sintético con margen a ambos lados.
+				    Inicio = #date(2025, 1, 1),
+				    Fin    = #date(2026, 12, 31),
+				    Dias   = Duration.Days(Fin - Inicio) + 1,
+				    Lista  = List.Dates(Inicio, Dias, #duration(1, 0, 0, 0)),
+				    Tabla  = Table.FromList(Lista, Splitter.SplitByNothing(), {"Fecha"}),
+				    Tipo   = Table.TransformColumnTypes(Tabla, {{"Fecha", type date}}),
+				    C1  = Table.AddColumn(Tipo, "Anio",         each Date.Year([Fecha]), Int64.Type),
+				    C2  = Table.AddColumn(C1,   "Mes",          each Date.Month([Fecha]), Int64.Type),
+				    C3  = Table.AddColumn(C2,   "NombreMes",    each Date.MonthName([Fecha]), type text),
+				    C4  = Table.AddColumn(C3,   "Trimestre",    each "T" & Text.From(Date.QuarterOfYear([Fecha])), type text),
+				    C5  = Table.AddColumn(C4,   "Semestre",     each "S" & Text.From(Number.RoundUp(Date.Month([Fecha]) / 6)), type text),
+				    C6  = Table.AddColumn(C5,   "AnioMes",      each Date.ToText([Fecha], "yyyy-MM"), type text),
+				    C7  = Table.AddColumn(C6,   "OrdenAnioMes", each [Anio] * 100 + [Mes], Int64.Type),
+				    C8  = Table.AddColumn(C7,   "MesCorto",     each Text.Proper(Text.Start(Date.MonthName([Fecha]), 3)) & " " & Text.End(Text.From([Anio]), 2), type text),
+				    C9  = Table.AddColumn(C8,   "InicioMes",    each Date.StartOfMonth([Fecha]), type date),
+				    C10 = Table.AddColumn(C9,   "EsLaboral",    each Date.DayOfWeek([Fecha], Day.Monday) < 5, type logical)
+				in
+				    C10
+
+	queryGroup: '02 · Dimensiones'
+
+	annotation PBI_ResultType = Table

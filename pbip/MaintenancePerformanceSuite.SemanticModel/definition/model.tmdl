@@ -1,0 +1,27 @@
+model Model
+	culture: es-CL
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: es-CL
+
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+	annotation PBI_QueryOrder = ["RutaDatos", "MargenHora", "CapacidadSemanal", "FactOrdenesMtto", "FactAvisosMtto", "FactPlanesMtto", "FactMaterialesMtto", "FactProduccion", "FactKaizen", "DimFecha", "DimEquipo", "DimMaterial", "DimTipoOrden", "DimArea", "DimLinea", "DimCriticidad", "DimGrupoPlanificador"]
+
+ref table FactOrdenesMtto
+ref table FactAvisosMtto
+ref table FactPlanesMtto
+ref table FactMaterialesMtto
+ref table FactProduccion
+ref table FactKaizen
+ref table DimFecha
+ref table DimEquipo
+ref table DimMaterial
+ref table DimTipoOrden
+ref table DimArea
+ref table DimLinea
+ref table DimCriticidad
+ref table DimGrupoPlanificador
+ref table '_Medidas'

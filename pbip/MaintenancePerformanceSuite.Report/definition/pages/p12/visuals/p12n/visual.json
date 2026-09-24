@@ -1,0 +1,123 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "p12n",
+  "position": {
+    "x": 16,
+    "y": 562,
+    "z": 173,
+    "width": 1248,
+    "height": 140,
+    "tabOrder": 1730
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "CUÁNTO VALE LLEGAR AL CUARTIL SUPERIOR",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "fontWeight": "bold",
+                      "color": "#D97706",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Qué dice el dato · ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#0E1C33",
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "El % planificado y el % reactivo son el mismo fenómeno medido de dos formas, y ambos dependen del pilar de Planificación.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#101828",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Correlación · ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#0E1C33",
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "Los rangos provienen de literatura pública que cita estudios de McKinsey & Company y del marco SMRP: son referencia orientativa, no dato auditado.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#101828",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Riesgo si no se actúa · ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#0E1C33",
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "La brecha de OEE no es cerrable hoy porque faltan velocidad y calidad de línea. Comprometer esa meta sería comprometer un número que nadie puede verificar.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#101828",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Decisión recomendada: ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#B42318",
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "Comprometer ante Gerencia solo las metas sostenidas por dato disponible y abrir en paralelo el proyecto de captura de velocidad y calidad.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#101828",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

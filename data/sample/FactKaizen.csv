@@ -1,0 +1,13 @@
+A3,PerdidaAtacada,Equipo,Area,EquipoTrabajo,FasePDCA,AhorroValidado,AnioMesInicio,KPI,Antes,Despues
+A3-01,Averías Envasadora L2,EQ-0457,Envasado,Confiabilidad,Act,6200,2025-09,MTBF (h),186,268
+A3-02,Setup cambio de formato,EQ-0455,Envasado,Proceso,Check,3400,2025-11,Setup (min),74,46
+A3-03,Paradas menores Etiquetadora,EQ-0461,Envasado,Autónomo,Do,2800,2026-02,Paradas/sem,31,19
+A3-04,Consumo repuestos críticos,EQ-0210,Servicios,Planificación,Act,1800,2026-01,Costo rep. (k$),2400,1700
+A3-05,Fallas eléctricas Compresor 3,EQ-0210,Servicios,Confiabilidad,Do,2400,2026-04,MTBF (h),240,296
+A3-06,Lubricación autónoma Línea 3,EQ-0470,Envasado,Autónomo,Plan,1500,2026-06,Fallas/mes,6,4
+A3-07,Eficiencia térmica Caldera 1,EQ-0201,Servicios,Proceso,Check,3100,2026-03,Consumo (%),100,92
+A3-08,Cierre técnico oportuno,,Transversal,Calidad datos,Act,900,2025-12,Cerr. sin HH,62,21
+A3-09,Alineamiento Bomba CIP,EQ-0330,Proceso,Confiabilidad,Do,1700,2026-05,MTBF (h),212,244
+A3-10,Reducción de defectos envasado,EQ-0457,Envasado,Calidad,Plan,2600,2026-08,Defectos (ppm),840,620
+A3-11,Gestión de repuestos A,,Bodega,Planificación,Do,2100,2026-07,Quiebres/mes,7,4
+A3-12,Velocidad nominal Línea 1,EQ-0455,Envasado,Proceso,Plan,3300,2026-09,Velocidad (%),84,93

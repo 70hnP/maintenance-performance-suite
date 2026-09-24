@@ -1,0 +1,123 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "p01n",
+  "position": {
+    "x": 16,
+    "y": 560,
+    "z": 17,
+    "width": 1248,
+    "height": 142,
+    "tabOrder": 170
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "LECTURA EJECUTIVA DEL PERÍODO",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "fontWeight": "bold",
+                      "color": "#D97706",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Qué dice el dato · ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#0E1C33",
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "El mix correctivo, la disponibilidad y el cumplimiento preventivo definen la salud del período; los cuatro KPI de cabecera se leen siempre juntos.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#101828",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Correlación · ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#0E1C33",
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "Los equipos que encabezan el ranking de costo son los mismos que lideran fallas: la pérdida está concentrada, no distribuida.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#101828",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Riesgo si no se actúa · ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#0E1C33",
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "Si el preventivo cae bajo meta, el correctivo recupera terreno en dos meses y el backlog supera la capacidad disponible.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#101828",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Decisión recomendada: ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#B42318",
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "Priorizar los planes vencidos de los dos equipos con mayor frecuencia de falla y abrir un A3 de Mejora Enfocada sobre averías.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#101828",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

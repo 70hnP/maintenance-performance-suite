@@ -1,0 +1,270 @@
+/// Hechos de órdenes de mantenimiento. Fuente: SAP PM · IW39 / IW38. Grano: una fila por orden. Costos (CO · KOB1) y horas hombre (IW47) vienen denormalizados en este dataset sintético.
+table FactOrdenesMtto
+	lineageTag: 101d3b68-de34-5f2a-bfd2-908b667ab211
+
+	/// N.º de orden SAP. Texto para preservar ceros a la izquierda.
+	column Orden
+		dataType: string
+		lineageTag: 439d3566-ee39-5a7a-8752-d734c9749db2
+		summarizeBy: none
+		sourceColumn: Orden
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Clave aaaa-MM.
+	column AnioMes
+		dataType: string
+		lineageTag: 3074ce33-36b9-57af-8a64-ca36b2225efe
+		summarizeBy: none
+		sourceColumn: AnioMes
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Primer día del mes. Relaciona con DimFecha.
+	column Fecha
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: b0fe056e-fee1-5056-8320-c8913bdb9142
+		summarizeBy: none
+		sourceColumn: Fecha
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Área de empresa.
+	column Area
+		dataType: string
+		lineageTag: baee5f54-3634-5d1c-95bb-941e9a511605
+		summarizeBy: none
+		sourceColumn: Area
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Línea productiva.
+	column Linea
+		dataType: string
+		lineageTag: 32edb026-a7da-5e17-bf2b-1f4c41e09b0a
+		summarizeBy: none
+		sourceColumn: Linea
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Código de equipo. FK a DimEquipo.
+	column Equipo
+		dataType: string
+		lineageTag: b065d210-3baf-5f96-b40d-fa1c50d2c5ab
+		summarizeBy: none
+		sourceColumn: Equipo
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Denominación del equipo.
+	column DenominacionEquipo
+		dataType: string
+		lineageTag: dda51735-cf0a-508e-b8a2-dcf39900d78b
+		summarizeBy: none
+		sourceColumn: DenominacionEquipo
+
+		annotation SummarizationSetBy = Automatic
+
+	/// A crítico · B esencial · C general.
+	column Criticidad
+		dataType: string
+		lineageTag: 8aac0049-7dab-5aaf-b006-20f8458a9f5e
+		summarizeBy: none
+		sourceColumn: Criticidad
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Derivada de la clase de orden.
+	column TipoMantenimiento
+		dataType: string
+		lineageTag: 7a8e7a9e-1d63-587f-9449-9867f21ebf10
+		summarizeBy: none
+		sourceColumn: TipoMantenimiento
+
+		annotation SummarizationSetBy = Automatic
+
+	/// PM01 a PM06. FK a DimTipoOrden.
+	column ClaseOrden
+		dataType: string
+		lineageTag: 5583d9f5-09c9-5375-bb15-e06c59a93099
+		summarizeBy: none
+		sourceColumn: ClaseOrden
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Abierta o Cerrada, derivada del status de sistema.
+	column EstadoCierre
+		dataType: string
+		lineageTag: d406a786-3262-53cf-a636-628aa40f25ae
+		summarizeBy: none
+		sourceColumn: EstadoCierre
+
+		annotation SummarizationSetBy = Automatic
+
+	/// HH planificadas.
+	column Trabajo
+		dataType: double
+		lineageTag: 2fc745fc-abc9-5812-8b10-7a761f95fa89
+		summarizeBy: sum
+		sourceColumn: Trabajo
+
+		annotation SummarizationSetBy = Automatic
+
+	/// HH reales confirmadas.
+	column TrabajoReal
+		dataType: double
+		lineageTag: 558c6ae2-19c0-5c2e-ab51-1aa859b82da4
+		summarizeBy: sum
+		sourceColumn: TrabajoReal
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Costo planificado en k$.
+	column CostoPlan
+		dataType: double
+		lineageTag: 7f924807-8dce-5738-9662-dc76bc2c5f75
+		summarizeBy: sum
+		sourceColumn: CostoPlan
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Costo real imputado en k$.
+	column CostoReal
+		dataType: double
+		lineageTag: 5d6599f6-3a8c-5f05-b277-c0a829a9425b
+		summarizeBy: sum
+		sourceColumn: CostoReal
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Días entre creación y cierre técnico.
+	column DiasCierre
+		dataType: int64
+		lineageTag: db51e274-9fcc-5ba6-a969-acd61f2efce2
+		summarizeBy: none
+		sourceColumn: DiasCierre
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Días de retraso contra la fecha fin extrema.
+	column RetrasoDias
+		dataType: int64
+		lineageTag: 9eeeb49d-0fb3-5d78-8d42-a1c86d0e44e2
+		summarizeBy: none
+		sourceColumn: RetrasoDias
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Máscara de bits de calidad de datos.
+	column FlagsCalidad
+		dataType: int64
+		lineageTag: 7363e0ec-6e52-5fb8-b714-21034bda4995
+		summarizeBy: none
+		sourceColumn: FlagsCalidad
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Gremio responsable.
+	column GrupoPlanificador
+		dataType: string
+		lineageTag: 6651f735-b28c-5679-aa0d-2d1819d1b80b
+		summarizeBy: none
+		sourceColumn: GrupoPlanificador
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Alta, Media o Baja.
+	column Prioridad
+		dataType: string
+		lineageTag: eb53c9ab-5eef-51ee-a8d8-63dcb7f06b3a
+		summarizeBy: none
+		sourceColumn: Prioridad
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Causa de la detención cuando la orden está bloqueada.
+	column MotivoDetencion
+		dataType: string
+		lineageTag: dda10905-c0d6-5a11-8517-793991c18c3b
+		summarizeBy: none
+		sourceColumn: MotivoDetencion
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Bandera: orden sin equipo asignado.
+	column SinEquipo
+		dataType: int64
+		lineageTag: 8b032c32-44a2-5aca-9408-8509dfb57c21
+		summarizeBy: sum
+		sourceColumn: SinEquipo
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Bandera: orden sin aviso de origen.
+	column SinAviso
+		dataType: int64
+		lineageTag: dd7ecc2e-f366-58f6-8073-ad64e1530992
+		summarizeBy: sum
+		sourceColumn: SinAviso
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Bandera: cerrada sin horas confirmadas.
+	column CerradaSinHH
+		dataType: int64
+		lineageTag: 63c32480-ac20-5f32-bc55-1fd921c74dd0
+		summarizeBy: sum
+		sourceColumn: CerradaSinHH
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Bandera: costo imputado con orden abierta.
+	column CostoSinCierre
+		dataType: int64
+		lineageTag: df8229a2-0223-56e5-a5bc-a051fffd8bac
+		summarizeBy: sum
+		sourceColumn: CostoSinCierre
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Bandera: preventiva fuera de ventana.
+	column PrevVencida
+		dataType: int64
+		lineageTag: 3f6a63e0-df33-5d8b-ba23-6101c0f9be4f
+		summarizeBy: sum
+		sourceColumn: PrevVencida
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FactOrdenesMtto = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(
+				        File.Contents(RutaDatos & "\FactOrdenesMtto.csv"),
+				        [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]
+				    ),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Tipos = Table.TransformColumnTypes(Encabezados, {{"Orden", string}, {"AnioMes", string}, {"Area", string}, {"Linea", string}, {"Equipo", string}, {"DenominacionEquipo", string}, {"Criticidad", string}, {"TipoMantenimiento", string}, {"ClaseOrden", string}, {"EstadoCierre", string}, {"Trabajo", type number}, {"TrabajoReal", type number}, {"CostoPlan", type number}, {"CostoReal", type number}, {"DiasCierre", Int64.Type}, {"RetrasoDias", Int64.Type}, {"FlagsCalidad", Int64.Type}, {"GrupoPlanificador", string}, {"Prioridad", string}, {"MotivoDetencion", string}}),
+				    ConFecha = Table.AddColumn(Tipos, "Fecha", each Date.FromText([AnioMes] & "-01"), type date),
+				    // FlagsCalidad es una máscara de bits: se expande a cinco banderas auditables,
+				    Flags = Table.AddColumn(ConFecha, "Banderas", each [
+				            SinEquipo      = Number.BitwiseAnd([FlagsCalidad], 1),
+				            SinAviso       = Number.BitwiseAnd([FlagsCalidad], 2) / 2,
+				            CerradaSinHH   = Number.BitwiseAnd([FlagsCalidad], 4) / 4,
+				            CostoSinCierre = Number.BitwiseAnd([FlagsCalidad], 8) / 8,
+				            PrevVencida    = Number.BitwiseAnd([FlagsCalidad], 16) / 16
+				        ], type record),
+				    Expandir = Table.ExpandRecordColumn(Flags, "Banderas",
+				        {"SinEquipo","SinAviso","CerradaSinHH","CostoSinCierre","PrevVencida"}),
+				    TiposFlags = Table.TransformColumnTypes(Expandir, {
+				        {"SinEquipo", Int64.Type}, {"SinAviso", Int64.Type}, {"CerradaSinHH", Int64.Type},
+				        {"CostoSinCierre", Int64.Type}, {"PrevVencida", Int64.Type}}),
+				    Final = Table.Distinct(TiposFlags, {"Orden"})
+				in
+				    Final
+
+	queryGroup: '01 · Hechos'
+
+	annotation PBI_ResultType = Table

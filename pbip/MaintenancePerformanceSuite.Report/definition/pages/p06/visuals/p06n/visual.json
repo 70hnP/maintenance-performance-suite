@@ -1,0 +1,123 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "p06n",
+  "position": {
+    "x": 16,
+    "y": 562,
+    "z": 88,
+    "width": 1248,
+    "height": 140,
+    "tabOrder": 880
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "EL BACKLOG GLOBAL ENGAÑA",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "fontWeight": "bold",
+                      "color": "#D97706",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Qué dice el dato · ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#0E1C33",
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "Un backlog total dentro del rango sano puede esconder una especialidad saturada muy por sobre su capacidad.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#101828",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Correlación · ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#0E1C33",
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "Las órdenes detenidas por espera de material corresponden a los repuestos bajo mínimo: el cuello de botella es de abastecimiento, no de dotación.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#101828",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Riesgo si no se actúa · ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#0E1C33",
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "El trabajo de más de 30 días suele rehacerse o cerrarse administrativamente sin ejecución, lo que contamina el histórico de confiabilidad.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#101828",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Decisión recomendada: ",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#B42318",
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "Separar el backlog en tres colas — ejecutable, en espera de repuesto y en espera de parada — con responsable distinto para cada una.",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#101828",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

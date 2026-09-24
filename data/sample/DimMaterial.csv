@@ -1,0 +1,13 @@
+Material,Descripcion,ABC,StockActual,StockMinimo,LeadTimeDias,EsRepuestoCritico,PrecioUnitario
+100231,Sello mecánico bomba,A,2,3,28,True,145
+100455,Rodamiento 6308,A,3,4,14,True,82
+100812,Correa transmisión,A,1,2,21,True,70
+101044,Sensor de nivel,B,6,4,18,False,110
+101220,Filtro de aire,B,14,8,9,False,38
+101355,"Válvula mariposa 3""",B,4,3,24,True,195
+101480,Junta espiralada,C,42,20,7,False,12
+101512,Contactor 40A,B,9,6,12,False,64
+101633,Acople elástico,B,5,4,16,True,88
+101744,Manómetro 0-10 bar,C,18,10,8,False,22
+101890,Reductor SEW,A,1,1,45,True,620
+101955,Lubricante ISO 220 (20L),C,25,12,6,False,34

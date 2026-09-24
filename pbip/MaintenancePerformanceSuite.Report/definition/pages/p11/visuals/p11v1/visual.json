@@ -1,0 +1,85 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "p11v1",
+  "position": {
+    "x": 16,
+    "y": 196,
+    "z": 156,
+    "width": 620,
+    "height": 250,
+    "tabOrder": 1560
+  },
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactAvisosMtto"
+                    }
+                  },
+                  "Property": "CategoriaPerdida"
+                }
+              },
+              "queryRef": "FactAvisosMtto.CategoriaPerdida",
+              "nativeQueryRef": "CategoriaPerdida"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Pérdida Total"
+                }
+              },
+              "queryRef": "_Medidas.Pérdida Total",
+              "nativeQueryRef": "Pérdida Total"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Árbol de pérdidas · las 6 grandes pérdidas   |   IW29 · COOIS · KOB1'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

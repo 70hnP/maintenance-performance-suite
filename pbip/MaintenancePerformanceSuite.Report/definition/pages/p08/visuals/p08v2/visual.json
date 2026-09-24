@@ -1,0 +1,85 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "p08v2",
+  "position": {
+    "x": 644,
+    "y": 196,
+    "z": 114,
+    "width": 620,
+    "height": 250,
+    "tabOrder": 1140
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimGrupoPlanificador"
+                    }
+                  },
+                  "Property": "GrupoPlanificador"
+                }
+              },
+              "queryRef": "DimGrupoPlanificador.GrupoPlanificador",
+              "nativeQueryRef": "GrupoPlanificador"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Índice de Calidad de Datos"
+                }
+              },
+              "queryRef": "_Medidas.Índice de Calidad de Datos",
+              "nativeQueryRef": "Índice de Calidad de Datos"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Calidad por grupo planificador   |   IW39'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

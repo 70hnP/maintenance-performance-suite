@@ -1,0 +1,101 @@
+/// Maestro de equipos. Fuente: SAP PM · IH08 / IE03. La criticidad gobierna la priorización de todo el sistema.
+table DimEquipo
+	lineageTag: 66dcc1f4-9383-5391-a137-74cd27d77577
+
+	/// Código de equipo SAP.
+	column Equipo
+		dataType: string
+		lineageTag: 7331b7e8-1855-5160-9fde-8fb2c2443a02
+		summarizeBy: none
+		sourceColumn: Equipo
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Nombre del equipo.
+	column Denominacion
+		dataType: string
+		lineageTag: 7d77289f-f93d-5c09-984d-a7b9880dfb0e
+		summarizeBy: none
+		sourceColumn: Denominacion
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Área.
+	column Area
+		dataType: string
+		lineageTag: 75886f3a-9c58-5175-af43-9928d055e9ac
+		summarizeBy: none
+		sourceColumn: Area
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Línea.
+	column Linea
+		dataType: string
+		lineageTag: 69125d9c-921a-512f-8a4a-1fd923f2e62d
+		summarizeBy: none
+		sourceColumn: Linea
+
+		annotation SummarizationSetBy = Automatic
+
+	/// A crítico · B esencial · C general.
+	column Criticidad
+		dataType: string
+		lineageTag: 6251d4e0-8f1c-534c-be70-a161a63ffaed
+		summarizeBy: none
+		sourceColumn: Criticidad
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Taxonomía de activos.
+	column Familia
+		dataType: string
+		lineageTag: 89844ffb-ac35-5601-b2c6-fb0716df232f
+		summarizeBy: none
+		sourceColumn: Familia
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Fabricante.
+	column Fabricante
+		dataType: string
+		lineageTag: 71c060f0-5e9f-546b-b383-40bd173d7c73
+		summarizeBy: none
+		sourceColumn: Fabricante
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Año de puesta en marcha.
+	column Anio
+		dataType: int64
+		lineageTag: 12fb7d0d-1be6-5bbc-8516-830d33939459
+		summarizeBy: none
+		sourceColumn: Anio
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Propensión a falla usada por el generador sintético.
+	column PesoFalla
+		dataType: double
+		lineageTag: 693d20ee-29b2-5935-8e70-c237a9a848ab
+		summarizeBy: none
+		sourceColumn: PesoFalla
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimEquipo = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(
+				        File.Contents(RutaDatos & "\DimEquipo.csv"),
+				        [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]
+				    ),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Tipos = Table.TransformColumnTypes(Encabezados, {{"Equipo", string}, {"Denominacion", string}, {"Area", string}, {"Linea", string}, {"Criticidad", string}, {"Familia", string}, {"Fabricante", string}, {"Anio", Int64.Type}, {"PesoFalla", type number}})
+				in
+				    Tipos
+
+	queryGroup: '02 · Dimensiones'
+
+	annotation PBI_ResultType = Table

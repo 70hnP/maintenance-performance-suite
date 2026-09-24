@@ -1,0 +1,123 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "p10v3",
+  "position": {
+    "x": 16,
+    "y": 454,
+    "z": 144,
+    "width": 1248,
+    "height": 100,
+    "tabOrder": 1440
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactAvisosMtto"
+                    }
+                  },
+                  "Property": "Causa"
+                }
+              },
+              "queryRef": "FactAvisosMtto.Causa",
+              "nativeQueryRef": "Causa"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactAvisosMtto"
+                    }
+                  },
+                  "Property": "CategoriaPerdida"
+                }
+              },
+              "queryRef": "FactAvisosMtto.CategoriaPerdida",
+              "nativeQueryRef": "CategoriaPerdida"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "N.º Avisos"
+                }
+              },
+              "queryRef": "_Medidas.N.º Avisos",
+              "nativeQueryRef": "N.º Avisos"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Horas de Detención"
+                }
+              },
+              "queryRef": "_Medidas.Horas de Detención",
+              "nativeQueryRef": "Horas de Detención"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Pérdida por Averías"
+                }
+              },
+              "queryRef": "_Medidas.Pérdida por Averías",
+              "nativeQueryRef": "Pérdida por Averías"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Modos de falla del activo   |   IW28 · IW29'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

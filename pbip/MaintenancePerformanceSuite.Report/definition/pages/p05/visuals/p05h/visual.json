@@ -1,0 +1,47 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "p05h",
+  "position": {
+    "x": 16,
+    "y": 8,
+    "z": 61,
+    "width": 1248,
+    "height": 34,
+    "tabOrder": 610
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "05 · Costos",
+                    "textStyle": {
+                      "fontSize": "15pt",
+                      "fontWeight": "bold",
+                      "color": "#0E1C33",
+                      "fontFamily": "Segoe UI"
+                    }
+                  },
+                  {
+                    "value": "     Controlar el gasto y su varianza",
+                    "textStyle": {
+                      "fontSize": "10pt",
+                      "color": "#5A6473",
+                      "fontFamily": "Segoe UI"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

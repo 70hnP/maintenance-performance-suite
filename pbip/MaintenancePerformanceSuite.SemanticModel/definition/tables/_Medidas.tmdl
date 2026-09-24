@@ -1,0 +1,657 @@
+/// Tabla contenedora de la capa semántica. Las medidas se agrupan por pilar
+/// fundamental para que el modelo sea navegable por un analista que llega nuevo.
+table '_Medidas'
+	lineageTag: 7b378a33-52db-5178-97d3-d585f77db379
+
+	/// Conteo de órdenes en el contexto de filtro. Fuente: IW39.
+	measure 'Órdenes Totales' = 
+			COUNTROWS ( FactOrdenesMtto )
+		formatString: #,0
+		lineageTag: 1a3bccfc-62d8-50bf-8be3-cb3a9963360d
+		displayFolder: 01 · Volumen y mix
+
+	/// Órdenes con cierre técnico.
+	measure 'Órdenes Cerradas' = 
+			CALCULATE ( [Órdenes Totales], FactOrdenesMtto[EstadoCierre] = "Cerrada" )
+		formatString: #,0
+		lineageTag: 1850697d-fe27-578c-96e2-c7604ff77179
+		displayFolder: 01 · Volumen y mix
+
+	/// Órdenes pendientes. Base del backlog.
+	measure 'Órdenes Abiertas' = 
+			CALCULATE ( [Órdenes Totales], FactOrdenesMtto[EstadoCierre] = "Abierta" )
+		formatString: #,0
+		lineageTag: 2c39ef35-84f2-58c2-bcaf-a6050fc39219
+		displayFolder: 01 · Volumen y mix
+
+	/// Correctivo estándar más emergencia.
+	measure 'Correctivas' = 
+			CALCULATE ( [Órdenes Totales], FactOrdenesMtto[TipoMantenimiento] IN { "Correctivo", "Emergencia" } )
+		formatString: #,0
+		lineageTag: 9e7d8106-222e-5a5b-aa56-917827fe6d47
+		displayFolder: 01 · Volumen y mix
+
+	/// Órdenes preventivas.
+	measure 'Preventivas' = 
+			CALCULATE ( [Órdenes Totales], FactOrdenesMtto[TipoMantenimiento] = "Preventivo" )
+		formatString: #,0
+		lineageTag: 71e2d3e3-a88e-567b-97f3-74a0eea20ec0
+		displayFolder: 01 · Volumen y mix
+
+	/// Meta ≤ 30%; cuartil superior ≤ 20%. Cuidado: un valor bajo puede ser sub-registro, no buen desempeño.
+	measure '% Órdenes Correctivas' = 
+			DIVIDE ( [Correctivas], [Órdenes Totales], 0 )
+		formatString: 0.0%
+		lineageTag: 7faf90ad-43a5-5387-a872-aba9afc1130b
+		displayFolder: 01 · Volumen y mix
+
+	/// Meta ≥ 70%.
+	measure '% Órdenes Preventivas' = 
+			DIVIDE ( [Preventivas], [Órdenes Totales], 0 )
+		formatString: 0.0%
+		lineageTag: 4f125218-5c28-50aa-92a3-554f47ce8ce6
+		displayFolder: 01 · Volumen y mix
+
+	/// Referencia de industria: 80%; alto desempeño ≥ 85%.
+	measure '% Trabajo Planificado' = 
+			VAR Planificado = CALCULATE ( [Órdenes Totales], DimTipoOrden[EsPlanificado] = "Sí" )
+			RETURN
+			    DIVIDE ( Planificado, [Órdenes Totales], 0 )
+		formatString: 0.0%
+		lineageTag: 3e598195-99d5-5414-b959-4bc080aff4ad
+		displayFolder: 01 · Volumen y mix
+
+	/// Meta ≥ 2,3.
+	measure 'Ratio Preventivo / Correctivo' = 
+			DIVIDE ( [Preventivas], [Correctivas], 0 )
+		formatString: 0.00
+		lineageTag: bf6683a6-4545-5c44-a65a-e22d2a68acb2
+		displayFolder: 01 · Volumen y mix
+
+	/// Preventivas cerradas sobre preventivas creadas.
+	measure 'Cumplimiento PM' = 
+			VAR CerradasPM =
+			    CALCULATE (
+			        [Órdenes Totales],
+			        FactOrdenesMtto[TipoMantenimiento] = "Preventivo",
+			        FactOrdenesMtto[EstadoCierre] = "Cerrada"
+			    )
+			RETURN
+			    DIVIDE ( CerradasPM, [Preventivas], 0 )
+		formatString: 0.0%
+		lineageTag: ef9cadf0-7027-5173-9257-6ddcabf0fff0
+		displayFolder: 01 · Volumen y mix
+
+	/// Posiciones de plan preventivo del período. Fuente: IP24.
+	measure 'Posiciones de Plan' = 
+			COUNTROWS ( FactPlanesMtto )
+		formatString: #,0
+		lineageTag: a66c7f12-bd14-54d0-a4aa-9fa7dd6b1e67
+		displayFolder: 01 · Volumen y mix
+
+	/// Posiciones fuera de su ventana.
+	measure 'Planes Vencidos' = 
+			CALCULATE ( [Posiciones de Plan], FactPlanesMtto[Estado] = "Vencido" )
+		formatString: #,0
+		lineageTag: bd7939ba-a023-56aa-8861-934f24918c01
+		displayFolder: 01 · Volumen y mix
+
+	/// Meta ≥ 90%; cuartil superior ≥ 95%.
+	measure 'Cumplimiento Plan Preventivo' = 
+			DIVIDE (
+			    CALCULATE ( [Posiciones de Plan], FactPlanesMtto[Estado] = "Cumplido" ),
+			    [Posiciones de Plan],
+			    0
+			)
+		formatString: 0.0%
+		lineageTag: f13986d3-8a68-5332-892c-ef3b3812b5cf
+		displayFolder: 01 · Volumen y mix
+
+	/// Avisos registrados. Fuente: IW29.
+	measure 'N.º Avisos' = 
+			COUNTROWS ( FactAvisosMtto )
+		formatString: #,0
+		lineageTag: 788894ea-629d-578a-9c7a-c885567be60a
+		displayFolder: 02 · Confiabilidad
+
+	/// Avisos clasificados como avería. Denominador del MTBF.
+	measure 'N.º Averías' = 
+			CALCULATE ( [N.º Avisos], FactAvisosMtto[CategoriaPerdida] = "Averías" )
+		formatString: #,0
+		lineageTag: 434f7927-1343-551f-8b30-cbf2599249ad
+		displayFolder: 02 · Confiabilidad
+
+	/// Horas de parada declaradas en el aviso.
+	measure 'Horas de Detención' = 
+			SUM ( FactAvisosMtto[DuracionParada_h] )
+		formatString: #,0.0
+		lineageTag: 265b344d-aab9-5734-8085-3d440fa58117
+		displayFolder: 02 · Confiabilidad
+
+	/// Tiempo medio de reparación. Se calcula desde la duración de parada del aviso, NO desde las HH de la orden: las HH son horas hombre, no horas de reloj.
+	measure 'MTTR (h)' = 
+			AVERAGE ( FactAvisosMtto[DuracionParada_h] )
+		formatString: #,0.0
+		lineageTag: c026d75d-7fe9-531d-985a-d7014b1db66a
+		displayFolder: 02 · Confiabilidad
+
+	/// Horas operativas de línea. Fuente: COOIS.
+	measure 'Horas de Operación' = 
+			SUM ( FactProduccion[HorasOperacion] )
+		formatString: #,0
+		lineageTag: bd30d35e-5f3e-5186-952d-908861108524
+		displayFolder: 02 · Confiabilidad
+
+	/// Horas operativas expresadas por equipo. Sin esta conversión el MTBF queda subestimado.
+	measure 'Horas Equipo' = 
+			VAR LineasActivas = MAX ( 1, DISTINCTCOUNT ( FactProduccion[Linea] ) )
+			VAR EquiposActivos = COUNTROWS ( DimEquipo )
+			RETURN
+			    DIVIDE ( [Horas de Operación], LineasActivas ) * EquiposActivos
+		formatString: #,0
+		lineageTag: 56455320-b843-55b2-9c39-15d38e083343
+		displayFolder: 02 · Confiabilidad
+
+	/// Tiempo medio entre fallas.
+	measure 'MTBF (h)' = 
+			DIVIDE ( [Horas Equipo], [N.º Averías], BLANK () )
+		formatString: #,0
+		lineageTag: ea1e63da-5fa0-5ea9-8736-3fc183520775
+		displayFolder: 02 · Confiabilidad
+
+	/// Meta ≥ 92%; cuartil superior ≥ 95%. Fuente: COOIS.
+	measure 'Disponibilidad Operacional' = 
+			1 - DIVIDE ( SUM ( FactProduccion[HorasDetencion] ), SUM ( FactProduccion[HorasOperacion] ), 0 )
+		formatString: 0.0%
+		lineageTag: b920fd2c-226d-5a34-b941-5db2ea3d288b
+		displayFolder: 02 · Confiabilidad
+
+	/// BRECHA DECLARADA: solo el componente Disponibilidad proviene de dato real. Rendimiento y Calidad usan supuestos fijos porque SAP PM no entrega velocidad de línea ni defectos. No comprometer metas sobre esta medida.
+	measure 'OEE Parcial' = 
+			[Disponibilidad Operacional] * 0.86 * 0.94
+		formatString: 0.0%
+		lineageTag: 03b00286-56a0-58e6-8e26-886f9993183a
+		displayFolder: 02 · Confiabilidad
+
+	/// Horas hombre planificadas.
+	measure 'HH Planificadas' = 
+			SUM ( FactOrdenesMtto[Trabajo] )
+		formatString: #,0
+		lineageTag: 0e13ecd4-52c3-5fc0-b8bc-686df4de310c
+		displayFolder: 03 · Backlog y ejecución
+
+	/// Horas hombre confirmadas.
+	measure 'HH Reales' = 
+			SUM ( FactOrdenesMtto[TrabajoReal] )
+		formatString: #,0
+		lineageTag: 8f84e2b1-4b1e-50ca-a48b-1620e400b751
+		displayFolder: 03 · Backlog y ejecución
+
+	/// Diferencia absoluta.
+	measure 'Desviación HH' = 
+			[HH Reales] - [HH Planificadas]
+		formatString: #,0
+		lineageTag: 6f4147e3-b942-509e-b9d6-990030076ab1
+		displayFolder: 03 · Backlog y ejecución
+
+	/// Rango sano 90% a 110%.
+	measure '% Cumplimiento HH' = 
+			DIVIDE ( [HH Reales], [HH Planificadas], 0 )
+		formatString: 0.0%
+		lineageTag: 9a7f78cc-7e1b-5505-8685-4a5012345b83
+		displayFolder: 03 · Backlog y ejecución
+
+	/// HH pendientes de órdenes ABIERTAS. Incluir las cerradas devuelve cero o negativo.
+	measure 'Backlog HH' = 
+			SUMX (
+			    FILTER ( FactOrdenesMtto, FactOrdenesMtto[EstadoCierre] = "Abierta" ),
+			    MAX ( 0, FactOrdenesMtto[Trabajo] - FactOrdenesMtto[TrabajoReal] )
+			)
+		formatString: #,0
+		lineageTag: 1ec20f38-641c-5616-a8b8-372654eaf37c
+		displayFolder: 03 · Backlog y ejecución
+
+	/// Capacidad del gremio filtrado, o el parámetro global si no hay filtro.
+	measure 'Capacidad Semanal HH' = 
+			VAR PorGrupo = SUM ( DimGrupoPlanificador[CapacidadSemanalHH] )
+			RETURN
+			    IF ( ISBLANK ( PorGrupo ), CapacidadSemanal, PorGrupo )
+		formatString: #,0
+		lineageTag: 3b3cce87-5500-51c3-9923-b919653a664b
+		displayFolder: 03 · Backlog y ejecución
+
+	/// Rango sano 2 a 4 semanas. Bajo 1 indica falta de trabajo preparado; sobre 6, saturación.
+	measure 'Backlog Semanas' = 
+			DIVIDE ( [Backlog HH], [Capacidad Semanal HH], 0 )
+		formatString: 0.0
+		lineageTag: 8a872fba-16c7-51c1-af21-d7597cfd62b6
+		displayFolder: 03 · Backlog y ejecución
+
+	/// Días entre creación y cierre técnico.
+	measure 'Tiempo Promedio de Cierre (d)' = 
+			AVERAGE ( FactOrdenesMtto[DiasCierre] )
+		formatString: 0.0
+		lineageTag: 4d2ef70a-a8e9-5fb3-ac57-5515ba0b2b2a
+		displayFolder: 03 · Backlog y ejecución
+
+	/// Órdenes fuera de su fecha fin extrema.
+	measure 'Órdenes Retrasadas' = 
+			CALCULATE ( [Órdenes Totales], FactOrdenesMtto[RetrasoDias] > 0 )
+		formatString: #,0
+		lineageTag: 486f9514-be06-5d8a-9eaf-b85772133fe1
+		displayFolder: 03 · Backlog y ejecución
+
+	/// Meta ≤ 10%.
+	measure '% Órdenes Retrasadas' = 
+			DIVIDE ( [Órdenes Retrasadas], [Órdenes Totales], 0 )
+		formatString: 0.0%
+		lineageTag: 02ab9541-3f8e-5427-b7bd-1a5f0d6d7273
+		displayFolder: 03 · Backlog y ejecución
+
+	/// Meta ≥ 85%.
+	measure 'SLA Cierre 7 días' = 
+			VAR EnSLA =
+			    CALCULATE (
+			        [Órdenes Totales],
+			        FactOrdenesMtto[EstadoCierre] = "Cerrada",
+			        FactOrdenesMtto[DiasCierre] <= 7
+			    )
+			RETURN
+			    DIVIDE ( EnSLA, [Órdenes Cerradas], 0 )
+		formatString: 0.0%
+		lineageTag: c1a5400a-5d63-54f1-8372-e5d36b795e99
+		displayFolder: 03 · Backlog y ejecución
+
+	/// Abiertas con más de 30 días de retraso.
+	measure 'Órdenes Envejecidas' = 
+			CALCULATE ( [Órdenes Abiertas], FactOrdenesMtto[RetrasoDias] > 30 )
+		formatString: #,0
+		lineageTag: b0b3736c-614c-53b4-8905-12b9adb2b0c6
+		displayFolder: 03 · Backlog y ejecución
+
+	/// Correlaciona abastecimiento con backlog.
+	measure 'HH Bloqueadas por Repuesto' = 
+			CALCULATE ( [Backlog HH], FactOrdenesMtto[MotivoDetencion] = "Espera de repuesto" )
+		formatString: #,0
+		lineageTag: 72960616-3870-53b4-90af-6d526b8df0bb
+		displayFolder: 03 · Backlog y ejecución
+
+	/// Costo real en k$. Fuente: KOB1.
+	measure 'Costo Total' = 
+			SUM ( FactOrdenesMtto[CostoReal] )
+		formatString: #,0.0
+		lineageTag: cfec62ff-36b1-5716-aeaa-bc50df349670
+		displayFolder: 04 · Costos
+
+	/// Costo planificado en k$.
+	measure 'Costo Plan' = 
+			SUM ( FactOrdenesMtto[CostoPlan] )
+		formatString: #,0.0
+		lineageTag: 7b7a501e-878a-5b31-9abc-8ecb685b8bf8
+		displayFolder: 04 · Costos
+
+	/// Costo real en millones.
+	measure 'Costo Total M$' = 
+			DIVIDE ( [Costo Total], 1000 )
+		formatString: #,0.0
+		lineageTag: 33a663c4-dc17-55e2-a72c-80299ae3ae8d
+		displayFolder: 04 · Costos
+
+	/// Gasto reactivo.
+	measure 'Costo Correctivo' = 
+			CALCULATE ( [Costo Total], FactOrdenesMtto[TipoMantenimiento] IN { "Correctivo", "Emergencia" } )
+		formatString: #,0.0
+		lineageTag: 4078643b-be2d-54e4-8923-6a61cb7989c1
+		displayFolder: 04 · Costos
+
+	/// Gasto planificado.
+	measure 'Costo Preventivo' = 
+			CALCULATE ( [Costo Total], FactOrdenesMtto[TipoMantenimiento] = "Preventivo" )
+		formatString: #,0.0
+		lineageTag: 4ff77171-b3ad-5b14-a862-a3bec33179ac
+		displayFolder: 04 · Costos
+
+	/// Meta ≥ 60%.
+	measure '% Costo Preventivo' = 
+			DIVIDE ( [Costo Preventivo], [Costo Preventivo] + [Costo Correctivo], 0 )
+		formatString: 0.0%
+		lineageTag: 7d60bcc8-58d6-5ff8-926e-a20f8fa9bafb
+		displayFolder: 04 · Costos
+
+	/// Costo unitario medio.
+	measure 'Costo Promedio por Orden' = 
+			DIVIDE ( [Costo Total], [Órdenes Totales], 0 )
+		formatString: #,0.0
+		lineageTag: 764efe72-5404-5661-b6a3-7b96c93422ff
+		displayFolder: 04 · Costos
+
+	/// Real menos plan, en k$.
+	measure 'Varianza Costo' = 
+			[Costo Total] - [Costo Plan]
+		formatString: #,0.0
+		lineageTag: ebfd46ee-3450-5571-9875-cd6974b59ef7
+		displayFolder: 04 · Costos
+
+	/// Rango aceptable ±10%. Reportar separada por tipo de mantenimiento, nunca agregada.
+	measure '% Varianza Costo' = 
+			DIVIDE ( [Varianza Costo], [Costo Plan], 0 )
+		formatString: 0.0%
+		lineageTag: aafe6f40-b92a-55f9-a3ab-c0e5b1996321
+		displayFolder: 04 · Costos
+
+	/// Volumen. Fuente: COOIS.
+	measure 'Toneladas Producidas' = 
+			SUM ( FactProduccion[ToneladasProducidas] )
+		formatString: #,0
+		lineageTag: 91f82f1a-91fa-5836-a94c-35a3487b5121
+		displayFolder: 04 · Costos
+
+	/// Costo de mantenimiento normalizado por volumen, en $ por tonelada.
+	measure 'Costo por Tonelada' = 
+			DIVIDE ( [Costo Total] * 1000, [Toneladas Producidas], 0 )
+		formatString: #,0
+		lineageTag: 59e3d214-eb8c-50a4-b951-7257dc9fcbb7
+		displayFolder: 04 · Costos
+
+	/// Esfuerzo de mantenimiento por unidad producida.
+	measure 'HH por Tonelada' = 
+			DIVIDE ( [HH Reales], [Toneladas Producidas], 0 )
+		formatString: 0.000
+		lineageTag: 88c6888d-23d2-5a50-8b2c-0d2ad6a4a1d1
+		displayFolder: 04 · Costos
+
+	/// Valor consumido en k$. Fuente: MB51.
+	measure 'Consumo de Repuestos' = 
+			SUM ( FactMaterialesMtto[Importe] )
+		formatString: #,0.0
+		lineageTag: 41f52b87-91ab-5de4-8bb5-b58ce24598b7
+		displayFolder: 04 · Costos
+
+	/// Materiales críticos en o bajo su mínimo: riesgo directo de parada extendida.
+	measure 'Repuestos Críticos Bajo Stock' = 
+			CALCULATE (
+			    COUNTROWS ( DimMaterial ),
+			    DimMaterial[EsRepuestoCritico] = TRUE (),
+			    FILTER ( DimMaterial, DimMaterial[StockActual] <= DimMaterial[StockMinimo] )
+			)
+		formatString: #,0
+		lineageTag: 8dd2962c-0655-5c92-9a50-da68459cdc46
+		displayFolder: 04 · Costos
+
+	/// Días de aprovisionamiento. Fuente: MM03 / ME2N.
+	measure 'Lead Time Promedio' = 
+			AVERAGE ( DimMaterial[LeadTimeDias] )
+		formatString: #,0
+		lineageTag: f1b32cd4-d202-5e68-8f80-4c4ff4a387c8
+		displayFolder: 04 · Costos
+
+	/// Rompen la jerarquía técnica: distorsionan MTBF y todos los análisis por activo.
+	measure 'Órdenes sin Equipo' = 
+			SUM ( FactOrdenesMtto[SinEquipo] )
+		formatString: #,0
+		lineageTag: 2da957f5-1063-50ce-919e-b7ba496efdad
+		displayFolder: 05 · Calidad de datos
+
+	/// Pierden la trazabilidad de la falla: sin ellas no hay causa raíz.
+	measure 'Órdenes sin Aviso' = 
+			SUM ( FactOrdenesMtto[SinAviso] )
+		formatString: #,0
+		lineageTag: ebe9649d-fac2-5587-b605-7534177cd4ca
+		displayFolder: 05 · Calidad de datos
+
+	/// Subestiman el MTTR y el backlog: hacen que la operación parezca mejor de lo que es.
+	measure 'Cerradas sin HH' = 
+			SUM ( FactOrdenesMtto[CerradaSinHH] )
+		formatString: #,0
+		lineageTag: 37c751e3-b4d3-5ace-b9f8-7363b708a1bf
+		displayFolder: 05 · Calidad de datos
+
+	/// Desplazan el costo al período equivocado.
+	measure 'Costo sin Cierre' = 
+			SUM ( FactOrdenesMtto[CostoSinCierre] )
+		formatString: #,0
+		lineageTag: 76f90234-66d2-5114-bd6d-4192c78bb263
+		displayFolder: 05 · Calidad de datos
+
+	/// Inflan el mix preventivo aparente.
+	measure 'Preventivas Vencidas' = 
+			SUM ( FactOrdenesMtto[PrevVencida] )
+		formatString: #,0
+		lineageTag: a0b95346-1dba-55cc-906e-acb31c46a465
+		displayFolder: 05 · Calidad de datos
+
+	/// CONDICIÓN HABILITANTE. Meta ≥ 95%. Bajo ese umbral ningún otro KPI es plenamente confiable y no debe usarse para comprometer inversión.
+	measure 'Índice de Calidad de Datos' = 
+			VAR Banderas =
+			    [Órdenes sin Equipo] + [Órdenes sin Aviso] + [Cerradas sin HH]
+			        + [Costo sin Cierre] + [Preventivas Vencidas]
+			VAR Controles = [Órdenes Totales] * 5
+			RETURN
+			    1 - DIVIDE ( Banderas, Controles, 0 )
+		formatString: 0.0%
+		lineageTag: 3cb2e30a-5c7e-5498-bb14-bbaed7bbbb6c
+		displayFolder: 05 · Calidad de datos
+
+	/// Avisos que derivaron en orden.
+	measure 'Trazabilidad Aviso → Orden' = 
+			DIVIDE ( SUM ( FactAvisosMtto[LigadoAOrden] ), [N.º Avisos], 0 )
+		formatString: 0.0%
+		lineageTag: e3cc8870-2813-5358-9c92-1f102e63522c
+		displayFolder: 05 · Calidad de datos
+
+	/// Parámetro de Controlling en k$ por hora de detención. Monetiza el árbol de pérdidas.
+	measure 'Margen por Hora' = 
+			MargenHora
+		formatString: #,0
+		lineageTag: d4a8693a-c040-58ef-b5c3-0bfef1443289
+		displayFolder: 06 · Mejora Enfocada
+
+	/// Pérdida del período en M$: horas de detención por el margen de contribución por hora.
+	measure 'Pérdida Total' = 
+			DIVIDE ( [Horas de Detención] * [Margen por Hora], 1000 )
+		formatString: #,0.0
+		lineageTag: 4308344b-93f5-5927-9570-494f29a01727
+		displayFolder: 06 · Mejora Enfocada
+
+	/// Pérdida atribuible a averías, la categoría dominante.
+	measure 'Pérdida por Averías' = 
+			DIVIDE (
+			    CALCULATE ( [Horas de Detención], FactAvisosMtto[CategoriaPerdida] = "Averías" ) * [Margen por Hora],
+			    1000
+			)
+		formatString: #,0.0
+		lineageTag: b4069f90-b742-5d1b-be23-05bb91f13bc0
+		displayFolder: 06 · Mejora Enfocada
+
+	/// Solo A3 en fase Act, es decir con ahorro confirmado en CO y estándar actualizado. Nunca se contabiliza ahorro estimado.
+	measure 'Ahorro Validado' = 
+			DIVIDE ( CALCULATE ( SUM ( FactKaizen[AhorroValidado] ), FactKaizen[FasePDCA] = "Act" ), 1000 )
+		formatString: #,0.0
+		lineageTag: c0503778-ab58-5c9c-aecc-f13812366788
+		displayFolder: 06 · Mejora Enfocada
+
+	/// Iniciativas en Plan, Do o Check.
+	measure 'Kaizen Activos' = 
+			CALCULATE ( COUNTROWS ( FactKaizen ), FactKaizen[FasePDCA] <> "Act" )
+		formatString: #,0
+		lineageTag: 99f938ad-b3f1-5948-810f-35773e3e026d
+		displayFolder: 06 · Mejora Enfocada
+
+	/// Cartera completa.
+	measure 'Kaizen Totales' = 
+			COUNTROWS ( FactKaizen )
+		formatString: #,0
+		lineageTag: cd54008e-cf15-52ab-ab1e-19fd33a4a5ba
+		displayFolder: 06 · Mejora Enfocada
+
+	/// Proporción de la pérdida con A3 asignado. El resto marca el techo del ahorro cuando cierren los actuales.
+	measure '% Pérdidas Atacadas' = 
+			VAR Cubiertas =
+			    CALCULATE (
+			        [Pérdida Total],
+			        FactAvisosMtto[CategoriaPerdida] IN { "Averías", "Paradas menores", "Setup y ajustes" }
+			    )
+			RETURN
+			    DIVIDE ( Cubiertas, [Pérdida Total], 0 )
+		formatString: 0.0%
+		lineageTag: 02a69890-4583-5c60-afb0-f3275f12f20a
+		displayFolder: 06 · Mejora Enfocada
+
+	/// Gestión de activos, escalado 1 a 5 desde el propio dato SAP.
+	measure 'Score F1 Activos' = 
+			VAR Limpieza = 1 - DIVIDE ( [Órdenes sin Equipo], [Órdenes Totales], 0 )
+			RETURN
+			    MAX ( 1, MIN ( 5, 1 + 4 * DIVIDE ( Limpieza - 0.93, 0.07 ) ) )
+		formatString: 0.0
+		lineageTag: d14aafb3-6067-5c55-97f7-21f78a666f86
+		displayFolder: 07 · Madurez y benchmark
+
+	/// Planificación y programación.
+	measure 'Score F2 Planificación' = 
+			MAX ( 1, MIN ( 5, 1 + 4 * DIVIDE ( [Cumplimiento Plan Preventivo] - 0.78, 0.20 ) ) )
+		formatString: 0.0
+		lineageTag: e2f80cf0-7ff4-5848-a596-cee66e18b39b
+		displayFolder: 07 · Madurez y benchmark
+
+	/// Ejecución y disciplina de cierre.
+	measure 'Score F3 Ejecución' = 
+			VAR Limpieza = 1 - DIVIDE ( [Cerradas sin HH], [Órdenes Totales], 0 )
+			RETURN
+			    MAX ( 1, MIN ( 5, 1 + 4 * DIVIDE ( Limpieza - 0.93, 0.07 ) ) )
+		formatString: 0.0
+		lineageTag: 4e4e0696-e6b6-5c1d-8211-efa9aed2f332
+		displayFolder: 07 · Madurez y benchmark
+
+	/// Control de costos.
+	measure 'Score F4 Costos' = 
+			VAR Ajuste = 1 - ABS ( [% Varianza Costo] )
+			RETURN
+			    MAX ( 1, MIN ( 5, 1 + 4 * DIVIDE ( Ajuste - 0.92, 0.08 ) ) )
+		formatString: 0.0
+		lineageTag: 06998be8-8632-58a7-970a-b92ab8b52b1c
+		displayFolder: 07 · Madurez y benchmark
+
+	/// Confiabilidad y mejora continua.
+	measure 'Score F5 Confiabilidad' = 
+			MAX ( 1, MIN ( 5, 1 + 4 * DIVIDE ( [Disponibilidad Operacional] - 0.885, 0.08 ) ) )
+		formatString: 0.0
+		lineageTag: cb69b605-b7b4-5ddd-9523-426f9111be94
+		displayFolder: 07 · Madurez y benchmark
+
+	/// Promedio de los cinco pilares. Meta 4,0.
+	measure 'Madurez Promedio' = 
+			AVERAGEX (
+			    { [Score F1 Activos], [Score F2 Planificación], [Score F3 Ejecución], [Score F4 Costos], [Score F5 Confiabilidad] },
+			    [Value]
+			)
+		formatString: 0.0
+		lineageTag: 2bbb753a-5203-536d-864f-53b78fd8be94
+		displayFolder: 07 · Madurez y benchmark
+
+	/// Distancia al cuartil superior de industria (85%).
+	measure 'Brecha % Planificado' = 
+			[% Trabajo Planificado] - 0.85
+		formatString: 0.0%
+		lineageTag: 8fc56bb8-01f2-595f-9626-f8aa30c7eed3
+		displayFolder: 07 · Madurez y benchmark
+
+	/// Distancia al cuartil superior (95%).
+	measure 'Brecha Disponibilidad' = 
+			[Disponibilidad Operacional] - 0.95
+		formatString: 0.0%
+		lineageTag: c43abd7f-f406-5e9c-99c3-53f4924bbd44
+		displayFolder: 07 · Madurez y benchmark
+
+	/// Número de indicadores bajo la referencia externa de cuartil superior.
+	measure 'KPI Bajo Referencia' = 
+			VAR B1 = IF ( [% Trabajo Planificado] < 0.85, 1, 0 )
+			VAR B2 = IF ( [% Órdenes Correctivas] > 0.20, 1, 0 )
+			VAR B3 = IF ( [Disponibilidad Operacional] < 0.95, 1, 0 )
+			VAR B4 = IF ( [Cumplimiento Plan Preventivo] < 0.95, 1, 0 )
+			VAR B5 = IF ( [Índice de Calidad de Datos] < 0.95, 1, 0 )
+			RETURN
+			    B1 + B2 + B3 + B4 + B5
+		formatString: #,0
+		lineageTag: 6d925f2f-d5c7-5c08-9edc-4a7c238a9e9c
+		displayFolder: 07 · Madurez y benchmark
+
+	/// Valor anual recuperable al cerrar la brecha, estimado por punto porcentual. Referencia orientativa, no dato auditado.
+	measure 'Valor de la Brecha M$' = 
+			VAR GapPlan = MAX ( 0, 0.85 - [% Trabajo Planificado] ) * 100 * 0.62
+			VAR GapDisp = MAX ( 0, 0.95 - [Disponibilidad Operacional] ) * 100 * 1.35
+			RETURN
+			    GapPlan + GapDisp
+		formatString: #,0.0
+		lineageTag: 30f52691-059c-59af-b01f-1cd589587cc5
+		displayFolder: 07 · Madurez y benchmark
+
+	/// Color para formato condicional. Meta ≤ 30%.
+	measure 'Semáforo Correctivo' = 
+			SWITCH (
+			    TRUE (),
+			    [% Órdenes Correctivas] <= 0.30, "#12805C",
+			    [% Órdenes Correctivas] <= 0.45, "#B54708",
+			    "#B42318"
+			)
+		lineageTag: d5d31f1d-9268-54cb-9590-87d4eea9bb62
+		displayFolder: 08 · Semáforos
+
+	/// Color para formato condicional. Meta ≥ 90%.
+	measure 'Semáforo Cumplimiento PM' = 
+			SWITCH (
+			    TRUE (),
+			    [Cumplimiento Plan Preventivo] >= 0.90, "#12805C",
+			    [Cumplimiento Plan Preventivo] >= 0.80, "#B54708",
+			    "#B42318"
+			)
+		lineageTag: 9c44274a-43bb-52a9-8c0f-eefbb95180d5
+		displayFolder: 08 · Semáforos
+
+	/// Color para formato condicional. Meta ≥ 92%.
+	measure 'Semáforo Disponibilidad' = 
+			SWITCH (
+			    TRUE (),
+			    [Disponibilidad Operacional] >= 0.92, "#12805C",
+			    [Disponibilidad Operacional] >= 0.88, "#B54708",
+			    "#B42318"
+			)
+		lineageTag: 787baf49-b0cb-5de4-8d30-02e203baa1b7
+		displayFolder: 08 · Semáforos
+
+	/// Color para formato condicional. Meta ≥ 95%.
+	measure 'Semáforo Calidad de Datos' = 
+			SWITCH (
+			    TRUE (),
+			    [Índice de Calidad de Datos] >= 0.95, "#12805C",
+			    [Índice de Calidad de Datos] >= 0.85, "#B54708",
+			    "#B42318"
+			)
+		lineageTag: cf429a86-9fcc-5a8c-888f-f4518796d4cf
+		displayFolder: 08 · Semáforos
+
+	/// Color para formato condicional. Rango sano 2 a 4 semanas.
+	measure 'Semáforo Backlog' = 
+			SWITCH (
+			    TRUE (),
+			    [Backlog Semanas] >= 2 && [Backlog Semanas] <= 4, "#12805C",
+			    [Backlog Semanas] <= 6, "#B54708",
+			    "#B42318"
+			)
+		lineageTag: 15775af5-4dd5-57ac-9f38-176fae55230e
+		displayFolder: 08 · Semáforos
+
+	column Marcador
+		isHidden
+		formatString: 0
+		lineageTag: ace1bc6c-9682-5d5b-896e-70c58d0e5a7e
+		summarizeBy: sum
+		sourceColumn: [Marcador]
+		isNameInferred
+
+		annotation SummarizationSetBy = Automatic
+
+	partition '_Medidas' = calculated
+		mode: import
+		source = SELECTCOLUMNS ( { 0 }, "Marcador", [Value] )
+
+	annotation PBI_Id = medidas

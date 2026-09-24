@@ -1,0 +1,123 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "p03v4",
+  "position": {
+    "x": 16,
+    "y": 454,
+    "z": 45,
+    "width": 1248,
+    "height": 100,
+    "tabOrder": 450
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimEquipo"
+                    }
+                  },
+                  "Property": "Denominacion"
+                }
+              },
+              "queryRef": "DimEquipo.Denominacion",
+              "nativeQueryRef": "Denominacion"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimEquipo"
+                    }
+                  },
+                  "Property": "Criticidad"
+                }
+              },
+              "queryRef": "DimEquipo.Criticidad",
+              "nativeQueryRef": "Criticidad"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Correctivas"
+                }
+              },
+              "queryRef": "_Medidas.Correctivas",
+              "nativeQueryRef": "Correctivas"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Planes Vencidos"
+                }
+              },
+              "queryRef": "_Medidas.Planes Vencidos",
+              "nativeQueryRef": "Planes Vencidos"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Costo Total M$"
+                }
+              },
+              "queryRef": "_Medidas.Costo Total M$",
+              "nativeQueryRef": "Costo Total M$"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Correctivos recurrentes y sus planes vencidos   |   IW29 × IP24 × IH08'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

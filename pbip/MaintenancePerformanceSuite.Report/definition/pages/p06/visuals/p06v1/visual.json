@@ -1,0 +1,99 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "p06v1",
+  "position": {
+    "x": 16,
+    "y": 196,
+    "z": 85,
+    "width": 620,
+    "height": 250,
+    "tabOrder": 850
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimGrupoPlanificador"
+                    }
+                  },
+                  "Property": "GrupoPlanificador"
+                }
+              },
+              "queryRef": "DimGrupoPlanificador.GrupoPlanificador",
+              "nativeQueryRef": "GrupoPlanificador"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Backlog HH"
+                }
+              },
+              "queryRef": "_Medidas.Backlog HH",
+              "nativeQueryRef": "Backlog HH"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Capacidad Semanal HH"
+                }
+              },
+              "queryRef": "_Medidas.Capacidad Semanal HH",
+              "nativeQueryRef": "Capacidad Semanal HH"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Backlog vs. capacidad por especialidad   |   IW47 × CR03'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,79 @@
+relationship 3c02deb0-9ed8-5b5c-9fc8-91282728914c
+	fromColumn: FactOrdenesMtto.Fecha
+	toColumn: DimFecha.Fecha
+
+relationship 1fe0bd36-36bf-549a-af67-3a91140f15e5
+	fromColumn: FactAvisosMtto.Fecha
+	toColumn: DimFecha.Fecha
+
+relationship 6d45eb27-0870-5d4e-9fc7-a538349f4a84
+	fromColumn: FactPlanesMtto.Fecha
+	toColumn: DimFecha.Fecha
+
+relationship 584a3519-f34a-5ca5-8a59-6a53a4e4f6bb
+	fromColumn: FactMaterialesMtto.Fecha
+	toColumn: DimFecha.Fecha
+
+relationship 312d92ef-fbe1-55d2-9035-150126146d49
+	fromColumn: FactProduccion.Fecha
+	toColumn: DimFecha.Fecha
+
+relationship 6302f333-ee41-51c0-a4da-5809225097ba
+	fromColumn: FactOrdenesMtto.Equipo
+	toColumn: DimEquipo.Equipo
+
+relationship f8978c8c-e1cb-563c-9d49-53369dc63558
+	fromColumn: FactAvisosMtto.Equipo
+	toColumn: DimEquipo.Equipo
+
+relationship b0b611e5-b04d-588a-8c4c-a0ad7ce7fc26
+	fromColumn: FactPlanesMtto.Equipo
+	toColumn: DimEquipo.Equipo
+
+relationship 591e00a0-ccd5-566c-80e2-497d6d2b9c2d
+	fromColumn: FactMaterialesMtto.Material
+	toColumn: DimMaterial.Material
+
+relationship 1a5fe97d-6ea1-5068-a88d-b71b67a017ad
+	fromColumn: FactOrdenesMtto.ClaseOrden
+	toColumn: DimTipoOrden.ClaseOrden
+
+relationship 427a9f96-f9a2-5dc2-b0ea-57cd423caba4
+	fromColumn: FactOrdenesMtto.Area
+	toColumn: DimArea.Area
+
+relationship cd883cd6-13c9-5849-8002-9d409c5fcb6b
+	fromColumn: FactAvisosMtto.Area
+	toColumn: DimArea.Area
+
+relationship 17d24d78-302d-5edf-b50f-2053a1f098b9
+	fromColumn: FactProduccion.Area
+	toColumn: DimArea.Area
+
+relationship 425c41a5-658d-5467-a427-07a6543647c2
+	fromColumn: FactMaterialesMtto.Area
+	toColumn: DimArea.Area
+
+relationship c162e0e9-5f2f-5250-978b-40d6157107dd
+	fromColumn: FactOrdenesMtto.Linea
+	toColumn: DimLinea.Linea
+
+relationship ae688bdf-da95-5251-b419-5ae272b4855f
+	fromColumn: FactAvisosMtto.Linea
+	toColumn: DimLinea.Linea
+
+relationship 96f83c5f-6287-5007-8b95-d9a5a931c0ac
+	fromColumn: FactProduccion.Linea
+	toColumn: DimLinea.Linea
+
+relationship 276f21fc-e466-5f90-b70f-b2de9ea91360
+	fromColumn: FactOrdenesMtto.Criticidad
+	toColumn: DimCriticidad.Criticidad
+
+relationship 339dc094-c081-5062-92b8-93d9d08e9556
+	fromColumn: FactAvisosMtto.Criticidad
+	toColumn: DimCriticidad.Criticidad
+
+relationship 04a68f00-561b-5183-bdb9-9881e7eb57f9
+	fromColumn: FactOrdenesMtto.GrupoPlanificador
+	toColumn: DimGrupoPlanificador.GrupoPlanificador

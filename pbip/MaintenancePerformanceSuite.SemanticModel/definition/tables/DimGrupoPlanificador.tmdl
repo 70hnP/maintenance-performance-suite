@@ -1,0 +1,41 @@
+/// Gremios de mantenimiento y su capacidad semanal declarada en CR03.
+table DimGrupoPlanificador
+	lineageTag: b9a58af4-d937-5822-a3f5-051dce929e9e
+
+	/// Especialidad.
+	column GrupoPlanificador
+		dataType: string
+		lineageTag: aa85a8f6-ba14-5502-abb0-b9c777f71fc0
+		summarizeBy: none
+		sourceColumn: GrupoPlanificador
+
+		annotation SummarizationSetBy = Automatic
+
+	/// HH semanales disponibles.
+	column CapacidadSemanalHH
+		dataType: int64
+		lineageTag: 77dbc9f8-7d07-5382-ac83-b4e6a014edd4
+		summarizeBy: sum
+		sourceColumn: CapacidadSemanalHH
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimGrupoPlanificador = m
+		mode: import
+		source =
+				let
+				    Origen = #table(
+				        {"GrupoPlanificador", "CapacidadSemanalHH"},
+				        {
+				        {"Mecánico", "240"},
+				        {"Eléctrico", "140"},
+				        {"Instrumentación", "90"},
+				        {"Servicios", "70"}
+				        }
+				    )
+				in
+				    Origen
+
+	queryGroup: '02 · Dimensiones'
+
+	annotation PBI_ResultType = Table

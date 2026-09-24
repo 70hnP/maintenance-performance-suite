@@ -1,0 +1,214 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodeIndex": 0,
+      "zoomValue": 80,
+      "name": "Modelo en estrella",
+      "hideKeyFieldsWhenCollapsed": false,
+      "pinKeyFieldsToTop": false,
+      "nodes": [
+        {
+          "location": {
+            "x": 40,
+            "y": 40
+          },
+          "nodeIndex": "DimFecha",
+          "size": {
+            "height": 220,
+            "width": 220
+          },
+          "zIndex": 0,
+          "nodeLineageTag": "6d333e06-6810-5a2f-8455-e68b04ec296f"
+        },
+        {
+          "location": {
+            "x": 40,
+            "y": 300
+          },
+          "nodeIndex": "DimEquipo",
+          "size": {
+            "height": 220,
+            "width": 220
+          },
+          "zIndex": 1,
+          "nodeLineageTag": "66dcc1f4-9383-5391-a137-74cd27d77577"
+        },
+        {
+          "location": {
+            "x": 40,
+            "y": 560
+          },
+          "nodeIndex": "DimArea",
+          "size": {
+            "height": 220,
+            "width": 220
+          },
+          "zIndex": 2,
+          "nodeLineageTag": "3f12e256-4041-5266-b01d-cc43882c4cba"
+        },
+        {
+          "location": {
+            "x": 300,
+            "y": 620
+          },
+          "nodeIndex": "DimLinea",
+          "size": {
+            "height": 220,
+            "width": 220
+          },
+          "zIndex": 3,
+          "nodeLineageTag": "beef53b3-f50e-53d7-9b72-d71436164910"
+        },
+        {
+          "location": {
+            "x": 560,
+            "y": 660
+          },
+          "nodeIndex": "DimCriticidad",
+          "size": {
+            "height": 220,
+            "width": 220
+          },
+          "zIndex": 4,
+          "nodeLineageTag": "630aaafe-f4d4-5f86-875f-0676a371b70b"
+        },
+        {
+          "location": {
+            "x": 820,
+            "y": 620
+          },
+          "nodeIndex": "DimGrupoPlanificador",
+          "size": {
+            "height": 220,
+            "width": 220
+          },
+          "zIndex": 5,
+          "nodeLineageTag": "b9a58af4-d937-5822-a3f5-051dce929e9e"
+        },
+        {
+          "location": {
+            "x": 1080,
+            "y": 560
+          },
+          "nodeIndex": "DimTipoOrden",
+          "size": {
+            "height": 220,
+            "width": 220
+          },
+          "zIndex": 6,
+          "nodeLineageTag": "73ed64bd-e37d-53f9-ac45-446c2c3b7f62"
+        },
+        {
+          "location": {
+            "x": 1080,
+            "y": 300
+          },
+          "nodeIndex": "DimMaterial",
+          "size": {
+            "height": 220,
+            "width": 220
+          },
+          "zIndex": 7,
+          "nodeLineageTag": "b4e5befe-6a82-56c0-86c3-8cbbeb21a29f"
+        },
+        {
+          "location": {
+            "x": 560,
+            "y": 300
+          },
+          "nodeIndex": "FactOrdenesMtto",
+          "size": {
+            "height": 220,
+            "width": 220
+          },
+          "zIndex": 8,
+          "nodeLineageTag": "101d3b68-de34-5f2a-bfd2-908b667ab211"
+        },
+        {
+          "location": {
+            "x": 820,
+            "y": 60
+          },
+          "nodeIndex": "FactAvisosMtto",
+          "size": {
+            "height": 220,
+            "width": 220
+          },
+          "zIndex": 9,
+          "nodeLineageTag": "14f11bc5-28a1-5928-a160-5a0b99f26619"
+        },
+        {
+          "location": {
+            "x": 300,
+            "y": 60
+          },
+          "nodeIndex": "FactProduccion",
+          "size": {
+            "height": 220,
+            "width": 220
+          },
+          "zIndex": 10,
+          "nodeLineageTag": "9fc99d83-9b72-50ab-9c8f-0c4907faba60"
+        },
+        {
+          "location": {
+            "x": 820,
+            "y": 300
+          },
+          "nodeIndex": "FactPlanesMtto",
+          "size": {
+            "height": 220,
+            "width": 220
+          },
+          "zIndex": 11,
+          "nodeLineageTag": "cad964d6-083d-58d9-806f-06e9009ea0ae"
+        },
+        {
+          "location": {
+            "x": 1080,
+            "y": 60
+          },
+          "nodeIndex": "FactMaterialesMtto",
+          "size": {
+            "height": 220,
+            "width": 220
+          },
+          "zIndex": 12,
+          "nodeLineageTag": "f369509c-14b8-59a5-9844-53a3091de58b"
+        },
+        {
+          "location": {
+            "x": 560,
+            "y": 40
+          },
+          "nodeIndex": "FactKaizen",
+          "size": {
+            "height": 220,
+            "width": 220
+          },
+          "zIndex": 13,
+          "nodeLineageTag": "9c4158f5-dc15-57b2-ab03-70c0562f2498"
+        },
+        {
+          "location": {
+            "x": 300,
+            "y": 300
+          },
+          "nodeIndex": "_Medidas",
+          "size": {
+            "height": 220,
+            "width": 220
+          },
+          "zIndex": 14,
+          "nodeLineageTag": "7b378a33-52db-5178-97d3-d585f77db379"
+        }
+      ]
+    }
+  ]
+}

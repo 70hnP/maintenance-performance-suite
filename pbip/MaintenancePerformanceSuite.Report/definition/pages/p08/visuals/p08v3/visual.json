@@ -1,0 +1,137 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "p08v3",
+  "position": {
+    "x": 16,
+    "y": 454,
+    "z": 115,
+    "width": 1248,
+    "height": 100,
+    "tabOrder": 1150
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimArea"
+                    }
+                  },
+                  "Property": "Area"
+                }
+              },
+              "queryRef": "DimArea.Area",
+              "nativeQueryRef": "Area"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Órdenes sin Equipo"
+                }
+              },
+              "queryRef": "_Medidas.Órdenes sin Equipo",
+              "nativeQueryRef": "Órdenes sin Equipo"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Órdenes sin Aviso"
+                }
+              },
+              "queryRef": "_Medidas.Órdenes sin Aviso",
+              "nativeQueryRef": "Órdenes sin Aviso"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Cerradas sin HH"
+                }
+              },
+              "queryRef": "_Medidas.Cerradas sin HH",
+              "nativeQueryRef": "Cerradas sin HH"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Costo sin Cierre"
+                }
+              },
+              "queryRef": "_Medidas.Costo sin Cierre",
+              "nativeQueryRef": "Costo sin Cierre"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Preventivas Vencidas"
+                }
+              },
+              "queryRef": "_Medidas.Preventivas Vencidas",
+              "nativeQueryRef": "Preventivas Vencidas"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Anomalías por área   |   IW39 · IW29 · IW47'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

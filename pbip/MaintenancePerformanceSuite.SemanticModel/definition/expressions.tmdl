@@ -1,0 +1,24 @@
+/// Carpeta local que contiene los CSV sintéticos (data/sample).
+/// Cámbiala en Power BI: Inicio > Transformar datos > Administrar parámetros.
+expression RutaDatos = "C:\\repo\\maintenance-performance-suite\\data\\sample" meta [IsParameterQuery=true, List={}, DefaultValue="", Type="Text", IsParameterQueryRequired=true]
+	lineageTag: dcf5a5a0-dcaa-53ea-a30c-7727d2fda77b
+	queryGroup: '00 · Parámetros'
+
+	annotation PBI_ResultType = Text
+
+/// Margen de contribución por hora de detención (k$/h). Parámetro de Controlling
+/// que monetiza el árbol de pérdidas de la Mejora Enfocada.
+expression MargenHora = 34 meta [IsParameterQuery=true, List={}, DefaultValue=34, Type="Number", IsParameterQueryRequired=true]
+	lineageTag: a82edb1c-46f8-5bb6-9293-2b85f5e582d4
+	queryGroup: '00 · Parámetros'
+
+	annotation PBI_ResultType = Number
+
+/// Capacidad instalada de mantenimiento, en HH por semana (maestro CR03).
+expression CapacidadSemanal = 540 meta [IsParameterQuery=true, List={}, DefaultValue=540, Type="Number", IsParameterQueryRequired=true]
+	lineageTag: e686fa21-1c39-5c49-890e-b5a5dc927ce7
+	queryGroup: '00 · Parámetros'
+
+	annotation PBI_ResultType = Number
+
+annotation PBI_QueryGroupOrder = ["00 · Parámetros","01 · Hechos","02 · Dimensiones"]

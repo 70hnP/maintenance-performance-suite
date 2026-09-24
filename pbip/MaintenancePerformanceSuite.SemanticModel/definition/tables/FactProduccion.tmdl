@@ -1,0 +1,86 @@
+/// Producción y horas de operación. Fuente: SAP PP · COOIS / LIS. Grano: línea por mes. Habilita MTBF, disponibilidad y los indicadores por tonelada.
+table FactProduccion
+	lineageTag: 9fc99d83-9b72-50ab-9c8f-0c4907faba60
+
+	/// Clave aaaa-MM.
+	column AnioMes
+		dataType: string
+		lineageTag: c1421424-d692-559d-b8f0-4759755b073c
+		summarizeBy: none
+		sourceColumn: AnioMes
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Relaciona con DimFecha.
+	column Fecha
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: 5980996a-d344-55df-a7bc-d8a5b013e038
+		summarizeBy: none
+		sourceColumn: Fecha
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Área.
+	column Area
+		dataType: string
+		lineageTag: e779cc2d-c164-5bcd-978c-ca7e169db233
+		summarizeBy: none
+		sourceColumn: Area
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Línea.
+	column Linea
+		dataType: string
+		lineageTag: a723671c-2176-542e-babc-8b672bdc173c
+		summarizeBy: none
+		sourceColumn: Linea
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Volumen producido.
+	column ToneladasProducidas
+		dataType: double
+		lineageTag: 4376cd16-9d94-5b82-8f17-1c978a762415
+		summarizeBy: sum
+		sourceColumn: ToneladasProducidas
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Horas operativas de la línea.
+	column HorasOperacion
+		dataType: double
+		lineageTag: 0d4bfabe-60b7-5ad6-8ebb-a982480bebda
+		summarizeBy: sum
+		sourceColumn: HorasOperacion
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Horas de detención de la línea.
+	column HorasDetencion
+		dataType: double
+		lineageTag: 16ede5b5-02a8-5613-a4f0-59436cc170b9
+		summarizeBy: sum
+		sourceColumn: HorasDetencion
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FactProduccion = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(
+				        File.Contents(RutaDatos & "\FactProduccion.csv"),
+				        [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]
+				    ),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Tipos = Table.TransformColumnTypes(Encabezados, {{"AnioMes", string}, {"Area", string}, {"Linea", string}, {"ToneladasProducidas", type number}, {"HorasOperacion", type number}, {"HorasDetencion", type number}}),
+				    ConFecha = Table.AddColumn(Tipos, "Fecha", each Date.FromText([AnioMes] & "-01"), type date),
+				    Final = ConFecha
+				in
+				    Final
+
+	queryGroup: '01 · Hechos'
+
+	annotation PBI_ResultType = Table

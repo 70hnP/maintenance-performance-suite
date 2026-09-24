@@ -1,0 +1,113 @@
+/// Posiciones de planes preventivos. Fuente: SAP PM · IP15 / IP24. Grano: posición por mes.
+table FactPlanesMtto
+	lineageTag: cad964d6-083d-58d9-806f-06e9009ea0ae
+
+	/// Clave aaaa-MM.
+	column AnioMes
+		dataType: string
+		lineageTag: 88ee3868-4c4c-5cf8-adbf-9483c8b30684
+		summarizeBy: none
+		sourceColumn: AnioMes
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Relaciona con DimFecha.
+	column Fecha
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: 07ba2914-513b-5d44-b39d-59429ea465b2
+		summarizeBy: none
+		sourceColumn: Fecha
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Código del plan de mantenimiento.
+	column Plan
+		dataType: string
+		lineageTag: 9a9b76bf-88b3-566d-8f63-abfaa3042936
+		summarizeBy: none
+		sourceColumn: Plan
+
+		annotation SummarizationSetBy = Automatic
+
+	/// FK a DimEquipo.
+	column Equipo
+		dataType: string
+		lineageTag: e8777514-c9fd-579b-9960-2e772a837e59
+		summarizeBy: none
+		sourceColumn: Equipo
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Denominación.
+	column DenominacionEquipo
+		dataType: string
+		lineageTag: 7633aca8-e3f3-5105-a6b7-2d48605dab17
+		summarizeBy: none
+		sourceColumn: DenominacionEquipo
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Área.
+	column Area
+		dataType: string
+		lineageTag: 75879e96-e6bf-53b8-9795-e350c552f112
+		summarizeBy: none
+		sourceColumn: Area
+
+		annotation SummarizationSetBy = Automatic
+
+	/// A, B o C.
+	column Criticidad
+		dataType: string
+		lineageTag: 42762a9d-424d-52bf-b625-662792454a83
+		summarizeBy: none
+		sourceColumn: Criticidad
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Tipo de intervención programada.
+	column Estrategia
+		dataType: string
+		lineageTag: c7233c49-4646-52e0-972d-008de1284920
+		summarizeBy: none
+		sourceColumn: Estrategia
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Frecuencia del ciclo.
+	column Ciclo
+		dataType: string
+		lineageTag: f2ea4207-794c-5e2d-aa8c-e625244becf5
+		summarizeBy: none
+		sourceColumn: Ciclo
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Cumplido o Vencido en su ventana.
+	column Estado
+		dataType: string
+		lineageTag: 6c84efb1-6e47-5f9d-b9db-8a64372fd975
+		summarizeBy: none
+		sourceColumn: Estado
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FactPlanesMtto = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(
+				        File.Contents(RutaDatos & "\FactPlanesMtto.csv"),
+				        [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]
+				    ),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Tipos = Table.TransformColumnTypes(Encabezados, {{"AnioMes", string}, {"Plan", string}, {"Equipo", string}, {"DenominacionEquipo", string}, {"Area", string}, {"Criticidad", string}, {"Estrategia", string}, {"Ciclo", string}, {"Estado", string}}),
+				    ConFecha = Table.AddColumn(Tipos, "Fecha", each Date.FromText([AnioMes] & "-01"), type date),
+				    Final = ConFecha
+				in
+				    Final
+
+	queryGroup: '01 · Hechos'
+
+	annotation PBI_ResultType = Table

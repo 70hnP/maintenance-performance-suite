@@ -1,0 +1,151 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "p12v3",
+  "position": {
+    "x": 16,
+    "y": 454,
+    "z": 172,
+    "width": 1248,
+    "height": 100,
+    "tabOrder": 1720
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimArea"
+                    }
+                  },
+                  "Property": "Area"
+                }
+              },
+              "queryRef": "DimArea.Area",
+              "nativeQueryRef": "Area"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "% Trabajo Planificado"
+                }
+              },
+              "queryRef": "_Medidas.% Trabajo Planificado",
+              "nativeQueryRef": "% Trabajo Planificado"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Brecha % Planificado"
+                }
+              },
+              "queryRef": "_Medidas.Brecha % Planificado",
+              "nativeQueryRef": "Brecha % Planificado"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Disponibilidad Operacional"
+                }
+              },
+              "queryRef": "_Medidas.Disponibilidad Operacional",
+              "nativeQueryRef": "Disponibilidad Operacional"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Brecha Disponibilidad"
+                }
+              },
+              "queryRef": "_Medidas.Brecha Disponibilidad",
+              "nativeQueryRef": "Brecha Disponibilidad"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "OEE Parcial"
+                }
+              },
+              "queryRef": "_Medidas.OEE Parcial",
+              "nativeQueryRef": "OEE Parcial"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Valor de la Brecha M$"
+                }
+              },
+              "queryRef": "_Medidas.Valor de la Brecha M$",
+              "nativeQueryRef": "Valor de la Brecha M$"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Brecha por área y su valor   |   referencia de industria'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

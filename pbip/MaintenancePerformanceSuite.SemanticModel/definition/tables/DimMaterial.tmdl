@@ -1,0 +1,92 @@
+/// Maestro de materiales. Fuente: SAP MM · MM03 / MB52. Stock, mínimo y lead time habilitan la alerta de quiebre.
+table DimMaterial
+	lineageTag: b4e5befe-6a82-56c0-86c3-8cbbeb21a29f
+
+	/// Código de material.
+	column Material
+		dataType: string
+		lineageTag: 8da0ad79-2a56-5da8-b6f6-7f4f813737f6
+		summarizeBy: none
+		sourceColumn: Material
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Descripción.
+	column Descripcion
+		dataType: string
+		lineageTag: 4201d66c-f45c-5b9a-93ef-d842137d9fe8
+		summarizeBy: none
+		sourceColumn: Descripcion
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Clasificación ABC.
+	column ABC
+		dataType: string
+		lineageTag: 0842adf9-4483-56e6-a5f6-9870ca51b149
+		summarizeBy: none
+		sourceColumn: ABC
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Stock disponible.
+	column StockActual
+		dataType: int64
+		lineageTag: 10074ddf-e74e-51e1-9d8c-9c179d197c73
+		summarizeBy: sum
+		sourceColumn: StockActual
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Stock mínimo definido.
+	column StockMinimo
+		dataType: int64
+		lineageTag: 85f1787d-c360-5315-99e1-e3cdb6acf370
+		summarizeBy: sum
+		sourceColumn: StockMinimo
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Plazo de aprovisionamiento.
+	column LeadTimeDias
+		dataType: int64
+		lineageTag: 584dd220-a665-5678-ac61-39bbdf5574b8
+		summarizeBy: none
+		sourceColumn: LeadTimeDias
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Marca de criticidad.
+	column EsRepuestoCritico
+		dataType: boolean
+		lineageTag: a4c21d24-a8dd-5829-888c-453991a844e0
+		summarizeBy: none
+		sourceColumn: EsRepuestoCritico
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Precio en k$.
+	column PrecioUnitario
+		dataType: double
+		lineageTag: 3d373231-6087-5670-a3b6-d3cbc27013f5
+		summarizeBy: none
+		sourceColumn: PrecioUnitario
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimMaterial = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(
+				        File.Contents(RutaDatos & "\DimMaterial.csv"),
+				        [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]
+				    ),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Tipos = Table.TransformColumnTypes(Encabezados, {{"Material", string}, {"Descripcion", string}, {"ABC", string}, {"StockActual", Int64.Type}, {"StockMinimo", Int64.Type}, {"LeadTimeDias", Int64.Type}, {"EsRepuestoCritico", type logical}, {"PrecioUnitario", type number}})
+				in
+				    Tipos
+
+	queryGroup: '02 · Dimensiones'
+
+	annotation PBI_ResultType = Table

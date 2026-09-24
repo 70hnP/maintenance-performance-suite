@@ -1,0 +1,41 @@
+/// Líneas productivas.
+table DimLinea
+	lineageTag: beef53b3-f50e-53d7-9b72-d71436164910
+
+	/// Línea productiva.
+	column Linea
+		dataType: string
+		lineageTag: 04343676-78d9-51b0-89c2-d966a6fac677
+		summarizeBy: none
+		sourceColumn: Linea
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Sí o No.
+	column EsProductiva
+		dataType: string
+		lineageTag: b061061a-3438-5932-9bb3-737249196146
+		summarizeBy: none
+		sourceColumn: EsProductiva
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimLinea = m
+		mode: import
+		source =
+				let
+				    Origen = #table(
+				        {"Linea", "EsProductiva"},
+				        {
+				        {"Línea 1", "Sí"},
+				        {"Línea 2", "Sí"},
+				        {"Línea 3", "Sí"},
+				        {"N/A", "No"}
+				        }
+				    )
+				in
+				    Origen
+
+	queryGroup: '02 · Dimensiones'
+
+	annotation PBI_ResultType = Table

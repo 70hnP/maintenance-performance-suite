@@ -1,0 +1,6 @@
+# Artefactos locales de Power BI Desktop
+*.pbix
+.pbi/localSettings.json
+.pbi/cache.abf
+**/.pbi/
+*.abf

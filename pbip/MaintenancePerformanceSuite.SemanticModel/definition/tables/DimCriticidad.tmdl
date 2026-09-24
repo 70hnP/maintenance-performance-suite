@@ -1,0 +1,49 @@
+/// Matriz de criticidad de activos. Gobierna la priorización de planes, repuestos y RCA.
+table DimCriticidad
+	lineageTag: 630aaafe-f4d4-5f86-875f-0676a371b70b
+
+	/// A, B o C.
+	column Criticidad
+		dataType: string
+		lineageTag: 3470afd0-62a4-5562-ab22-55835f5c5fe1
+		summarizeBy: none
+		sourceColumn: Criticidad
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Significado operacional.
+	column Descripcion
+		dataType: string
+		lineageTag: 97f3fefb-e86f-5a85-bc81-a79218209c7e
+		summarizeBy: none
+		sourceColumn: Descripcion
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Orden de despliegue.
+	column Orden
+		dataType: int64
+		lineageTag: 9db8c48e-6be6-52db-82e4-b113a3b79ed8
+		summarizeBy: none
+		sourceColumn: Orden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimCriticidad = m
+		mode: import
+		source =
+				let
+				    Origen = #table(
+				        {"Criticidad", "Descripcion", "Orden"},
+				        {
+				        {"A", "Crítico · detiene producción", "1"},
+				        {"B", "Esencial · degrada producción", "2"},
+				        {"C", "General · sin impacto inmediato", "3"}
+				        }
+				    )
+				in
+				    Origen
+
+	queryGroup: '02 · Dimensiones'
+
+	annotation PBI_ResultType = Table

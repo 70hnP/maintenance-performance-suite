@@ -1,0 +1,151 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "p11v3",
+  "position": {
+    "x": 16,
+    "y": 454,
+    "z": 158,
+    "width": 1248,
+    "height": 100,
+    "tabOrder": 1580
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactKaizen"
+                    }
+                  },
+                  "Property": "A3"
+                }
+              },
+              "queryRef": "FactKaizen.A3",
+              "nativeQueryRef": "A3"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactKaizen"
+                    }
+                  },
+                  "Property": "PerdidaAtacada"
+                }
+              },
+              "queryRef": "FactKaizen.PerdidaAtacada",
+              "nativeQueryRef": "PerdidaAtacada"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactKaizen"
+                    }
+                  },
+                  "Property": "FasePDCA"
+                }
+              },
+              "queryRef": "FactKaizen.FasePDCA",
+              "nativeQueryRef": "FasePDCA"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactKaizen"
+                    }
+                  },
+                  "Property": "KPI"
+                }
+              },
+              "queryRef": "FactKaizen.KPI",
+              "nativeQueryRef": "KPI"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactKaizen"
+                    }
+                  },
+                  "Property": "Antes"
+                }
+              },
+              "queryRef": "FactKaizen.Antes",
+              "nativeQueryRef": "Antes"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactKaizen"
+                    }
+                  },
+                  "Property": "Despues"
+                }
+              },
+              "queryRef": "FactKaizen.Despues",
+              "nativeQueryRef": "Despues"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Ahorro Validado"
+                }
+              },
+              "queryRef": "_Medidas.Ahorro Validado",
+              "nativeQueryRef": "Ahorro Validado"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Cartera de kaizen con efecto medido   |   registro A3 validado en CO'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

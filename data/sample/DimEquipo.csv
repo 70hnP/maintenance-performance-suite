@@ -1,0 +1,17 @@
+Equipo,Denominacion,Area,Linea,Criticidad,Familia,Fabricante,Anio,PesoFalla
+EQ-0457,Envasadora L2,Envasado,Línea 2,A,Envasado,Vendor-K,2014,3.3
+EQ-0455,Envasadora L1,Envasado,Línea 1,A,Envasado,Vendor-K,2018,1.35
+EQ-0461,Etiquetadora L1,Envasado,Línea 1,A,Etiquetado,Vendor-S,2016,1.95
+EQ-0462,Etiquetadora L2,Envasado,Línea 2,B,Etiquetado,Vendor-S,2019,1.05
+EQ-0470,Paletizador,Envasado,Línea 3,B,Paletizado,Vendor-A,2017,1.2
+EQ-0471,Transportador L3,Envasado,Línea 3,C,Transporte,Vendor-A,2015,0.8
+EQ-0310,Reactor P1,Proceso,Línea 1,A,Proceso,Vendor-T,2012,1.55
+EQ-0311,Intercambiador P1,Proceso,Línea 1,B,Proceso,Vendor-T,2013,0.95
+EQ-0320,Mezclador P2,Proceso,Línea 2,B,Proceso,Vendor-T,2016,1.1
+EQ-0330,Bomba CIP,Proceso,Línea 2,B,Bombas,Vendor-G,2015,1.45
+EQ-0331,Bomba de proceso,Proceso,Línea 1,C,Bombas,Vendor-G,2018,0.7
+EQ-0201,Caldera 1,Servicios,N/A,A,Generación vapor,Vendor-B,2010,1.25
+EQ-0202,Caldera 2,Servicios,N/A,B,Generación vapor,Vendor-B,2019,0.6
+EQ-0210,Compresor 3,Servicios,N/A,B,Aire comprimido,Vendor-C,2014,1.7
+EQ-0211,Chiller 1,Servicios,N/A,A,Refrigeración,Vendor-C,2017,1.0
+EQ-0601,Grúa horquilla 4,Bodega,N/A,C,Movilización,Vendor-M,2020,0.55

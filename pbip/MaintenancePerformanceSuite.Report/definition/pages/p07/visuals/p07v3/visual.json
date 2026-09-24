@@ -1,0 +1,137 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "p07v3",
+  "position": {
+    "x": 16,
+    "y": 454,
+    "z": 101,
+    "width": 1248,
+    "height": 100,
+    "tabOrder": 1010
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimMaterial"
+                    }
+                  },
+                  "Property": "Material"
+                }
+              },
+              "queryRef": "DimMaterial.Material",
+              "nativeQueryRef": "Material"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimMaterial"
+                    }
+                  },
+                  "Property": "Descripcion"
+                }
+              },
+              "queryRef": "DimMaterial.Descripcion",
+              "nativeQueryRef": "Descripcion"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimMaterial"
+                    }
+                  },
+                  "Property": "ABC"
+                }
+              },
+              "queryRef": "DimMaterial.ABC",
+              "nativeQueryRef": "ABC"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimMaterial"
+                    }
+                  },
+                  "Property": "StockActual"
+                }
+              },
+              "queryRef": "DimMaterial.StockActual",
+              "nativeQueryRef": "StockActual"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimMaterial"
+                    }
+                  },
+                  "Property": "StockMinimo"
+                }
+              },
+              "queryRef": "DimMaterial.StockMinimo",
+              "nativeQueryRef": "StockMinimo"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimMaterial"
+                    }
+                  },
+                  "Property": "LeadTimeDias"
+                }
+              },
+              "queryRef": "DimMaterial.LeadTimeDias",
+              "nativeQueryRef": "LeadTimeDias"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Materiales críticos: stock contra mínimo   |   MB52 · MM03'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

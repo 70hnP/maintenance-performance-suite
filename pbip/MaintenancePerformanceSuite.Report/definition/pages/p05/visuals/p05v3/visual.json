@@ -1,0 +1,123 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "p05v3",
+  "position": {
+    "x": 16,
+    "y": 454,
+    "z": 73,
+    "width": 1248,
+    "height": 100,
+    "tabOrder": 730
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimEquipo"
+                    }
+                  },
+                  "Property": "Denominacion"
+                }
+              },
+              "queryRef": "DimEquipo.Denominacion",
+              "nativeQueryRef": "Denominacion"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Costo Plan"
+                }
+              },
+              "queryRef": "_Medidas.Costo Plan",
+              "nativeQueryRef": "Costo Plan"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Costo Total"
+                }
+              },
+              "queryRef": "_Medidas.Costo Total",
+              "nativeQueryRef": "Costo Total"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Varianza Costo"
+                }
+              },
+              "queryRef": "_Medidas.Varianza Costo",
+              "nativeQueryRef": "Varianza Costo"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "% Varianza Costo"
+                }
+              },
+              "queryRef": "_Medidas.% Varianza Costo",
+              "nativeQueryRef": "% Varianza Costo"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Varianza por equipo   |   IW39 × KOB1'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,131 @@
+/// Hechos de avisos de mantenimiento. Fuente: SAP PM · IW28 / IW29. Grano: un aviso. Aporta la duración de parada, única fuente válida para el MTTR.
+table FactAvisosMtto
+	lineageTag: 14f11bc5-28a1-5928-a160-5a0b99f26619
+
+	/// N.º de aviso SAP.
+	column Aviso
+		dataType: string
+		lineageTag: e68158f6-544a-591a-b1c6-73022fe06840
+		summarizeBy: none
+		sourceColumn: Aviso
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Clave aaaa-MM.
+	column AnioMes
+		dataType: string
+		lineageTag: d801b147-d5b3-5edb-abc4-237d976d2362
+		summarizeBy: none
+		sourceColumn: AnioMes
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Relaciona con DimFecha.
+	column Fecha
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: afa1b82e-4ddc-5781-93d0-c969a31d3c11
+		summarizeBy: none
+		sourceColumn: Fecha
+
+		annotation SummarizationSetBy = Automatic
+
+	/// FK a DimEquipo.
+	column Equipo
+		dataType: string
+		lineageTag: 0ba064f9-7686-52fe-a15c-85d824820bff
+		summarizeBy: none
+		sourceColumn: Equipo
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Denominación.
+	column DenominacionEquipo
+		dataType: string
+		lineageTag: 287333a0-2c9e-5925-b41a-5a6decfd32cd
+		summarizeBy: none
+		sourceColumn: DenominacionEquipo
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Área.
+	column Area
+		dataType: string
+		lineageTag: aa7c7b30-3c8b-578c-ac51-f146a88e918e
+		summarizeBy: none
+		sourceColumn: Area
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Línea.
+	column Linea
+		dataType: string
+		lineageTag: 366cc6d2-eacd-5071-acd6-756055e1af88
+		summarizeBy: none
+		sourceColumn: Linea
+
+		annotation SummarizationSetBy = Automatic
+
+	/// A, B o C.
+	column Criticidad
+		dataType: string
+		lineageTag: 7f8b20aa-002e-5571-84f6-d7b70b858ffb
+		summarizeBy: none
+		sourceColumn: Criticidad
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Código de daño. Base del Pareto de causas.
+	column Causa
+		dataType: string
+		lineageTag: eccc0d52-b4c9-5c5d-80da-5b202fc9689b
+		summarizeBy: none
+		sourceColumn: Causa
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Horas de detención declaradas. Base del MTTR y del árbol de pérdidas.
+	column DuracionParada_h
+		dataType: double
+		lineageTag: aad64388-8344-5a99-86f4-00b7a20b1c2a
+		summarizeBy: sum
+		sourceColumn: DuracionParada_h
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Una de las 6 grandes pérdidas del TPM.
+	column CategoriaPerdida
+		dataType: string
+		lineageTag: 10505289-cf6b-5172-9747-c296f62d0166
+		summarizeBy: none
+		sourceColumn: CategoriaPerdida
+
+		annotation SummarizationSetBy = Automatic
+
+	/// 1 si el aviso derivó en orden.
+	column LigadoAOrden
+		dataType: int64
+		lineageTag: 1d2cf77e-1c9b-5da1-953e-d440a64d0d2d
+		summarizeBy: sum
+		sourceColumn: LigadoAOrden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FactAvisosMtto = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(
+				        File.Contents(RutaDatos & "\FactAvisosMtto.csv"),
+				        [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]
+				    ),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Tipos = Table.TransformColumnTypes(Encabezados, {{"Aviso", string}, {"AnioMes", string}, {"Equipo", string}, {"DenominacionEquipo", string}, {"Area", string}, {"Linea", string}, {"Criticidad", string}, {"Causa", string}, {"DuracionParada_h", type number}, {"CategoriaPerdida", string}, {"LigadoAOrden", Int64.Type}}),
+				    ConFecha = Table.AddColumn(Tipos, "Fecha", each Date.FromText([AnioMes] & "-01"), type date),
+				    Final = ConFecha
+				in
+				    Final
+
+	queryGroup: '01 · Hechos'
+
+	annotation PBI_ResultType = Table

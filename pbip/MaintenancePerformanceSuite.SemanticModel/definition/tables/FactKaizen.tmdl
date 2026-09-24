@@ -1,0 +1,119 @@
+/// Cartera de iniciativas A3 de Mejora Enfocada. Registro propio del pilar, no nativo de SAP: el ahorro se valida contra documentos de costo en CO.
+table FactKaizen
+	lineageTag: 9c4158f5-dc15-57b2-ab03-70c0562f2498
+
+	/// Identificador de la iniciativa.
+	column A3
+		dataType: string
+		lineageTag: 8d31f6f8-0ad6-5f2c-825f-4156288a3957
+		summarizeBy: none
+		sourceColumn: A3
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Pérdida que la iniciativa ataca.
+	column PerdidaAtacada
+		dataType: string
+		lineageTag: ab178ced-af37-5e53-9f1f-5ba12593cf14
+		summarizeBy: none
+		sourceColumn: PerdidaAtacada
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Equipo intervenido.
+	column Equipo
+		dataType: string
+		lineageTag: 3a2a7beb-30e8-5e26-8026-5f39f50fb525
+		summarizeBy: none
+		sourceColumn: Equipo
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Área.
+	column Area
+		dataType: string
+		lineageTag: cc2401f7-fc2e-5138-9fac-fcc43da6ccc4
+		summarizeBy: none
+		sourceColumn: Area
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Equipo multidisciplinario responsable.
+	column EquipoTrabajo
+		dataType: string
+		lineageTag: 93d8068b-616d-53bb-adf4-98722477504c
+		summarizeBy: none
+		sourceColumn: EquipoTrabajo
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Plan, Do, Check o Act.
+	column FasePDCA
+		dataType: string
+		lineageTag: 7f8aa719-d378-53f0-b0af-1cf7aa589dec
+		summarizeBy: none
+		sourceColumn: FasePDCA
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Ahorro confirmado en CO, en k$.
+	column AhorroValidado
+		dataType: double
+		lineageTag: 89f0e639-b485-5596-8150-95c329b20869
+		summarizeBy: sum
+		sourceColumn: AhorroValidado
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Mes de apertura del A3.
+	column AnioMesInicio
+		dataType: string
+		lineageTag: 8913ba46-13ca-5a41-8374-75d48a9e6f9f
+		summarizeBy: none
+		sourceColumn: AnioMesInicio
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Indicador que mide el efecto.
+	column KPI
+		dataType: string
+		lineageTag: 85deeb68-633e-5722-ab80-c26ec2b5f8a3
+		summarizeBy: none
+		sourceColumn: KPI
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Valor del KPI antes de la contramedida.
+	column Antes
+		dataType: double
+		lineageTag: 8e2c735a-d840-5d95-8a5b-b658197cb980
+		summarizeBy: none
+		sourceColumn: Antes
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Valor del KPI después de la contramedida.
+	column Despues
+		dataType: double
+		lineageTag: b6def10b-92bb-56bc-b136-daea525f13ee
+		summarizeBy: none
+		sourceColumn: Despues
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FactKaizen = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(
+				        File.Contents(RutaDatos & "\FactKaizen.csv"),
+				        [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]
+				    ),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Tipos = Table.TransformColumnTypes(Encabezados, {{"A3", string}, {"PerdidaAtacada", string}, {"Equipo", string}, {"Area", string}, {"EquipoTrabajo", string}, {"FasePDCA", string}, {"AhorroValidado", type number}, {"AnioMesInicio", string}, {"KPI", string}, {"Antes", type number}, {"Despues", type number}})
+				in
+				    Tipos
+
+	queryGroup: '01 · Hechos'
+
+	annotation PBI_ResultType = Table

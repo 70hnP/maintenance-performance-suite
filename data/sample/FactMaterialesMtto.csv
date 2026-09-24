@@ -1,0 +1,275 @@
+AnioMes,Material,Descripcion,Area,Cantidad,Importe,EsRepuestoCritico
+2025-01,100231,Sello mecánico bomba,Envasado,3,435,True
+2025-01,100455,Rodamiento 6308,Servicios,3,246,True
+2025-01,101044,Sensor de nivel,Proceso,3,330,False
+2025-01,101220,Filtro de aire,Proceso,7,266,False
+2025-01,101355,"Válvula mariposa 3""",Proceso,4,780,True
+2025-01,101480,Junta espiralada,Proceso,10,120,False
+2025-01,101512,Contactor 40A,Proceso,1,64,False
+2025-01,101633,Acople elástico,Envasado,7,616,True
+2025-01,101744,Manómetro 0-10 bar,Servicios,10,220,False
+2025-01,101890,Reductor SEW,Proceso,4,2480,True
+2025-01,101955,Lubricante ISO 220 (20L),Proceso,6,204,False
+2025-02,100231,Sello mecánico bomba,Proceso,1,145,True
+2025-02,100455,Rodamiento 6308,Envasado,2,164,True
+2025-02,100812,Correa transmisión,Envasado,3,210,True
+2025-02,101220,Filtro de aire,Proceso,7,266,False
+2025-02,101355,"Válvula mariposa 3""",Servicios,1,195,True
+2025-02,101480,Junta espiralada,Envasado,4,48,False
+2025-02,101512,Contactor 40A,Envasado,4,256,False
+2025-02,101633,Acople elástico,Servicios,4,352,True
+2025-02,101744,Manómetro 0-10 bar,Servicios,12,264,False
+2025-02,101890,Reductor SEW,Envasado,4,2480,True
+2025-02,101955,Lubricante ISO 220 (20L),Proceso,11,374,False
+2025-03,100231,Sello mecánico bomba,Servicios,2,290,True
+2025-03,100812,Correa transmisión,Envasado,2,140,True
+2025-03,101044,Sensor de nivel,Envasado,6,660,False
+2025-03,101220,Filtro de aire,Proceso,4,152,False
+2025-03,101355,"Válvula mariposa 3""",Proceso,3,585,True
+2025-03,101480,Junta espiralada,Envasado,2,24,False
+2025-03,101512,Contactor 40A,Envasado,4,256,False
+2025-03,101744,Manómetro 0-10 bar,Servicios,12,264,False
+2025-03,101890,Reductor SEW,Servicios,4,2480,True
+2025-03,101955,Lubricante ISO 220 (20L),Proceso,11,374,False
+2025-04,100231,Sello mecánico bomba,Envasado,3,435,True
+2025-04,100455,Rodamiento 6308,Servicios,2,164,True
+2025-04,100812,Correa transmisión,Envasado,1,70,True
+2025-04,101044,Sensor de nivel,Servicios,3,330,False
+2025-04,101220,Filtro de aire,Envasado,4,152,False
+2025-04,101355,"Válvula mariposa 3""",Envasado,2,390,True
+2025-04,101480,Junta espiralada,Servicios,5,60,False
+2025-04,101512,Contactor 40A,Servicios,5,320,False
+2025-04,101633,Acople elástico,Envasado,1,88,True
+2025-04,101744,Manómetro 0-10 bar,Proceso,7,154,False
+2025-04,101890,Reductor SEW,Servicios,3,1860,True
+2025-04,101955,Lubricante ISO 220 (20L),Servicios,8,272,False
+2025-05,100231,Sello mecánico bomba,Proceso,3,435,True
+2025-05,100455,Rodamiento 6308,Envasado,3,246,True
+2025-05,100812,Correa transmisión,Envasado,2,140,True
+2025-05,101044,Sensor de nivel,Envasado,5,550,False
+2025-05,101220,Filtro de aire,Envasado,4,152,False
+2025-05,101355,"Válvula mariposa 3""",Servicios,1,195,True
+2025-05,101480,Junta espiralada,Servicios,10,120,False
+2025-05,101512,Contactor 40A,Proceso,5,320,False
+2025-05,101633,Acople elástico,Proceso,5,440,True
+2025-05,101744,Manómetro 0-10 bar,Servicios,6,132,False
+2025-05,101890,Reductor SEW,Envasado,3,1860,True
+2025-05,101955,Lubricante ISO 220 (20L),Envasado,6,204,False
+2025-06,100231,Sello mecánico bomba,Envasado,3,435,True
+2025-06,100455,Rodamiento 6308,Envasado,4,328,True
+2025-06,100812,Correa transmisión,Proceso,2,140,True
+2025-06,101044,Sensor de nivel,Envasado,1,110,False
+2025-06,101220,Filtro de aire,Envasado,7,266,False
+2025-06,101355,"Válvula mariposa 3""",Envasado,1,195,True
+2025-06,101480,Junta espiralada,Servicios,6,72,False
+2025-06,101512,Contactor 40A,Bodega,7,448,False
+2025-06,101633,Acople elástico,Envasado,3,264,True
+2025-06,101744,Manómetro 0-10 bar,Envasado,9,198,False
+2025-06,101890,Reductor SEW,Envasado,3,1860,True
+2025-06,101955,Lubricante ISO 220 (20L),Proceso,5,170,False
+2025-07,100231,Sello mecánico bomba,Servicios,4,580,True
+2025-07,100455,Rodamiento 6308,Proceso,2,164,True
+2025-07,100812,Correa transmisión,Envasado,4,280,True
+2025-07,101044,Sensor de nivel,Envasado,7,770,False
+2025-07,101220,Filtro de aire,Proceso,3,114,False
+2025-07,101355,"Válvula mariposa 3""",Envasado,5,975,True
+2025-07,101480,Junta espiralada,Envasado,9,108,False
+2025-07,101512,Contactor 40A,Proceso,2,128,False
+2025-07,101633,Acople elástico,Envasado,7,616,True
+2025-07,101744,Manómetro 0-10 bar,Envasado,4,88,False
+2025-07,101890,Reductor SEW,Envasado,3,1860,True
+2025-07,101955,Lubricante ISO 220 (20L),Envasado,2,68,False
+2025-08,100231,Sello mecánico bomba,Envasado,1,145,True
+2025-08,100455,Rodamiento 6308,Proceso,1,82,True
+2025-08,100812,Correa transmisión,Proceso,1,70,True
+2025-08,101044,Sensor de nivel,Servicios,5,550,False
+2025-08,101220,Filtro de aire,Bodega,5,190,False
+2025-08,101355,"Válvula mariposa 3""",Servicios,3,585,True
+2025-08,101480,Junta espiralada,Envasado,8,96,False
+2025-08,101512,Contactor 40A,Envasado,4,256,False
+2025-08,101633,Acople elástico,Bodega,2,176,True
+2025-08,101744,Manómetro 0-10 bar,Envasado,15,330,False
+2025-08,101890,Reductor SEW,Envasado,2,1240,True
+2025-08,101955,Lubricante ISO 220 (20L),Bodega,2,68,False
+2025-09,100231,Sello mecánico bomba,Servicios,1,145,True
+2025-09,100455,Rodamiento 6308,Envasado,3,246,True
+2025-09,100812,Correa transmisión,Servicios,1,70,True
+2025-09,101044,Sensor de nivel,Envasado,4,440,False
+2025-09,101220,Filtro de aire,Servicios,4,152,False
+2025-09,101355,"Válvula mariposa 3""",Bodega,2,390,True
+2025-09,101480,Junta espiralada,Servicios,10,120,False
+2025-09,101512,Contactor 40A,Envasado,6,384,False
+2025-09,101633,Acople elástico,Proceso,3,264,True
+2025-09,101744,Manómetro 0-10 bar,Proceso,6,132,False
+2025-09,101890,Reductor SEW,Proceso,2,1240,True
+2025-09,101955,Lubricante ISO 220 (20L),Proceso,6,204,False
+2025-10,100231,Sello mecánico bomba,Envasado,3,435,True
+2025-10,100455,Rodamiento 6308,Envasado,1,82,True
+2025-10,100812,Correa transmisión,Proceso,1,70,True
+2025-10,101044,Sensor de nivel,Servicios,7,770,False
+2025-10,101220,Filtro de aire,Envasado,4,152,False
+2025-10,101355,"Válvula mariposa 3""",Servicios,5,975,True
+2025-10,101480,Junta espiralada,Envasado,7,84,False
+2025-10,101512,Contactor 40A,Servicios,2,128,False
+2025-10,101633,Acople elástico,Envasado,5,440,True
+2025-10,101744,Manómetro 0-10 bar,Proceso,9,198,False
+2025-10,101890,Reductor SEW,Bodega,1,620,True
+2025-10,101955,Lubricante ISO 220 (20L),Envasado,6,204,False
+2025-11,100231,Sello mecánico bomba,Proceso,2,290,True
+2025-11,100455,Rodamiento 6308,Envasado,1,82,True
+2025-11,100812,Correa transmisión,Envasado,1,70,True
+2025-11,101220,Filtro de aire,Servicios,2,76,False
+2025-11,101480,Junta espiralada,Envasado,9,108,False
+2025-11,101512,Contactor 40A,Proceso,2,128,False
+2025-11,101633,Acople elástico,Envasado,2,176,True
+2025-11,101744,Manómetro 0-10 bar,Envasado,8,176,False
+2025-11,101890,Reductor SEW,Envasado,2,1240,True
+2025-11,101955,Lubricante ISO 220 (20L),Envasado,12,408,False
+2025-12,100231,Sello mecánico bomba,Proceso,3,435,True
+2025-12,100455,Rodamiento 6308,Servicios,4,328,True
+2025-12,100812,Correa transmisión,Envasado,3,210,True
+2025-12,101044,Sensor de nivel,Proceso,3,330,False
+2025-12,101220,Filtro de aire,Proceso,3,114,False
+2025-12,101355,"Válvula mariposa 3""",Servicios,2,390,True
+2025-12,101480,Junta espiralada,Envasado,8,96,False
+2025-12,101512,Contactor 40A,Envasado,3,192,False
+2025-12,101633,Acople elástico,Envasado,6,528,True
+2025-12,101744,Manómetro 0-10 bar,Proceso,11,242,False
+2025-12,101890,Reductor SEW,Bodega,2,1240,True
+2025-12,101955,Lubricante ISO 220 (20L),Envasado,3,102,False
+2026-01,100231,Sello mecánico bomba,Envasado,2,290,True
+2026-01,100455,Rodamiento 6308,Envasado,6,492,True
+2026-01,100812,Correa transmisión,Envasado,1,70,True
+2026-01,101044,Sensor de nivel,Envasado,7,770,False
+2026-01,101220,Filtro de aire,Proceso,3,114,False
+2026-01,101355,"Válvula mariposa 3""",Proceso,4,780,True
+2026-01,101480,Junta espiralada,Envasado,7,84,False
+2026-01,101512,Contactor 40A,Proceso,7,448,False
+2026-01,101633,Acople elástico,Servicios,6,528,True
+2026-01,101744,Manómetro 0-10 bar,Envasado,17,374,False
+2026-01,101890,Reductor SEW,Servicios,1,620,True
+2026-01,101955,Lubricante ISO 220 (20L),Envasado,5,170,False
+2026-02,100455,Rodamiento 6308,Servicios,3,246,True
+2026-02,100812,Correa transmisión,Envasado,3,210,True
+2026-02,101044,Sensor de nivel,Servicios,4,440,False
+2026-02,101220,Filtro de aire,Servicios,7,266,False
+2026-02,101355,"Válvula mariposa 3""",Proceso,8,1560,True
+2026-02,101480,Junta espiralada,Envasado,9,108,False
+2026-02,101512,Contactor 40A,Bodega,2,128,False
+2026-02,101633,Acople elástico,Envasado,5,440,True
+2026-02,101744,Manómetro 0-10 bar,Servicios,12,264,False
+2026-02,101890,Reductor SEW,Envasado,3,1860,True
+2026-02,101955,Lubricante ISO 220 (20L),Envasado,12,408,False
+2026-03,100231,Sello mecánico bomba,Proceso,2,290,True
+2026-03,100455,Rodamiento 6308,Envasado,4,328,True
+2026-03,100812,Correa transmisión,Envasado,3,210,True
+2026-03,101044,Sensor de nivel,Envasado,3,330,False
+2026-03,101220,Filtro de aire,Envasado,5,190,False
+2026-03,101355,"Válvula mariposa 3""",Servicios,3,585,True
+2026-03,101480,Junta espiralada,Proceso,5,60,False
+2026-03,101512,Contactor 40A,Envasado,6,384,False
+2026-03,101633,Acople elástico,Proceso,6,528,True
+2026-03,101744,Manómetro 0-10 bar,Servicios,2,44,False
+2026-03,101890,Reductor SEW,Proceso,2,1240,True
+2026-03,101955,Lubricante ISO 220 (20L),Envasado,10,340,False
+2026-04,100231,Sello mecánico bomba,Proceso,2,290,True
+2026-04,100455,Rodamiento 6308,Envasado,2,164,True
+2026-04,100812,Correa transmisión,Proceso,2,140,True
+2026-04,101044,Sensor de nivel,Bodega,2,220,False
+2026-04,101220,Filtro de aire,Servicios,3,114,False
+2026-04,101355,"Válvula mariposa 3""",Proceso,2,390,True
+2026-04,101480,Junta espiralada,Envasado,8,96,False
+2026-04,101512,Contactor 40A,Proceso,8,512,False
+2026-04,101744,Manómetro 0-10 bar,Bodega,4,88,False
+2026-04,101890,Reductor SEW,Envasado,2,1240,True
+2026-04,101955,Lubricante ISO 220 (20L),Envasado,8,272,False
+2026-05,100231,Sello mecánico bomba,Envasado,2,290,True
+2026-05,100455,Rodamiento 6308,Bodega,2,164,True
+2026-05,100812,Correa transmisión,Envasado,2,140,True
+2026-05,101044,Sensor de nivel,Proceso,4,440,False
+2026-05,101220,Filtro de aire,Servicios,3,114,False
+2026-05,101355,"Válvula mariposa 3""",Envasado,2,390,True
+2026-05,101480,Junta espiralada,Envasado,10,120,False
+2026-05,101512,Contactor 40A,Envasado,3,192,False
+2026-05,101633,Acople elástico,Proceso,7,616,True
+2026-05,101744,Manómetro 0-10 bar,Bodega,11,242,False
+2026-05,101890,Reductor SEW,Envasado,2,1240,True
+2026-05,101955,Lubricante ISO 220 (20L),Servicios,7,238,False
+2026-06,100231,Sello mecánico bomba,Proceso,2,290,True
+2026-06,100455,Rodamiento 6308,Proceso,3,246,True
+2026-06,101044,Sensor de nivel,Envasado,3,330,False
+2026-06,101220,Filtro de aire,Envasado,3,114,False
+2026-06,101355,"Válvula mariposa 3""",Envasado,7,1365,True
+2026-06,101480,Junta espiralada,Envasado,10,120,False
+2026-06,101512,Contactor 40A,Envasado,4,256,False
+2026-06,101633,Acople elástico,Servicios,8,704,True
+2026-06,101744,Manómetro 0-10 bar,Envasado,6,132,False
+2026-06,101890,Reductor SEW,Envasado,4,2480,True
+2026-06,101955,Lubricante ISO 220 (20L),Servicios,7,238,False
+2026-07,100231,Sello mecánico bomba,Envasado,3,435,True
+2026-07,100455,Rodamiento 6308,Servicios,2,164,True
+2026-07,100812,Correa transmisión,Proceso,3,210,True
+2026-07,101044,Sensor de nivel,Proceso,6,660,False
+2026-07,101220,Filtro de aire,Envasado,1,38,False
+2026-07,101355,"Válvula mariposa 3""",Servicios,4,780,True
+2026-07,101480,Junta espiralada,Envasado,9,108,False
+2026-07,101512,Contactor 40A,Bodega,7,448,False
+2026-07,101633,Acople elástico,Envasado,3,264,True
+2026-07,101744,Manómetro 0-10 bar,Proceso,1,22,False
+2026-07,101890,Reductor SEW,Bodega,3,1860,True
+2026-08,100231,Sello mecánico bomba,Envasado,3,435,True
+2026-08,100455,Rodamiento 6308,Envasado,1,82,True
+2026-08,100812,Correa transmisión,Envasado,1,70,True
+2026-08,101044,Sensor de nivel,Envasado,6,660,False
+2026-08,101220,Filtro de aire,Servicios,5,190,False
+2026-08,101355,"Válvula mariposa 3""",Proceso,2,390,True
+2026-08,101480,Junta espiralada,Envasado,4,48,False
+2026-08,101512,Contactor 40A,Bodega,3,192,False
+2026-08,101633,Acople elástico,Envasado,4,352,True
+2026-08,101744,Manómetro 0-10 bar,Envasado,11,242,False
+2026-08,101890,Reductor SEW,Servicios,2,1240,True
+2026-08,101955,Lubricante ISO 220 (20L),Proceso,5,170,False
+2026-09,100231,Sello mecánico bomba,Servicios,2,290,True
+2026-09,100455,Rodamiento 6308,Envasado,1,82,True
+2026-09,100812,Correa transmisión,Envasado,1,70,True
+2026-09,101044,Sensor de nivel,Servicios,2,220,False
+2026-09,101220,Filtro de aire,Servicios,5,190,False
+2026-09,101355,"Válvula mariposa 3""",Envasado,3,585,True
+2026-09,101480,Junta espiralada,Servicios,12,144,False
+2026-09,101512,Contactor 40A,Servicios,9,576,False
+2026-09,101633,Acople elástico,Envasado,4,352,True
+2026-09,101890,Reductor SEW,Envasado,1,620,True
+2026-09,101955,Lubricante ISO 220 (20L),Envasado,2,68,False
+2026-10,100231,Sello mecánico bomba,Envasado,2,290,True
+2026-10,100455,Rodamiento 6308,Envasado,3,246,True
+2026-10,101044,Sensor de nivel,Servicios,2,220,False
+2026-10,101220,Filtro de aire,Servicios,3,114,False
+2026-10,101355,"Válvula mariposa 3""",Envasado,2,390,True
+2026-10,101480,Junta espiralada,Servicios,3,36,False
+2026-10,101512,Contactor 40A,Envasado,4,256,False
+2026-10,101633,Acople elástico,Proceso,3,264,True
+2026-10,101744,Manómetro 0-10 bar,Bodega,5,110,False
+2026-10,101890,Reductor SEW,Servicios,1,620,True
+2026-10,101955,Lubricante ISO 220 (20L),Proceso,4,136,False
+2026-11,100231,Sello mecánico bomba,Servicios,3,435,True
+2026-11,100455,Rodamiento 6308,Envasado,1,82,True
+2026-11,100812,Correa transmisión,Envasado,3,210,True
+2026-11,101044,Sensor de nivel,Envasado,2,220,False
+2026-11,101220,Filtro de aire,Envasado,2,76,False
+2026-11,101355,"Válvula mariposa 3""",Servicios,4,780,True
+2026-11,101480,Junta espiralada,Envasado,13,156,False
+2026-11,101512,Contactor 40A,Envasado,6,384,False
+2026-11,101633,Acople elástico,Servicios,1,88,True
+2026-11,101744,Manómetro 0-10 bar,Envasado,5,110,False
+2026-11,101955,Lubricante ISO 220 (20L),Proceso,9,306,False
+2026-12,100455,Rodamiento 6308,Envasado,1,82,True
+2026-12,100812,Correa transmisión,Servicios,4,280,True
+2026-12,101044,Sensor de nivel,Servicios,4,440,False
+2026-12,101220,Filtro de aire,Envasado,3,114,False
+2026-12,101355,"Válvula mariposa 3""",Envasado,3,585,True
+2026-12,101480,Junta espiralada,Envasado,8,96,False
+2026-12,101512,Contactor 40A,Proceso,3,192,False
+2026-12,101633,Acople elástico,Envasado,8,704,True
+2026-12,101744,Manómetro 0-10 bar,Envasado,4,88,False
+2026-12,101890,Reductor SEW,Proceso,1,620,True
+2026-12,101955,Lubricante ISO 220 (20L),Servicios,4,136,False

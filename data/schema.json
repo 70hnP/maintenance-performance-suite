@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Maintenance Performance Suite — CSV contract",
+  "version": "1.0.0",
+  "tables": {
+    "FactOrdenesMtto": {
+      "primaryKey": ["Orden"],
+      "minRows": 1000,
+      "columns": {
+        "Orden": "integer", "AnioMes": "year_month", "Area": "string", "Linea": "string",
+        "Equipo": "string", "DenominacionEquipo": "string", "Criticidad": "string",
+        "TipoMantenimiento": "string", "ClaseOrden": "string", "EstadoCierre": "string",
+        "Trabajo": "number", "TrabajoReal": "number", "CostoPlan": "number", "CostoReal": "number",
+        "DiasCierre": "nullable_integer", "RetrasoDias": "integer", "FlagsCalidad": "integer",
+        "GrupoPlanificador": "string", "Prioridad": "string", "MotivoDetencion": "nullable_string"
+      }
+    },
+    "FactAvisosMtto": {
+      "primaryKey": ["Aviso"],
+      "minRows": 800,
+      "columns": {
+        "Aviso": "integer", "AnioMes": "year_month", "Equipo": "string", "DenominacionEquipo": "string",
+        "Area": "string", "Linea": "string", "Criticidad": "string", "Causa": "string",
+        "DuracionParada_h": "number", "CategoriaPerdida": "string", "LigadoAOrden": "integer"
+      }
+    },
+    "FactProduccion": {
+      "primaryKey": ["AnioMes", "Area", "Linea"],
+      "minRows": 100,
+      "columns": {
+        "AnioMes": "year_month", "Area": "string", "Linea": "string",
+        "ToneladasProducidas": "number", "HorasOperacion": "number", "HorasDetencion": "number"
+      }
+    },
+    "FactMaterialesMtto": {
+      "primaryKey": ["AnioMes", "Material", "Area"],
+      "minRows": 200,
+      "columns": {
+        "AnioMes": "year_month", "Material": "string", "Descripcion": "string", "Area": "string",
+        "Cantidad": "integer", "Importe": "number", "EsRepuestoCritico": "boolean"
+      }
+    },
+    "FactPlanesMtto": {
+      "primaryKey": ["AnioMes", "Plan"],
+      "minRows": 1000,
+      "columns": {
+        "AnioMes": "year_month", "Plan": "string", "Equipo": "string", "DenominacionEquipo": "string",
+        "Area": "string", "Criticidad": "string", "Estrategia": "string", "Ciclo": "string", "Estado": "string"
+      }
+    },
+    "DimEquipo": {
+      "primaryKey": ["Equipo"],
+      "minRows": 16,
+      "columns": {
+        "Equipo": "string", "Denominacion": "string", "Area": "string", "Linea": "string",
+        "Criticidad": "string", "Familia": "string", "Fabricante": "string", "Anio": "integer", "PesoFalla": "number"
+      }
+    },
+    "DimMaterial": {
+      "primaryKey": ["Material"],
+      "minRows": 12,
+      "columns": {
+        "Material": "string", "Descripcion": "string", "ABC": "string", "StockActual": "integer",
+        "StockMinimo": "integer", "LeadTimeDias": "integer", "EsRepuestoCritico": "boolean", "PrecioUnitario": "number"
+      }
+    },
+    "FactKaizen": {
+      "primaryKey": ["A3"],
+      "minRows": 12,
+      "columns": {
+        "A3": "string", "PerdidaAtacada": "string", "Equipo": "nullable_string", "Area": "string",
+        "EquipoTrabajo": "string", "FasePDCA": "string", "AhorroValidado": "number",
+        "AnioMesInicio": "year_month", "KPI": "string", "Antes": "number", "Despues": "number"
+      }
+    }
+  },
+  "foreignKeys": [
+    {"table": "FactOrdenesMtto", "column": "Equipo", "refTable": "DimEquipo", "refColumn": "Equipo"},
+    {"table": "FactAvisosMtto", "column": "Equipo", "refTable": "DimEquipo", "refColumn": "Equipo"},
+    {"table": "FactPlanesMtto", "column": "Equipo", "refTable": "DimEquipo", "refColumn": "Equipo"},
+    {"table": "FactMaterialesMtto", "column": "Material", "refTable": "DimMaterial", "refColumn": "Material"},
+    {"table": "FactKaizen", "column": "Equipo", "refTable": "DimEquipo", "refColumn": "Equipo", "nullable": true}
+  ]
+}

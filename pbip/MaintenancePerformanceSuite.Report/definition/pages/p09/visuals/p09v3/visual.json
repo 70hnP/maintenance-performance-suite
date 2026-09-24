@@ -1,0 +1,151 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.4.0/schema.json",
+  "name": "p09v3",
+  "position": {
+    "x": 16,
+    "y": 454,
+    "z": 129,
+    "width": 1248,
+    "height": 100,
+    "tabOrder": 1290
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimArea"
+                    }
+                  },
+                  "Property": "Area"
+                }
+              },
+              "queryRef": "DimArea.Area",
+              "nativeQueryRef": "Area"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Score F1 Activos"
+                }
+              },
+              "queryRef": "_Medidas.Score F1 Activos",
+              "nativeQueryRef": "Score F1 Activos"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Score F2 Planificación"
+                }
+              },
+              "queryRef": "_Medidas.Score F2 Planificación",
+              "nativeQueryRef": "Score F2 Planificación"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Score F3 Ejecución"
+                }
+              },
+              "queryRef": "_Medidas.Score F3 Ejecución",
+              "nativeQueryRef": "Score F3 Ejecución"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Score F4 Costos"
+                }
+              },
+              "queryRef": "_Medidas.Score F4 Costos",
+              "nativeQueryRef": "Score F4 Costos"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Score F5 Confiabilidad"
+                }
+              },
+              "queryRef": "_Medidas.Score F5 Confiabilidad",
+              "nativeQueryRef": "Score F5 Confiabilidad"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Madurez Promedio"
+                }
+              },
+              "queryRef": "_Medidas.Madurez Promedio",
+              "nativeQueryRef": "Madurez Promedio"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Matriz de madurez por área   |   modelo de score'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,95 @@
+/// Consumo de repuestos. Fuente: SAP MM · MB51. Grano: material por mes y área.
+table FactMaterialesMtto
+	lineageTag: f369509c-14b8-59a5-9844-53a3091de58b
+
+	/// Clave aaaa-MM.
+	column AnioMes
+		dataType: string
+		lineageTag: 66e53d49-8b62-5dc5-a36c-65ed1d6e73e8
+		summarizeBy: none
+		sourceColumn: AnioMes
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Relaciona con DimFecha.
+	column Fecha
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: a4ca6b0d-e256-5a36-b569-4a381a7b16e5
+		summarizeBy: none
+		sourceColumn: Fecha
+
+		annotation SummarizationSetBy = Automatic
+
+	/// FK a DimMaterial.
+	column Material
+		dataType: string
+		lineageTag: d0e75fe2-f7b8-5fae-867f-6dbe0fc44fd8
+		summarizeBy: none
+		sourceColumn: Material
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Descripción del material.
+	column Descripcion
+		dataType: string
+		lineageTag: 68e73b68-397e-5de8-b847-d390bf67c48f
+		summarizeBy: none
+		sourceColumn: Descripcion
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Área que consume.
+	column Area
+		dataType: string
+		lineageTag: fb75121d-3758-5020-b2f2-9cb13276a632
+		summarizeBy: none
+		sourceColumn: Area
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Unidades consumidas.
+	column Cantidad
+		dataType: double
+		lineageTag: 808cf938-1225-5221-b2da-d37154779382
+		summarizeBy: sum
+		sourceColumn: Cantidad
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Valor del consumo en k$.
+	column Importe
+		dataType: double
+		lineageTag: 2d6fa5e2-6cbd-50d1-bf32-d5c59fe87a59
+		summarizeBy: sum
+		sourceColumn: Importe
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Marca de criticidad del repuesto.
+	column EsRepuestoCritico
+		dataType: boolean
+		lineageTag: fcbf8cc8-10e1-54c8-a2ce-c8df0a59fabd
+		summarizeBy: none
+		sourceColumn: EsRepuestoCritico
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FactMaterialesMtto = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(
+				        File.Contents(RutaDatos & "\FactMaterialesMtto.csv"),
+				        [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]
+				    ),
+				    Encabezados = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				    Tipos = Table.TransformColumnTypes(Encabezados, {{"AnioMes", string}, {"Material", string}, {"Descripcion", string}, {"Area", string}, {"Cantidad", Int64.Type}, {"Importe", type number}, {"EsRepuestoCritico", type logical}}),
+				    ConFecha = Table.AddColumn(Tipos, "Fecha", each Date.FromText([AnioMes] & "-01"), type date),
+				    Final = ConFecha
+				in
+				    Final
+
+	queryGroup: '01 · Hechos'
+
+	annotation PBI_ResultType = Table

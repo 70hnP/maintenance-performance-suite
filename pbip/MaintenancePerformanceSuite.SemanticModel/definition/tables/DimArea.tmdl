@@ -1,0 +1,41 @@
+/// Áreas de empresa del alcance.
+table DimArea
+	lineageTag: 3f12e256-4041-5266-b01d-cc43882c4cba
+
+	/// Área de empresa.
+	column Area
+		dataType: string
+		lineageTag: 50499e8c-a4e0-5802-a53b-a33406fcf688
+		summarizeBy: none
+		sourceColumn: Area
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Productiva o de soporte.
+	column TipoArea
+		dataType: string
+		lineageTag: 90f66d2d-4c4f-538e-8743-a1f181ad1dcb
+		summarizeBy: none
+		sourceColumn: TipoArea
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimArea = m
+		mode: import
+		source =
+				let
+				    Origen = #table(
+				        {"Area", "TipoArea"},
+				        {
+				        {"Envasado", "Productiva"},
+				        {"Proceso", "Productiva"},
+				        {"Servicios", "Soporte"},
+				        {"Bodega", "Soporte"}
+				        }
+				    )
+				in
+				    Origen
+
+	queryGroup: '02 · Dimensiones'
+
+	annotation PBI_ResultType = Table

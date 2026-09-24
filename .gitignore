@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+.artifact-build/
+.artifact-qa/
+deliverables/*.inspect.ndjson
+deliverables/presentacion-ejecutiva-revisada.pptx
+deliverables/presentacion-ejecutiva-final.pptx
+deliverables/presentacion-ejecutiva-validada.pptx
+
+# Power BI Desktop
+*.pbix
+**/.pbi/
+*.abf
